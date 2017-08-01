@@ -1,0 +1,314 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:microchip_pic12mcu
+LIBS:xilinx7
+LIBS:hdmi3dmix
+LIBS:TPD12S016_PW_24_TSSOP
+LIBS:TPD12S016_RKT_24_UQFN
+LIBS:crystal
+LIBS:SMA_SMD_from_Eagle
+LIBS:DDR3
+LIBS:hiroseConnMichael
+LIBS:Ethernet_DP83867IRPAP
+LIBS:SN74AVC4T245PWR
+LIBS:Ethernet_7499111221A
+LIBS:VideoGPU
+LIBS:TPS74701DRCR
+LIBS:TPS82130
+LIBS:FMC_MIPI_v1-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 10 18
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 1550 1200 0    60   Input ~ 0
+BOARD_12V
+Text Label 1950 1200 0    60   ~ 0
+BOARD_12V
+$Comp
+L R R94
+U 1 1 59205BFF
+P 3550 2250
+F 0 "R94" V 3630 2250 50  0000 C CNN
+F 1 "0k" V 3550 2250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3480 2250 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Panasonic/ERJ-6GEY0R00V/?qs=tQNqqtTOejLLHbaWAzeH1w==" H 3550 2250 50  0001 C CNN
+F 4 "5%" V 3550 2250 60  0001 C CNN "Tolerance"
+F 5 "NA" V 3550 2250 60  0001 C CNN "Power"
+F 6 "ERJ-6GEY0R00V" V 3550 2250 60  0001 C CNN "Part Number"
+	1    3550 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R98
+U 1 1 592061C3
+P 8300 2250
+F 0 "R98" V 8380 2250 50  0000 C CNN
+F 1 "0k" V 8300 2250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 8230 2250 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Panasonic/ERJ-6GEY0R00V/?qs=tQNqqtTOejLLHbaWAzeH1w==" H 8300 2250 50  0001 C CNN
+F 4 "5%" V 8300 2250 60  0001 C CNN "Tolerance"
+F 5 "NA" V 8300 2250 60  0001 C CNN "Power"
+F 6 "ERJ-6GEY0R00V" V 8300 2250 60  0001 C CNN "Part Number"
+	1    8300 2250
+	0    -1   -1   0   
+$EndComp
+Text Label 2700 2250 0    60   ~ 0
+BOARD_12V
+Text Label 8750 2250 0    60   ~ 0
+PowerSupply_1V1_2A
+Text Label 1950 1450 0    60   ~ 0
+PowerSupply_1V1_2A
+Text HLabel 1550 1450 0    60   Output ~ 0
+PowerSupply_1V1_2A
+$Comp
+L R R95
+U 1 1 5920B31F
+P 7050 2650
+F 0 "R95" V 7130 2650 50  0000 C CNN
+F 1 "100k" V 7050 2650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6980 2650 50  0001 C CNN
+F 3 "http://www.mouser.com/ProductDetail/Panasonic/ERJ-6ENF1003V/?qs=%2fha2pyFaduirjrsza3agtkxlbPCthtJwO97G1ixwA8VTfiTiPb6Z8Q%3d%3d" H 7050 2650 50  0001 C CNN
+F 4 "ERJ-6ENF1003V" V 7050 2650 60  0001 C CNN "Part Number"
+F 5 "1%" V 7050 2650 60  0001 C CNN "Tolerance"
+F 6 "1/8W" V 7050 2650 60  0001 C CNN "Power"
+	1    7050 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L R R96
+U 1 1 5920BA90
+P 7550 3250
+F 0 "R96" V 7630 3250 50  0000 C CNN
+F 1 "100k" V 7550 3250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 7480 3250 50  0001 C CNN
+F 3 "http://www.mouser.com/ProductDetail/Panasonic/ERJ-6ENF1003V/?qs=%2fha2pyFaduirjrsza3agtkxlbPCthtJwO97G1ixwA8VTfiTiPb6Z8Q%3d%3d" H 7550 3250 50  0001 C CNN
+F 4 "ERJ-6ENF1003V" V 7550 3250 60  0001 C CNN "Part Number"
+F 5 "1%" V 7550 3250 60  0001 C CNN "Tolerance"
+F 6 "1/8W" V 7550 3250 60  0001 C CNN "Power"
+	1    7550 3250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1550 1200 1950 1200
+Wire Wire Line
+	3700 2250 5350 2250
+Wire Wire Line
+	6750 2250 8150 2250
+Wire Wire Line
+	6750 2350 6900 2350
+Wire Wire Line
+	6900 2350 6900 2250
+Connection ~ 6900 2250
+Wire Wire Line
+	8450 2250 8750 2250
+Wire Wire Line
+	3400 2250 2700 2250
+Wire Wire Line
+	1550 1450 1950 1450
+Wire Wire Line
+	6750 2650 6900 2650
+Wire Wire Line
+	7200 2650 7300 2650
+Wire Wire Line
+	7300 2650 7300 2250
+Connection ~ 7300 2250
+Wire Wire Line
+	6750 2950 7550 2950
+Wire Wire Line
+	7550 2650 7550 3100
+Wire Wire Line
+	6750 3150 6850 3150
+Wire Wire Line
+	6850 3150 6850 3650
+Wire Wire Line
+	6750 3250 6850 3250
+Connection ~ 6850 3250
+Wire Wire Line
+	7550 3400 7550 3650
+$Comp
+L Earth #PWR57
+U 1 1 5920BF00
+P 6850 3650
+F 0 "#PWR57" H 6850 3400 50  0001 C CNN
+F 1 "Earth" H 6850 3500 50  0001 C CNN
+F 2 "" H 6850 3650 50  0000 C CNN
+F 3 "" H 6850 3650 50  0000 C CNN
+	1    6850 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR58
+U 1 1 5920C2DA
+P 7550 3650
+F 0 "#PWR58" H 7550 3400 50  0001 C CNN
+F 1 "Earth" H 7550 3500 50  0001 C CNN
+F 2 "" H 7550 3650 50  0000 C CNN
+F 3 "" H 7550 3650 50  0000 C CNN
+	1    7550 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R97
+U 1 1 5920C75D
+P 7550 2500
+F 0 "R97" V 7630 2500 50  0000 C CNN
+F 1 "37.4k" V 7550 2500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 7480 2500 50  0001 C CNN
+F 3 "http://www.mouser.com/ProductDetail/KOA-Speer/RK73H2ATTD3742F/?qs=sGAEpiMZZMu61qfTUdNhG7ky4wXVMYV53%252bkVIo5QGfA%3d" H 7550 2500 50  0001 C CNN
+F 4 "RK73H2ATTD3742F" V 7550 2500 60  0001 C CNN "Part Number"
+F 5 "1%" V 7550 2500 60  0001 C CNN "Tolerance"
+F 6 "1/8W" V 7550 2500 60  0001 C CNN "Power"
+	1    7550 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C53
+U 1 1 5920D498
+P 4950 3400
+F 0 "C53" H 4975 3500 50  0000 L CNN
+F 1 "130pF" H 4975 3300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 4988 3250 50  0001 C CNN
+F 3 "http://www.mouser.com/ProductDetail/Murata-Electronics/GRM1885C1H131JA01D/?qs=sGAEpiMZZMs0AnBnWHyRQCld5UqfCmT5oQEYIFqAPAc%3d" H 4950 3400 50  0001 C CNN
+F 4 "GRM1885C1H131JA01D" H 4950 3400 60  0001 C CNN "Part Number"
+F 5 "5%" H 4950 3400 60  0001 C CNN "Tolerance"
+F 6 "50VDC" H 4950 3400 60  0001 C CNN "Voltage"
+	1    4950 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C54
+U 1 1 5920D96E
+P 8000 2950
+F 0 "C54" H 8025 3050 50  0000 L CNN
+F 1 "22uF" H 8025 2850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 8038 2800 50  0001 C CNN
+F 3 "http://www.mouser.com/ProductDetail/TDK/C2012X5R1C226K125AC/?qs=sGAEpiMZZMs0AnBnWHyRQEWjzA2rN6H9CIykJN6v5H4%3d" H 8000 2950 50  0001 C CNN
+F 4 "C2012X5R1C226K125AC" H 8000 2950 60  0001 C CNN "Part Number"
+F 5 "10%" H 8000 2950 60  0001 C CNN "Tolerance"
+F 6 "16VDC" H 8000 2950 60  0001 C CNN "Voltage"
+	1    8000 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 2350 7550 2250
+Connection ~ 7550 2250
+Connection ~ 7550 2950
+$Comp
+L C C52
+U 1 1 59214156
+P 4050 2650
+F 0 "C52" H 4075 2750 50  0000 L CNN
+F 1 "10uF" H 4075 2550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4088 2500 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Murata-Electronics/GRM219R61A106KE44D/?qs=sGAEpiMZZMs0AnBnWHyRQHSMLfoHgeTXxsJSLzlD0Z4%3d" H 4050 2650 50  0001 C CNN
+F 4 "GRM219R61A106KE44D" H 4050 2650 60  0001 C CNN "Part Number"
+F 5 "10%" H 4050 2650 60  0001 C CNN "Tolerance"
+F 6 "10V" H 4050 2650 60  0001 C CNN "Voltage"
+	1    4050 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 2250 5050 2750
+Wire Wire Line
+	5050 2750 5350 2750
+Connection ~ 5050 2250
+Wire Wire Line
+	4050 2500 4050 2250
+Connection ~ 4050 2250
+$Comp
+L Earth #PWR55
+U 1 1 5921451D
+P 4050 3650
+F 0 "#PWR55" H 4050 3400 50  0001 C CNN
+F 1 "Earth" H 4050 3500 50  0001 C CNN
+F 2 "" H 4050 3650 50  0000 C CNN
+F 3 "" H 4050 3650 50  0000 C CNN
+	1    4050 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 2800 4050 3650
+Wire Wire Line
+	8000 2800 8000 2250
+Connection ~ 8000 2250
+Wire Wire Line
+	8000 3100 8000 3650
+$Comp
+L Earth #PWR59
+U 1 1 59215621
+P 8000 3650
+F 0 "#PWR59" H 8000 3400 50  0001 C CNN
+F 1 "Earth" H 8000 3500 50  0001 C CNN
+F 2 "" H 8000 3650 50  0000 C CNN
+F 3 "" H 8000 3650 50  0000 C CNN
+	1    8000 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3250 4950 3150
+Wire Wire Line
+	4950 3150 5350 3150
+Wire Wire Line
+	4950 3550 4950 3750
+$Comp
+L Earth #PWR56
+U 1 1 5921627A
+P 4950 3750
+F 0 "#PWR56" H 4950 3500 50  0001 C CNN
+F 1 "Earth" H 4950 3600 50  0001 C CNN
+F 2 "" H 4950 3750 50  0000 C CNN
+F 3 "" H 4950 3750 50  0000 C CNN
+	1    4950 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L TPS82130SILR U17
+U 1 1 59220A4F
+P 6050 2750
+F 0 "U17" H 5564 3509 45  0000 L BNN
+F 1 "TPS82130SILR" H 5539 1909 45  0000 L BNN
+F 2 "TPS82130SILR:TPS82130-SIL0008D_SMD" H 6050 2750 60  0001 C CNN
+F 3 "http://www.mouser.com/ProductDetail/Texas-Instruments/TPS82130SILR/?qs=diC8vqfyxkoyC4Q%252bBNy%2FPA%3D%3D" H 6050 2750 60  0001 C CNN
+F 4 "TPS82130SILR" H 6050 2750 60  0001 C CNN "Part Number"
+	1    6050 2750
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
