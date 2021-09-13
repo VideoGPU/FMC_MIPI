@@ -1,0 +1,1524 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:microchip_pic12mcu
+LIBS:xilinx7
+LIBS:hdmi3dmix
+LIBS:TPD12S016_PW_24_TSSOP
+LIBS:TPD12S016_RKT_24_UQFN
+LIBS:crystal
+LIBS:SMA_SMD_from_Eagle
+LIBS:DDR3
+LIBS:hiroseConnMichael
+LIBS:Ethernet_DP83867IRPAP
+LIBS:SN74AVC4T245PWR
+LIBS:Ethernet_7499111221A
+LIBS:VideoGPU
+LIBS:TPS74701DRCR
+LIBS:TPS82130
+LIBS:FMC_MIPI_v1-cache
+EELAYER 25 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 13
+Title "FMC_MIPI_v1"
+Date "2017-06-24"
+Rev "1"
+Comp "VideoGPU"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 3600 1500 3300 2000
+U 594E6395
+F0 "FMC_coonector" 60
+F1 "FMC_coonector.sch" 60
+$EndSheet
+Text Notes 10650 1350 0    118  ~ 24
+MUSTuse Retimer when using LVDS with cable to camera
+$Sheet
+S 1450 4100 2650 1050
+U 595357E2
+F0 "LVDS_to_DPHY" 60
+F1 "LVDS_to_DPHY.sch" 60
+F2 "VOLT_1P2" I L 1450 4500 60 
+F3 "VOLT_3P3" I L 1450 4650 60 
+$EndSheet
+Text Notes 1050 950  0    60   ~ 0
+ADD 2.5 Volt source!!!\n
+Text Label 900  4500 0    60   ~ 0
+VOLT_1P2
+Text Label 2000 1450 0    60   ~ 0
+VOLT_1P2
+Text Notes 1100 1350 0    60   ~ 0
+ADD1.2 Volt source!!!\n
+$Comp
+L QTH-060-01-X-D-A_JetsonTXx J2
+U 1 1 595ACB35
+P 12700 5150
+F 0 "J2" H 12350 1950 45  0000 L BNN
+F 1 "QTH-060-01-X-D-A_JetsonTXx" H 12350 8300 45  0000 L BNN
+F 2 "hdmi3dmix:QTH-060-01-X-D-A-QTH-060-01-X-D-A" H 12380 8300 20  0001 C CNN
+F 3 "" H 12350 8150 60  0001 C CNN
+	1    12700 5150
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 1450 5450 2700 1300
+U 595E1A04
+F0 "CML_to_DPHY" 60
+F1 "CML_to_DPHY.sch" 60
+F2 "VOLT_1P2" I L 1450 5950 79 
+F3 "VOLT_3P3" I L 1450 6150 79 
+$EndSheet
+Text Label 700  5950 0    60   ~ 0
+VOLT_1P2
+Text GLabel 11600 2450 0    60   Output ~ 0
+MUXED1_CLK_P
+Text GLabel 11600 2550 0    60   Output ~ 0
+MUXED1_CLK_N
+Text GLabel 11600 2150 0    60   Output ~ 0
+MUXED1_D0_P
+Text GLabel 11600 2250 0    60   Output ~ 0
+MUXED1_D0_N
+Text GLabel 11600 2750 0    60   Output ~ 0
+MUXED1_D1_P
+Text GLabel 11600 2850 0    60   Output ~ 0
+MUXED1_D1_N
+Text GLabel 14100 2150 2    60   Output ~ 0
+MUXED1_D2_P
+Text GLabel 14100 2250 2    60   Output ~ 0
+MUXED1_D2_N
+Text GLabel 14100 2750 2    60   Output ~ 0
+MUXED1_D3_P
+Text GLabel 14100 2850 2    60   Output ~ 0
+MUXED1_D3_N
+NoConn ~ 13800 2450
+NoConn ~ 13800 2550
+Text Notes 12800 9900 0    118  ~ 24
+Stackup:\nSingle Ended: 14 mil\nDifferential:\n12 mil Width, 20 mil spacing\nVia:\nDrill: 0.25 mm, \nDiameter = 0.55 mm = 50 Ohm!!
+Text GLabel 11500 3450 0    60   Output ~ 0
+MUXED2_CLK_N
+Text GLabel 11500 3350 0    60   Output ~ 0
+MUXED2_CLK_P
+Text GLabel 11500 3150 0    60   Output ~ 0
+MUXED2_D0_N
+Text GLabel 11500 3050 0    60   Output ~ 0
+MUXED2_D0_P
+Text GLabel 11500 3750 0    60   Output ~ 0
+MUXED2_D1_N
+Text GLabel 11500 3650 0    60   Output ~ 0
+MUXED2_D1_P
+Text GLabel 14200 3050 2    60   Output ~ 0
+MUXED2_D2_P
+Text GLabel 14200 3150 2    60   Output ~ 0
+MUXED2_D2_N
+NoConn ~ 13800 3350
+NoConn ~ 13800 3450
+NoConn ~ 13800 3650
+NoConn ~ 13800 3750
+$Comp
+L SN74AVCH16T245_DGV_48 U?
+U 1 1 59694DC1
+P 8850 8100
+AR Path="/595357E2/59694DC1" Ref="U?"  Part="1" 
+AR Path="/59694DC1" Ref="U6"  Part="1" 
+F 0 "U6" H 9864 8459 45  0000 L BNN
+F 1 "SN74AVCH16T245_DGV_48" H 9839 8359 45  0000 L BNN
+F 2 "hdmi3dmix:hdmi3dmix-DGV48" H 8850 8100 60  0001 C CNN
+F 3 "http://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74AVCH16T245VR/?qs=sGAEpiMZZMsty6Jaj0%252bBBvekg8rNUJqyqbg9AFB8cOU%3d" H 8850 8100 60  0001 C CNN
+F 4 "SN74AVCH16T245VR" H 8850 8100 60  0001 C CNN "Part Number"
+	1    8850 8100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR01
+U 1 1 59694DC8
+P 6250 10650
+F 0 "#PWR01" H 6250 10400 50  0001 C CNN
+F 1 "Earth" H 6250 10500 50  0001 C CNN
+F 2 "" H 6250 10650 50  0000 C CNN
+F 3 "" H 6250 10650 50  0000 C CNN
+	1    6250 10650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR02
+U 1 1 59694DCE
+P 9000 10650
+F 0 "#PWR02" H 9000 10400 50  0001 C CNN
+F 1 "Earth" H 9000 10500 50  0001 C CNN
+F 2 "" H 9000 10650 50  0000 C CNN
+F 3 "" H 9000 10650 50  0000 C CNN
+	1    9000 10650
+	1    0    0    -1  
+$EndComp
+Text Label 5800 7950 0    60   ~ 0
+FMC_VADJ
+Text Label 9600 7800 0    60   ~ 0
+VOLT_1P8
+Text GLabel 5700 7950 0    39   Output ~ 0
+FMC_VADJ
+Text Label 2150 1700 2    60   ~ 0
+VOLT_1P8
+Text Notes 1100 1600 0    60   ~ 0
+ADD1.8 Volt source!!!\n
+Text GLabel 9750 7950 2    47   Input ~ 0
+FMC_TR_1DIR
+Text Label 9650 8200 2    55   ~ 0
+I2C_CAM_CLK_R
+Text Label 9650 8300 2    55   ~ 0
+I2C_CAM_DAT_R
+Text GLabel 4550 8200 0    60   BiDi ~ 0
+FMC_I2C_CAM_CLK
+Text GLabel 4550 8300 0    60   BiDi ~ 0
+FMC_I2C_CAM_DAT
+Text Label 11800 5950 2    60   ~ 0
+I2C_CAM_CLK
+Text Label 11800 6050 2    60   ~ 0
+I2C_CAM_DAT
+$Comp
+L R R62
+U 1 1 5969A4F7
+P 9800 8200
+F 0 "R62" V 9880 8200 50  0000 C CNN
+F 1 "0k" V 9800 8200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 9730 8200 50  0001 C CNN
+F 3 "http://www.mouser.com/ProductDetail/Yageo/RC0805JR-070RL/?qs=sGAEpiMZZMu61qfTUdNhGy0AaN4GKk3uYSsOCeyi3WM%3d" H 9800 8200 50  0001 C CNN
+F 4 "5%" V 9800 8200 60  0001 C CNN "Tolerance"
+F 5 "NA" V 9800 8200 60  0001 C CNN "Power"
+F 6 "RC0805JR-070RL" V 9800 8200 60  0001 C CNN "Part Number"
+	1    9800 8200
+	0    1    -1   0   
+$EndComp
+Text Label 10800 8200 2    60   ~ 0
+I2C_CAM_CLK
+Text Label 10900 8300 2    60   ~ 0
+I2C_CAM_DAT
+$Comp
+L R R63
+U 1 1 5969A5C9
+P 10100 8300
+F 0 "R63" V 10180 8300 50  0000 C CNN
+F 1 "0k" V 10100 8300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 10030 8300 50  0001 C CNN
+F 3 "http://www.mouser.com/ProductDetail/Yageo/RC0805JR-070RL/?qs=sGAEpiMZZMu61qfTUdNhGy0AaN4GKk3uYSsOCeyi3WM%3d" H 10100 8300 50  0001 C CNN
+F 4 "5%" V 10100 8300 60  0001 C CNN "Tolerance"
+F 5 "NA" V 10100 8300 60  0001 C CNN "Power"
+F 6 "RC0805JR-070RL" V 10100 8300 60  0001 C CNN "Part Number"
+	1    10100 8300
+	0    1    -1   0   
+$EndComp
+Text Label 6150 8200 2    60   ~ 0
+FMC_I2C_CAM_CLK_R
+Text Label 6100 8300 2    60   ~ 0
+FMC_I2C_CAM_DAT_R
+$Comp
+L R R35
+U 1 1 5969AD29
+P 5100 8200
+F 0 "R35" V 5180 8200 50  0000 C CNN
+F 1 "0k" V 5100 8200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5030 8200 50  0001 C CNN
+F 3 "http://www.mouser.com/ProductDetail/Yageo/RC0805JR-070RL/?qs=sGAEpiMZZMu61qfTUdNhGy0AaN4GKk3uYSsOCeyi3WM%3d" H 5100 8200 50  0001 C CNN
+F 4 "5%" V 5100 8200 60  0001 C CNN "Tolerance"
+F 5 "NA" V 5100 8200 60  0001 C CNN "Power"
+F 6 "RC0805JR-070RL" V 5100 8200 60  0001 C CNN "Part Number"
+	1    5100 8200
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R34
+U 1 1 5969AE8F
+P 4850 8300
+F 0 "R34" V 4930 8300 50  0000 C CNN
+F 1 "0k" V 4850 8300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4780 8300 50  0001 C CNN
+F 3 "http://www.mouser.com/ProductDetail/Yageo/RC0805JR-070RL/?qs=sGAEpiMZZMu61qfTUdNhGy0AaN4GKk3uYSsOCeyi3WM%3d" H 4850 8300 50  0001 C CNN
+F 4 "5%" V 4850 8300 60  0001 C CNN "Tolerance"
+F 5 "NA" V 4850 8300 60  0001 C CNN "Power"
+F 6 "RC0805JR-070RL" V 4850 8300 60  0001 C CNN "Part Number"
+	1    4850 8300
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R37
+U 1 1 5969BFE9
+P 9450 10400
+F 0 "R37" V 9530 10400 50  0000 C CNN
+F 1 "0k" V 9450 10400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 9380 10400 50  0001 C CNN
+F 3 "http://www.mouser.com/ProductDetail/Yageo/RC0805JR-070RL/?qs=sGAEpiMZZMu61qfTUdNhGy0AaN4GKk3uYSsOCeyi3WM%3d" H 9450 10400 50  0001 C CNN
+F 4 "5%" V 9450 10400 60  0001 C CNN "Tolerance"
+F 5 "NA" V 9450 10400 60  0001 C CNN "Power"
+F 6 "RC0805JR-070RL" V 9450 10400 60  0001 C CNN "Part Number"
+	1    9450 10400
+	0    1    -1   0   
+$EndComp
+$Comp
+L Earth #PWR03
+U 1 1 5969C1A5
+P 9750 10650
+F 0 "#PWR03" H 9750 10400 50  0001 C CNN
+F 1 "Earth" H 9750 10500 50  0001 C CNN
+F 2 "" H 9750 10650 50  0000 C CNN
+F 3 "" H 9750 10650 50  0000 C CNN
+	1    9750 10650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R36
+U 1 1 5969D6CA
+P 9300 7950
+F 0 "R36" V 9380 7950 50  0000 C CNN
+F 1 "0k" V 9300 7950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 9230 7950 50  0001 C CNN
+F 3 "http://www.mouser.com/ProductDetail/Yageo/RC0805JR-070RL/?qs=sGAEpiMZZMu61qfTUdNhGy0AaN4GKk3uYSsOCeyi3WM%3d" H 9300 7950 50  0001 C CNN
+F 4 "5%" V 9300 7950 60  0001 C CNN "Tolerance"
+F 5 "NA" V 9300 7950 60  0001 C CNN "Power"
+F 6 "RC0805JR-070RL" V 9300 7950 60  0001 C CNN "Part Number"
+	1    9300 7950
+	0    1    -1   0   
+$EndComp
+Text Label 9950 8500 2    60   ~ 0
+I2C_GP0_CLK_1V8_R
+Text Label 9950 8600 2    60   ~ 0
+I2C_GP0_DAT_1V8_R
+$Comp
+L R R64
+U 1 1 5969E486
+P 10150 8500
+F 0 "R64" V 10230 8500 50  0000 C CNN
+F 1 "0k" V 10150 8500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 10080 8500 50  0001 C CNN
+F 3 "http://www.mouser.com/ProductDetail/Yageo/RC0805JR-070RL/?qs=sGAEpiMZZMu61qfTUdNhGy0AaN4GKk3uYSsOCeyi3WM%3d" H 10150 8500 50  0001 C CNN
+F 4 "5%" V 10150 8500 60  0001 C CNN "Tolerance"
+F 5 "NA" V 10150 8500 60  0001 C CNN "Power"
+F 6 "RC0805JR-070RL" V 10150 8500 60  0001 C CNN "Part Number"
+	1    10150 8500
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R65
+U 1 1 5969E4DB
+P 10350 8600
+F 0 "R65" V 10430 8600 50  0000 C CNN
+F 1 "0k" V 10350 8600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 10280 8600 50  0001 C CNN
+F 3 "http://www.mouser.com/ProductDetail/Yageo/RC0805JR-070RL/?qs=sGAEpiMZZMu61qfTUdNhGy0AaN4GKk3uYSsOCeyi3WM%3d" H 10350 8600 50  0001 C CNN
+F 4 "5%" V 10350 8600 60  0001 C CNN "Tolerance"
+F 5 "NA" V 10350 8600 60  0001 C CNN "Power"
+F 6 "RC0805JR-070RL" V 10350 8600 60  0001 C CNN "Part Number"
+	1    10350 8600
+	0    1    -1   0   
+$EndComp
+Text Label 11300 8500 2    60   ~ 0
+I2C_GP0_CLK_1V8
+Text Label 11300 8600 2    60   ~ 0
+I2C_GP0_DAT_1V8
+Text Label 11900 7450 2    60   ~ 0
+I2C_GP0_CLK_1V8
+Text Label 11900 7550 2    60   ~ 0
+I2C_GP0_DAT_1V8
+Text Label 6150 8500 2    60   ~ 0
+FMC_I2C_GP0_CLK_1V8_R
+Text Label 6150 8600 2    60   ~ 0
+FMC_I2C_GP0_DAT_1V8_R
+$Comp
+L R R33
+U 1 1 5969F93B
+P 4800 8500
+F 0 "R33" V 4880 8500 50  0000 C CNN
+F 1 "0k" V 4800 8500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4730 8500 50  0001 C CNN
+F 3 "http://www.mouser.com/ProductDetail/Yageo/RC0805JR-070RL/?qs=sGAEpiMZZMu61qfTUdNhGy0AaN4GKk3uYSsOCeyi3WM%3d" H 4800 8500 50  0001 C CNN
+F 4 "5%" V 4800 8500 60  0001 C CNN "Tolerance"
+F 5 "NA" V 4800 8500 60  0001 C CNN "Power"
+F 6 "RC0805JR-070RL" V 4800 8500 60  0001 C CNN "Part Number"
+	1    4800 8500
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R2
+U 1 1 5969F990
+P 4500 8600
+F 0 "R2" V 4580 8600 50  0000 C CNN
+F 1 "0k" V 4500 8600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4430 8600 50  0001 C CNN
+F 3 "http://www.mouser.com/ProductDetail/Yageo/RC0805JR-070RL/?qs=sGAEpiMZZMu61qfTUdNhGy0AaN4GKk3uYSsOCeyi3WM%3d" H 4500 8600 50  0001 C CNN
+F 4 "5%" V 4500 8600 60  0001 C CNN "Tolerance"
+F 5 "NA" V 4500 8600 60  0001 C CNN "Power"
+F 6 "RC0805JR-070RL" V 4500 8600 60  0001 C CNN "Part Number"
+	1    4500 8600
+	0    1    -1   0   
+$EndComp
+Text GLabel 4150 8500 0    60   BiDi ~ 0
+FMC_I2C_GP0_CLK_1V8
+Text GLabel 4150 8600 0    60   BiDi ~ 0
+FMC_I2C_GP0_DAT_1V8
+Text Label 11850 6750 2    60   ~ 0
+CAM0_MCLK
+Text Label 11850 6850 2    60   ~ 0
+CAM0_PWR
+Text Label 11850 6950 2    60   ~ 0
+CAM0_RST
+Text Label 11850 7050 2    60   ~ 0
+CAM_FLASH_EN
+Text Label 14500 6850 2    60   ~ 0
+CAM2_MCLK
+Text Label 14500 6950 2    60   ~ 0
+CAM2_PWRD
+Text Label 14400 7050 2    60   ~ 0
+CAM2_RST
+Text Label 14500 6450 2    60   ~ 0
+CAM_VSYNC
+Text Label 10000 9300 2    60   ~ 0
+CAM0_MCLK
+Text Label 10000 9400 2    60   ~ 0
+CAM0_PWR
+Text Label 10000 9600 2    60   ~ 0
+CAM0_RST
+Text Label 10000 9700 2    60   ~ 0
+CAM_FLASH_EN
+Text Label 10000 10000 2    60   ~ 0
+CAM2_MCLK
+Text Label 10000 10200 2    60   ~ 0
+CAM2_PWRD
+Text Label 10000 10300 2    60   ~ 0
+CAM2_RST
+Text Label 10000 9900 2    60   ~ 0
+CAM_VSYNC
+Text GLabel 5250 9300 0    55   Output ~ 0
+FMC_CAM0_MCLK
+Text GLabel 5250 9400 0    55   Output ~ 0
+FMC_CAM0_PWR
+Text GLabel 5250 9600 0    55   Output ~ 0
+FMC_CAM0_RST
+Text GLabel 5250 9700 0    55   Output ~ 0
+FMC_CAM_FLASH_EN
+Text GLabel 5250 9900 0    55   Output ~ 0
+FMC_CAM_VSYNC
+Text GLabel 5250 10000 0    55   Output ~ 0
+FMC_CAM2_MCLK
+Text GLabel 5250 10200 0    55   Output ~ 0
+FMC_CAM2_PWRD
+Text GLabel 5250 10300 0    55   Output ~ 0
+FMC_CAM2_RST
+Text GLabel 9900 7050 0    60   Input ~ 0
+DVDD_CAM_IO_1V2
+Text GLabel 1550 1450 0    60   Output ~ 0
+DVDD_CAM_IO_1V2
+Text GLabel 15750 7250 2    60   Input ~ 0
+DVDD_CAM_IO_1V8
+Text GLabel 1450 1700 0    60   Output ~ 0
+DVDD_CAM_IO_1V8
+Text Notes 10150 1100 2    118  ~ 24
+Validate power consumption!!!\nBy All Components and the supply by Jetson board
+$Comp
+L Earth #PWR04
+U 1 1 596A06FB
+P 12050 8400
+F 0 "#PWR04" H 12050 8150 50  0001 C CNN
+F 1 "Earth" H 12050 8250 50  0001 C CNN
+F 2 "" H 12050 8400 50  0000 C CNN
+F 3 "" H 12050 8400 50  0000 C CNN
+	1    12050 8400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR05
+U 1 1 596A0868
+P 13900 8300
+F 0 "#PWR05" H 13900 8050 50  0001 C CNN
+F 1 "Earth" H 13900 8150 50  0001 C CNN
+F 2 "" H 13900 8300 50  0000 C CNN
+F 3 "" H 13900 8300 50  0000 C CNN
+	1    13900 8300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 12150 7350
+NoConn ~ 12150 6250
+NoConn ~ 12150 6350
+NoConn ~ 12150 6450
+NoConn ~ 12150 6550
+NoConn ~ 12150 6650
+NoConn ~ 12150 7650
+NoConn ~ 12150 7750
+NoConn ~ 12150 7850
+NoConn ~ 12150 7950
+NoConn ~ 12150 8050
+NoConn ~ 12150 8150
+NoConn ~ 12150 4850
+NoConn ~ 12150 4950
+NoConn ~ 12150 5050
+NoConn ~ 12150 5250
+NoConn ~ 12150 5350
+NoConn ~ 12150 5450
+NoConn ~ 12150 5550
+NoConn ~ 12150 5650
+NoConn ~ 12150 5750
+NoConn ~ 12150 5850
+NoConn ~ 12150 4550
+NoConn ~ 12150 4650
+NoConn ~ 12150 4250
+NoConn ~ 12150 4350
+NoConn ~ 12150 4050
+NoConn ~ 12150 3950
+NoConn ~ 13800 7350
+NoConn ~ 13800 7450
+NoConn ~ 13800 7550
+NoConn ~ 13800 7650
+NoConn ~ 13800 7750
+NoConn ~ 13800 7850
+NoConn ~ 13800 7950
+NoConn ~ 13800 8050
+NoConn ~ 13800 8150
+NoConn ~ 13800 6550
+NoConn ~ 13800 6650
+NoConn ~ 13800 6750
+NoConn ~ 13800 6250
+NoConn ~ 13800 6350
+NoConn ~ 13800 5750
+NoConn ~ 13800 5850
+NoConn ~ 13800 5950
+NoConn ~ 13800 6050
+NoConn ~ 13800 5250
+NoConn ~ 13800 5350
+NoConn ~ 13800 5450
+NoConn ~ 13800 5550
+NoConn ~ 13800 4850
+NoConn ~ 13800 4950
+NoConn ~ 13800 5050
+NoConn ~ 13800 4550
+NoConn ~ 13800 4650
+NoConn ~ 13800 4250
+NoConn ~ 13800 4350
+NoConn ~ 13800 3950
+NoConn ~ 13800 4050
+Text Label 950  4650 0    60   ~ 0
+VOLT_3P3
+Text Label 2050 1900 0    60   ~ 0
+VOLT_3P3
+Text Notes 1050 1850 0    60   ~ 0
+ADD 3.3 Volt source!!!\n
+Text Notes 15100 850  2    118  ~ 24
+Add decoupling capacitors to all power pins!!
+Text Label 700  6150 0    60   ~ 0
+VOLT_3P3
+$Comp
+L SN74AVCH16T245_DGV_48 U?
+U 1 1 596748EF
+P 6050 4500
+AR Path="/595357E2/596748EF" Ref="U?"  Part="1" 
+AR Path="/595E1A04/596748EF" Ref="U?"  Part="1" 
+AR Path="/596748EF" Ref="U7"  Part="1" 
+F 0 "U7" H 7064 4859 45  0000 L BNN
+F 1 "SN74AVCH16T245_DGV_48" H 7039 4759 45  0000 L BNN
+F 2 "hdmi3dmix:hdmi3dmix-DGV48" H 6050 4500 60  0001 C CNN
+F 3 "http://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74AVCH16T245VR/?qs=sGAEpiMZZMsty6Jaj0%252bBBvekg8rNUJqyqbg9AFB8cOU%3d" H 6050 4500 60  0001 C CNN
+F 4 "SN74AVCH16T245VR" H 6050 4500 60  0001 C CNN "Part Number"
+	1    6050 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR06
+U 1 1 596748F6
+P 5850 7050
+F 0 "#PWR06" H 5850 6800 50  0001 C CNN
+F 1 "Earth" H 5850 6900 50  0001 C CNN
+F 2 "" H 5850 7050 50  0000 C CNN
+F 3 "" H 5850 7050 50  0000 C CNN
+	1    5850 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR07
+U 1 1 596748FC
+P 8600 7050
+F 0 "#PWR07" H 8600 6800 50  0001 C CNN
+F 1 "Earth" H 8600 6900 50  0001 C CNN
+F 2 "" H 8600 7050 50  0000 C CNN
+F 3 "" H 8600 7050 50  0000 C CNN
+	1    8600 7050
+	1    0    0    -1  
+$EndComp
+Text Label 5400 4350 0    60   ~ 0
+FMC_VADJ
+Text Label 8850 4200 0    60   ~ 0
+VOLT_3P3
+$Comp
+L Earth #PWR08
+U 1 1 59674905
+P 9950 6700
+F 0 "#PWR08" H 9950 6450 50  0001 C CNN
+F 1 "Earth" H 9950 6550 50  0001 C CNN
+F 2 "" H 9950 6700 50  0000 C CNN
+F 3 "" H 9950 6700 50  0000 C CNN
+	1    9950 6700
+	1    0    0    -1  
+$EndComp
+Text GLabel 5200 4350 0    39   Input ~ 0
+FMC_VADJ
+Text GLabel 8850 4700 2    60   Input ~ 0
+Switch2_SEL2
+Text GLabel 8850 4600 2    60   Input ~ 0
+Switch2_SEL1
+Text GLabel 8850 5000 2    60   Input ~ 0
+Switch1_SEL2
+Text GLabel 8850 4900 2    60   Input ~ 0
+Switch1_SEL1
+Text GLabel 5200 4700 0    60   Output ~ 0
+FMC_Switch2_SEL2
+Text GLabel 5200 4600 0    60   Output ~ 0
+FMC_Switch2_SEL1
+Text GLabel 5200 5000 0    60   Output ~ 0
+FMC_Switch1_SEL2
+Text GLabel 5200 4900 0    60   Output ~ 0
+FMC_Switch1_SEL1
+Text GLabel 1250 1900 0    60   Input ~ 0
+FMC_VOLT_3P3
+Text Notes 550  750  0    79   ~ 16
+POWER:\nMaximum of 3 amps on 3.3V, 2 amps on VADJ and 1 amp on 12V?
+$Comp
+L NCP1117DT25RKG U8
+U 1 1 596ADF27
+P 1600 10050
+F 0 "U8" H 1600 10275 50  0000 C CNN
+F 1 "NCP1117DT25RKG" H 1600 10200 50  0000 C CNN
+F 2 "hdmi3dmix:hdmi3dmix-DPAK-3" H 1650 9800 50  0001 L CNN
+F 3 "http://eu.mouser.com/ProductDetail/ON-Semiconductor/NCP1117DT25RKG/?qs=sGAEpiMZZMsGz1a6aV8DcIdarLHG8JigCplOBDpKhYQ%3d" H 1600 10050 50  0001 C CNN
+F 4 "NCP1117DT25RKG" H 1600 10050 60  0001 C CNN "Part Number"
+	1    1600 10050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 596B5F4E
+P 1050 10350
+F 0 "C1" H 1075 10450 50  0000 L CNN
+F 1 "10uF" H 1075 10250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 1088 10200 50  0001 C CNN
+F 3 "http://eu.mouser.com/ProductDetail/Murata-Electronics/GRM21BC81E106KE51L/?qs=sGAEpiMZZMs0AnBnWHyRQAsAWwhBCY7by6E5eOxCntbsvnZB%252bbDcYQ%3d%3d" H 1050 10350 50  0001 C CNN
+F 4 "GRM21BC81E106KE51L" H 1050 10350 60  0001 C CNN "Part Number"
+F 5 "10%" H 1050 10350 60  0001 C CNN "Tolerance"
+F 6 "25 VDC" H 1050 10350 60  0001 C CNN "Voltage"
+	1    1050 10350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR09
+U 1 1 596B5F59
+P 1050 10600
+F 0 "#PWR09" H 1050 10350 50  0001 C CNN
+F 1 "Earth" H 1050 10450 50  0001 C CNN
+F 2 "" H 1050 10600 50  0000 C CNN
+F 3 "" H 1050 10600 50  0000 C CNN
+	1    1050 10600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 596B7F2C
+P 2150 10300
+F 0 "C2" H 2175 10400 50  0000 L CNN
+F 1 "10uF" H 2175 10200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2188 10150 50  0001 C CNN
+F 3 "http://eu.mouser.com/ProductDetail/Murata-Electronics/GRM21BC81E106KE51L/?qs=sGAEpiMZZMs0AnBnWHyRQAsAWwhBCY7by6E5eOxCntbsvnZB%252bbDcYQ%3d%3d" H 2150 10300 50  0001 C CNN
+F 4 "GRM21BC81E106KE51L" H 2150 10300 60  0001 C CNN "Part Number"
+F 5 "10%" H 2150 10300 60  0001 C CNN "Tolerance"
+F 6 "25 VDC" H 2150 10300 60  0001 C CNN "Voltage"
+	1    2150 10300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR010
+U 1 1 596B89A4
+P 2150 10600
+F 0 "#PWR010" H 2150 10350 50  0001 C CNN
+F 1 "Earth" H 2150 10450 50  0001 C CNN
+F 2 "" H 2150 10600 50  0000 C CNN
+F 3 "" H 2150 10600 50  0000 C CNN
+	1    2150 10600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR011
+U 1 1 596B89FD
+P 1600 10600
+F 0 "#PWR011" H 1600 10350 50  0001 C CNN
+F 1 "Earth" H 1600 10450 50  0001 C CNN
+F 2 "" H 1600 10600 50  0000 C CNN
+F 3 "" H 1600 10600 50  0000 C CNN
+	1    1600 10600
+	1    0    0    -1  
+$EndComp
+Text Label 500  10050 0    60   ~ 0
+VOLT_12P0
+Text GLabel 3850 10450 2    60   Input ~ 0
+VOLT_2P5
+Text GLabel 1150 1100 0    60   Input ~ 0
+VOLT_2P5
+Text Label 1900 1100 2    60   ~ 0
+VOLT_2P5
+Text GLabel 9400 4200 2    60   Output ~ 0
+FMC_VOLT_3P3
+Wire Wire Line
+	1900 1100 1150 1100
+Wire Wire Line
+	1450 4500 900  4500
+Wire Wire Line
+	1550 1450 2000 1450
+Wire Wire Line
+	1450 5950 700  5950
+Wire Wire Line
+	11600 2150 12150 2150
+Wire Wire Line
+	11600 2250 12150 2250
+Wire Wire Line
+	12150 2450 11600 2450
+Wire Wire Line
+	12150 2550 11600 2550
+Wire Wire Line
+	12150 2750 11600 2750
+Wire Wire Line
+	12150 2850 11600 2850
+Wire Wire Line
+	13800 2150 14100 2150
+Wire Wire Line
+	13800 2250 14100 2250
+Wire Wire Line
+	13800 2750 14100 2750
+Wire Wire Line
+	13800 2850 14100 2850
+Wire Wire Line
+	11500 3350 12150 3350
+Wire Wire Line
+	11500 3450 12150 3450
+Wire Wire Line
+	11500 3050 12150 3050
+Wire Wire Line
+	11500 3150 12150 3150
+Wire Wire Line
+	11500 3650 12150 3650
+Wire Wire Line
+	11500 3750 12150 3750
+Wire Wire Line
+	13800 3050 14200 3050
+Wire Wire Line
+	13800 3150 14200 3150
+Connection ~ 8900 8700
+Wire Wire Line
+	8900 9800 8850 9800
+Wire Wire Line
+	8900 7800 9600 7800
+Wire Wire Line
+	8900 7800 8900 9800
+Wire Wire Line
+	8850 8700 8900 8700
+Connection ~ 6350 8700
+Wire Wire Line
+	6350 9800 6450 9800
+Wire Wire Line
+	6350 8700 6450 8700
+Wire Wire Line
+	6350 7950 6350 9800
+Wire Wire Line
+	5700 7950 6350 7950
+Connection ~ 9000 9500
+Wire Wire Line
+	9000 9500 8850 9500
+Wire Wire Line
+	8850 8400 9000 8400
+Connection ~ 9000 9000
+Wire Wire Line
+	9000 9000 8850 9000
+Connection ~ 9000 10100
+Wire Wire Line
+	9000 10100 8850 10100
+Wire Wire Line
+	9000 8400 9000 10650
+Connection ~ 6250 10100
+Wire Wire Line
+	6250 10100 6450 10100
+Connection ~ 6250 9500
+Wire Wire Line
+	6250 9500 6450 9500
+Connection ~ 6250 9000
+Wire Wire Line
+	6250 9000 6450 9000
+Connection ~ 6250 8400
+Wire Wire Line
+	6450 8400 6250 8400
+Connection ~ 6250 10400
+Wire Wire Line
+	6250 8100 6450 8100
+Wire Wire Line
+	6250 8100 6250 10650
+Wire Wire Line
+	6250 10400 6450 10400
+Wire Wire Line
+	1450 1700 2150 1700
+Wire Wire Line
+	8850 10400 9300 10400
+Wire Wire Line
+	8850 8200 9650 8200
+Wire Wire Line
+	8850 8300 9950 8300
+Wire Wire Line
+	12150 5950 11800 5950
+Wire Wire Line
+	11800 6050 12150 6050
+Wire Wire Line
+	9100 7950 9100 8100
+Wire Wire Line
+	9100 8100 8850 8100
+Wire Wire Line
+	10250 8300 10900 8300
+Wire Wire Line
+	9950 8200 10800 8200
+Wire Wire Line
+	4550 8200 4950 8200
+Wire Wire Line
+	4550 8300 4700 8300
+Wire Wire Line
+	5250 8200 6450 8200
+Wire Wire Line
+	5000 8300 6450 8300
+Wire Wire Line
+	9600 10400 9750 10400
+Wire Wire Line
+	9750 10400 9750 10650
+Wire Wire Line
+	9100 7950 9150 7950
+Wire Wire Line
+	9450 7950 9750 7950
+Wire Wire Line
+	8850 8600 10200 8600
+Wire Wire Line
+	8850 8500 10000 8500
+Wire Wire Line
+	10300 8500 11300 8500
+Wire Wire Line
+	10500 8600 11300 8600
+Wire Wire Line
+	12150 7450 11900 7450
+Wire Wire Line
+	12150 7550 11900 7550
+Wire Wire Line
+	4950 8500 6450 8500
+Wire Wire Line
+	4650 8600 6450 8600
+Wire Wire Line
+	4650 8500 4150 8500
+Wire Wire Line
+	4350 8600 4150 8600
+Wire Wire Line
+	8850 8800 9000 8800
+Connection ~ 9000 8800
+Wire Wire Line
+	8850 8900 9000 8900
+Connection ~ 9000 8900
+Wire Wire Line
+	8850 9100 9000 9100
+Connection ~ 9000 9100
+Wire Wire Line
+	8850 9200 9000 9200
+Connection ~ 9000 9200
+Wire Wire Line
+	6450 8800 6250 8800
+Connection ~ 6250 8800
+Wire Wire Line
+	6450 8900 6250 8900
+Connection ~ 6250 8900
+Wire Wire Line
+	6450 9100 6250 9100
+Connection ~ 6250 9100
+Wire Wire Line
+	6450 9200 6250 9200
+Connection ~ 6250 9200
+Wire Wire Line
+	12150 6750 11850 6750
+Wire Wire Line
+	12150 6850 11850 6850
+Wire Wire Line
+	12150 6950 11850 6950
+Wire Wire Line
+	13800 6850 14500 6850
+Wire Wire Line
+	13800 6950 14500 6950
+Wire Wire Line
+	13800 7050 14400 7050
+Wire Wire Line
+	12150 7050 11850 7050
+Wire Wire Line
+	13800 6450 14500 6450
+Wire Wire Line
+	8850 9300 10000 9300
+Wire Wire Line
+	8850 9400 10000 9400
+Wire Wire Line
+	8850 9600 10000 9600
+Wire Wire Line
+	8850 9700 10000 9700
+Wire Wire Line
+	8850 10000 10000 10000
+Wire Wire Line
+	8850 10200 10000 10200
+Wire Wire Line
+	8850 10300 10000 10300
+Wire Wire Line
+	8850 9900 10000 9900
+Wire Wire Line
+	5250 9300 6450 9300
+Wire Wire Line
+	5250 9400 6450 9400
+Wire Wire Line
+	5250 9600 6450 9600
+Wire Wire Line
+	5250 9700 6450 9700
+Wire Wire Line
+	5250 10000 6450 10000
+Wire Wire Line
+	5250 10200 6450 10200
+Wire Wire Line
+	5250 10300 6450 10300
+Wire Wire Line
+	5250 9900 6450 9900
+Wire Wire Line
+	11300 7250 12150 7250
+Wire Notes Line
+	5350 650  10300 650 
+Wire Notes Line
+	10300 650  10300 1200
+Wire Notes Line
+	10300 1200 5350 1200
+Wire Notes Line
+	5350 1200 5350 650 
+Wire Wire Line
+	12050 7150 12150 7150
+Wire Wire Line
+	12050 2350 12050 8400
+Wire Wire Line
+	12150 2350 12050 2350
+Wire Wire Line
+	12050 2650 12150 2650
+Wire Wire Line
+	12050 2950 12150 2950
+Connection ~ 12050 2650
+Wire Wire Line
+	12050 3250 12150 3250
+Connection ~ 12050 2950
+Wire Wire Line
+	12050 3550 12150 3550
+Connection ~ 12050 3250
+Wire Wire Line
+	12050 3850 12150 3850
+Connection ~ 12050 3550
+Wire Wire Line
+	12050 4150 12150 4150
+Connection ~ 12050 3850
+Wire Wire Line
+	12050 4450 12150 4450
+Connection ~ 12050 4150
+Wire Wire Line
+	12050 4750 12150 4750
+Connection ~ 12050 4450
+Wire Wire Line
+	12050 6150 12150 6150
+Connection ~ 12050 4750
+Connection ~ 12050 7150
+Connection ~ 12050 6150
+Wire Wire Line
+	13800 2350 13900 2350
+Wire Wire Line
+	13900 2350 13900 8300
+Wire Wire Line
+	13900 2650 13800 2650
+Wire Wire Line
+	13900 2950 13800 2950
+Connection ~ 13900 2650
+Wire Wire Line
+	13900 3250 13800 3250
+Connection ~ 13900 2950
+Wire Wire Line
+	13900 3550 13800 3550
+Connection ~ 13900 3250
+Wire Wire Line
+	13900 3850 13800 3850
+Connection ~ 13900 3550
+Wire Wire Line
+	13900 4150 13800 4150
+Connection ~ 13900 3850
+Wire Wire Line
+	13900 4450 13800 4450
+Connection ~ 13900 4150
+Wire Wire Line
+	13900 4750 13800 4750
+Connection ~ 13900 4450
+Wire Wire Line
+	13900 5650 13800 5650
+Connection ~ 13900 4750
+Wire Wire Line
+	13900 6150 13800 6150
+Connection ~ 13900 5650
+Wire Wire Line
+	13900 7150 13800 7150
+Connection ~ 13900 6150
+Connection ~ 13900 7150
+Wire Wire Line
+	1450 4650 950  4650
+Wire Wire Line
+	1250 1900 2050 1900
+Wire Notes Line
+	10900 650  15200 650 
+Wire Notes Line
+	15200 650  15200 900 
+Wire Notes Line
+	15200 900  10900 900 
+Wire Notes Line
+	10900 900  10900 650 
+Wire Wire Line
+	1450 6150 700  6150
+Wire Notes Line
+	10500 1100 15900 1100
+Wire Notes Line
+	15900 1100 15900 1450
+Wire Notes Line
+	15900 1450 10500 1450
+Wire Notes Line
+	10500 1450 10500 1100
+Connection ~ 5850 5700
+Wire Wire Line
+	5850 5700 6050 5700
+Connection ~ 5850 5500
+Wire Wire Line
+	5850 5500 6050 5500
+Connection ~ 5850 5200
+Wire Wire Line
+	5850 5200 6050 5200
+Connection ~ 9950 6600
+Connection ~ 9950 6300
+Connection ~ 9950 6000
+Connection ~ 9950 5700
+Connection ~ 9950 5500
+Wire Wire Line
+	9950 5200 9950 6700
+Wire Wire Line
+	8450 6600 9950 6600
+Wire Wire Line
+	8450 6300 9950 6300
+Wire Wire Line
+	8450 6000 9950 6000
+Wire Wire Line
+	8450 5500 9950 5500
+Wire Wire Line
+	8450 5200 9950 5200
+Connection ~ 5850 6600
+Wire Wire Line
+	5850 6600 6050 6600
+Connection ~ 5850 6300
+Wire Wire Line
+	5850 6300 6050 6300
+Connection ~ 5850 6000
+Wire Wire Line
+	5850 6000 6050 6000
+Wire Wire Line
+	8500 6200 8450 6200
+Wire Wire Line
+	8500 4200 9400 4200
+Wire Wire Line
+	8500 4200 8500 6200
+Wire Wire Line
+	8450 4900 8850 4900
+Wire Wire Line
+	8450 4700 8850 4700
+Wire Wire Line
+	8450 4600 8850 4600
+Connection ~ 5950 5100
+Wire Wire Line
+	5950 6200 6050 6200
+Wire Wire Line
+	5950 5100 6050 5100
+Wire Wire Line
+	5950 4350 5950 6200
+Wire Wire Line
+	5200 4350 5950 4350
+Connection ~ 8600 5900
+Wire Wire Line
+	8600 5900 8450 5900
+Connection ~ 8600 4800
+Wire Wire Line
+	8450 4800 8600 4800
+Connection ~ 8600 5400
+Wire Wire Line
+	8600 5400 8450 5400
+Connection ~ 8600 6500
+Wire Wire Line
+	8450 4500 8600 4500
+Connection ~ 8600 6800
+Wire Wire Line
+	8600 6500 8450 6500
+Wire Wire Line
+	8600 4500 8600 7050
+Wire Wire Line
+	8600 6800 8450 6800
+Connection ~ 5850 6500
+Wire Wire Line
+	5850 6500 6050 6500
+Connection ~ 5850 5900
+Wire Wire Line
+	5850 5900 6050 5900
+Connection ~ 5850 5400
+Wire Wire Line
+	5850 5400 6050 5400
+Connection ~ 5850 4800
+Wire Wire Line
+	6050 4800 5850 4800
+Connection ~ 5850 6800
+Wire Wire Line
+	5850 4500 6050 4500
+Wire Wire Line
+	5850 4500 5850 7050
+Wire Wire Line
+	5850 6800 6050 6800
+Wire Wire Line
+	5200 4600 6050 4600
+Wire Wire Line
+	5850 6700 6050 6700
+Wire Wire Line
+	5850 6400 6050 6400
+Wire Wire Line
+	5200 5000 6050 5000
+Wire Wire Line
+	5200 4900 6050 4900
+Wire Wire Line
+	5200 4700 6050 4700
+Wire Wire Line
+	8450 6700 8600 6700
+Wire Wire Line
+	8450 6400 8600 6400
+Wire Wire Line
+	8450 5000 8850 5000
+Connection ~ 5850 6400
+Connection ~ 5850 6700
+Connection ~ 8600 6400
+Connection ~ 8600 6700
+Wire Wire Line
+	8450 5700 9950 5700
+Wire Wire Line
+	8450 5300 9950 5300
+Connection ~ 9950 5300
+Wire Wire Line
+	8450 5600 9950 5600
+Connection ~ 9950 5600
+Wire Wire Line
+	8450 5800 9950 5800
+Connection ~ 9950 5800
+Wire Wire Line
+	8450 6100 9950 6100
+Connection ~ 9950 6100
+Wire Wire Line
+	6050 5300 5850 5300
+Connection ~ 5850 5300
+Wire Wire Line
+	6050 5600 5850 5600
+Connection ~ 5850 5600
+Wire Wire Line
+	6050 5800 5850 5800
+Connection ~ 5850 5800
+Wire Wire Line
+	6050 6100 5850 6100
+Connection ~ 5850 6100
+Wire Wire Line
+	500  10050 1300 10050
+Wire Wire Line
+	1050 10200 1050 10050
+Connection ~ 1050 10050
+Wire Wire Line
+	1600 10350 1600 10600
+Wire Wire Line
+	1050 10500 1050 10600
+Wire Wire Line
+	2150 10450 2150 10600
+Wire Wire Line
+	8450 5100 8500 5100
+Connection ~ 8500 5100
+Wire Wire Line
+	1250 2100 1900 2100
+Text Label 1900 2100 0    60   ~ 0
+VOLT_12P0
+Text GLabel 1250 2100 0    60   Output ~ 0
+FMC_VOLT_12P0
+$Comp
+L R R77
+U 1 1 596F15AA
+P 11150 7250
+F 0 "R77" V 11230 7250 50  0000 C CNN
+F 1 "0k" V 11150 7250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 11080 7250 50  0001 C CNN
+F 3 "http://www.mouser.com/ProductDetail/Yageo/RC0805JR-070RL/?qs=sGAEpiMZZMu61qfTUdNhGy0AaN4GKk3uYSsOCeyi3WM%3d" H 11150 7250 50  0001 C CNN
+F 4 "5%" V 11150 7250 60  0001 C CNN "Tolerance"
+F 5 "NA" V 11150 7250 60  0001 C CNN "Power"
+F 6 "RC0805JR-070RL" V 11150 7250 60  0001 C CNN "Part Number"
+	1    11150 7250
+	0    1    -1   0   
+$EndComp
+Text Label 11400 7250 0    60   ~ 0
+JETSON_1V2
+$Comp
+L R R78
+U 1 1 596F279A
+P 14650 7250
+F 0 "R78" V 14730 7250 50  0000 C CNN
+F 1 "0k" V 14650 7250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 14580 7250 50  0001 C CNN
+F 3 "http://www.mouser.com/ProductDetail/Yageo/RC0805JR-070RL/?qs=sGAEpiMZZMu61qfTUdNhGy0AaN4GKk3uYSsOCeyi3WM%3d" H 14650 7250 50  0001 C CNN
+F 4 "5%" V 14650 7250 60  0001 C CNN "Tolerance"
+F 5 "NA" V 14650 7250 60  0001 C CNN "Power"
+F 6 "RC0805JR-070RL" V 14650 7250 60  0001 C CNN "Part Number"
+	1    14650 7250
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	14800 7250 14950 7250
+Wire Wire Line
+	15550 7250 15750 7250
+Wire Wire Line
+	14500 7250 13800 7250
+Text Label 13950 7250 0    60   ~ 0
+JETSON_1V8
+$Comp
+L R R79
+U 1 1 5970AD5D
+P 2900 10050
+F 0 "R79" V 2980 10050 50  0000 C CNN
+F 1 "0k" V 2900 10050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 2830 10050 50  0001 C CNN
+F 3 "http://www.mouser.com/ProductDetail/Yageo/RC0805JR-070RL/?qs=sGAEpiMZZMu61qfTUdNhGy0AaN4GKk3uYSsOCeyi3WM%3d" H 2900 10050 50  0001 C CNN
+F 4 "5%" V 2900 10050 60  0001 C CNN "Tolerance"
+F 5 "NA" V 2900 10050 60  0001 C CNN "Power"
+F 6 "RC0805JR-070RL" V 2900 10050 60  0001 C CNN "Part Number"
+	1    2900 10050
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	1900 10050 2750 10050
+Wire Wire Line
+	2150 10150 2150 10050
+Connection ~ 2150 10050
+Text Label 2150 10050 0    60   ~ 0
+VOLT_2P5_R
+Text Notes 11050 9850 0    79   ~ 0
+Stackup:\n---High speed signal\n---Ground\n---Slow signals\n---Power\n---Ground\n---High speed signals
+Wire Notes Line
+	10800 8950 12600 8950
+Wire Notes Line
+	12600 8950 12600 9950
+Wire Notes Line
+	12600 9950 10800 9950
+Wire Notes Line
+	10800 9950 10800 8950
+$Comp
+L C C12
+U 1 1 596DFA09
+P 6300 7650
+F 0 "C12" H 6325 7750 50  0000 L CNN
+F 1 "0.1uF" H 6325 7550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 6338 7500 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Taiyo-Yuden/TMK105BJ104KV-F/?qs=PzICbMaShUcuRhf9Ji%2f5mA==" H 6300 7650 50  0001 C CNN
+F 4 "TMK105BJ104KV-F" H 6300 7650 60  0001 C CNN "Part Number"
+F 5 "10%" H 6300 7650 60  0001 C CNN "Tolerance"
+F 6 "25V" H 6300 7650 60  0001 C CNN "Voltage"
+	1    6300 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C14
+U 1 1 596DFDDF
+P 9050 7550
+F 0 "C14" H 9075 7650 50  0000 L CNN
+F 1 "0.1uF" H 9075 7450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 9088 7400 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Taiyo-Yuden/TMK105BJ104KV-F/?qs=PzICbMaShUcuRhf9Ji%2f5mA==" H 9050 7550 50  0001 C CNN
+F 4 "TMK105BJ104KV-F" H 9050 7550 60  0001 C CNN "Part Number"
+F 5 "10%" H 9050 7550 60  0001 C CNN "Tolerance"
+F 6 "25V" H 9050 7550 60  0001 C CNN "Voltage"
+	1    9050 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 7800 6300 7950
+Connection ~ 6300 7950
+Wire Wire Line
+	9050 7700 9050 7800
+Connection ~ 9050 7800
+$Comp
+L C C11
+U 1 1 596E0DFC
+P 5750 4000
+F 0 "C11" H 5775 4100 50  0000 L CNN
+F 1 "0.1uF" H 5775 3900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 5788 3850 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Taiyo-Yuden/TMK105BJ104KV-F/?qs=PzICbMaShUcuRhf9Ji%2f5mA==" H 5750 4000 50  0001 C CNN
+F 4 "TMK105BJ104KV-F" H 5750 4000 60  0001 C CNN "Part Number"
+F 5 "10%" H 5750 4000 60  0001 C CNN "Tolerance"
+F 6 "25V" H 5750 4000 60  0001 C CNN "Voltage"
+	1    5750 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C13
+U 1 1 596E1446
+P 8700 3950
+F 0 "C13" H 8725 4050 50  0000 L CNN
+F 1 "0.1uF" H 8725 3850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 8738 3800 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Taiyo-Yuden/TMK105BJ104KV-F/?qs=PzICbMaShUcuRhf9Ji%2f5mA==" H 8700 3950 50  0001 C CNN
+F 4 "TMK105BJ104KV-F" H 8700 3950 60  0001 C CNN "Part Number"
+F 5 "10%" H 8700 3950 60  0001 C CNN "Tolerance"
+F 6 "25V" H 8700 3950 60  0001 C CNN "Voltage"
+	1    8700 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR012
+U 1 1 596E1C3C
+P 6600 7550
+F 0 "#PWR012" H 6600 7300 50  0001 C CNN
+F 1 "Earth" H 6600 7400 50  0001 C CNN
+F 2 "" H 6600 7550 50  0000 C CNN
+F 3 "" H 6600 7550 50  0000 C CNN
+	1    6600 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR013
+U 1 1 596E1F8E
+P 9550 7500
+F 0 "#PWR013" H 9550 7250 50  0001 C CNN
+F 1 "Earth" H 9550 7350 50  0001 C CNN
+F 2 "" H 9550 7500 50  0000 C CNN
+F 3 "" H 9550 7500 50  0000 C CNN
+	1    9550 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR014
+U 1 1 596E2BB3
+P 6200 3950
+F 0 "#PWR014" H 6200 3700 50  0001 C CNN
+F 1 "Earth" H 6200 3800 50  0001 C CNN
+F 2 "" H 6200 3950 50  0000 C CNN
+F 3 "" H 6200 3950 50  0000 C CNN
+	1    6200 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR015
+U 1 1 596E361A
+P 9750 3850
+F 0 "#PWR015" H 9750 3600 50  0001 C CNN
+F 1 "Earth" H 9750 3700 50  0001 C CNN
+F 2 "" H 9750 3850 50  0000 C CNN
+F 3 "" H 9750 3850 50  0000 C CNN
+	1    9750 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4150 5750 4350
+Connection ~ 5750 4350
+Wire Wire Line
+	5350 3850 6200 3850
+Wire Wire Line
+	6200 3850 6200 3950
+Wire Wire Line
+	8700 4100 8700 4200
+Connection ~ 8700 4200
+Wire Wire Line
+	8700 3800 8700 3750
+Wire Wire Line
+	8700 3750 9750 3750
+Wire Wire Line
+	9750 3750 9750 3850
+Wire Wire Line
+	9050 7400 9050 7350
+Wire Wire Line
+	9050 7350 9550 7350
+Wire Wire Line
+	9550 7350 9550 7500
+Wire Wire Line
+	6300 7500 6300 7450
+Wire Wire Line
+	6000 7450 6600 7450
+Wire Wire Line
+	6600 7450 6600 7550
+$Comp
+L C C29
+U 1 1 59708973
+P 5350 4050
+F 0 "C29" H 5375 4150 50  0000 L CNN
+F 1 "0.1uF" H 5375 3950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 5388 3900 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Taiyo-Yuden/TMK105BJ104KV-F/?qs=PzICbMaShUcuRhf9Ji%2f5mA==" H 5350 4050 50  0001 C CNN
+F 4 "TMK105BJ104KV-F" H 5350 4050 60  0001 C CNN "Part Number"
+F 5 "10%" H 5350 4050 60  0001 C CNN "Tolerance"
+F 6 "25V" H 5350 4050 60  0001 C CNN "Voltage"
+	1    5350 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3900 5350 3850
+Connection ~ 5750 3850
+Wire Wire Line
+	5350 4200 5350 4350
+Connection ~ 5350 4350
+$Comp
+L C C30
+U 1 1 59708FCA
+P 9350 3950
+F 0 "C30" H 9375 4050 50  0000 L CNN
+F 1 "0.1uF" H 9375 3850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 9388 3800 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Taiyo-Yuden/TMK105BJ104KV-F/?qs=PzICbMaShUcuRhf9Ji%2f5mA==" H 9350 3950 50  0001 C CNN
+F 4 "TMK105BJ104KV-F" H 9350 3950 60  0001 C CNN "Part Number"
+F 5 "10%" H 9350 3950 60  0001 C CNN "Tolerance"
+F 6 "25V" H 9350 3950 60  0001 C CNN "Voltage"
+	1    9350 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 3800 9350 3750
+Connection ~ 9350 3750
+Wire Wire Line
+	9350 4100 9350 4200
+Connection ~ 9350 4200
+$Comp
+L C C31
+U 1 1 5970A83F
+P 6000 7650
+F 0 "C31" H 6025 7750 50  0000 L CNN
+F 1 "0.1uF" H 6025 7550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 6038 7500 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Taiyo-Yuden/TMK105BJ104KV-F/?qs=PzICbMaShUcuRhf9Ji%2f5mA==" H 6000 7650 50  0001 C CNN
+F 4 "TMK105BJ104KV-F" H 6000 7650 60  0001 C CNN "Part Number"
+F 5 "10%" H 6000 7650 60  0001 C CNN "Tolerance"
+F 6 "25V" H 6000 7650 60  0001 C CNN "Voltage"
+	1    6000 7650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 7500 6000 7450
+Connection ~ 6300 7450
+Wire Wire Line
+	6000 7800 6000 7950
+Connection ~ 6000 7950
+$Comp
+L C C32
+U 1 1 5970B0D5
+P 9300 7550
+F 0 "C32" H 9325 7650 50  0000 L CNN
+F 1 "0.1uF" H 9325 7450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 9338 7400 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Taiyo-Yuden/TMK105BJ104KV-F/?qs=PzICbMaShUcuRhf9Ji%2f5mA==" H 9300 7550 50  0001 C CNN
+F 4 "TMK105BJ104KV-F" H 9300 7550 60  0001 C CNN "Part Number"
+F 5 "10%" H 9300 7550 60  0001 C CNN "Tolerance"
+F 6 "25V" H 9300 7550 60  0001 C CNN "Voltage"
+	1    9300 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 7400 9300 7350
+Connection ~ 9300 7350
+Wire Wire Line
+	9300 7700 9300 7800
+Connection ~ 9300 7800
+Text Notes 10650 1800 2    118  ~ 24
+Add jumpers to all power supply lines!!
+$Comp
+L Jumper JP1
+U 1 1 597156AC
+P 10450 7050
+F 0 "JP1" H 10450 7200 50  0000 C CNN
+F 1 "Jumper" H 10450 6970 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 10450 7050 50  0001 C CNN
+F 3 "http://eu.mouser.com/ProductDetail/Molex/22-28-5023/?qs=sGAEpiMZZMs%252bGHln7q6pm0R%252bIqgWC%252bQx%252bZP1khnW%252bIc%3d" H 10450 7050 50  0001 C CNN
+F 4 "22-28-5023" H 10450 7050 60  0001 C CNN "Part Number"
+	1    10450 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 7050 10150 7050
+Wire Wire Line
+	10750 7050 11000 7050
+Wire Wire Line
+	11000 7050 11000 7250
+$Comp
+L Jumper JP2
+U 1 1 59718726
+P 15250 7450
+F 0 "JP2" H 15250 7600 50  0000 C CNN
+F 1 "Jumper" H 15250 7370 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 15250 7450 50  0001 C CNN
+F 3 "http://eu.mouser.com/ProductDetail/Molex/22-28-5023/?qs=sGAEpiMZZMs%252bGHln7q6pm0R%252bIqgWC%252bQx%252bZP1khnW%252bIc%3d" H 15250 7450 50  0001 C CNN
+F 4 "22-28-5023" H 15250 7450 60  0001 C CNN "Part Number"
+	1    15250 7450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	15550 7450 15550 7250
+Wire Wire Line
+	14950 7250 14950 7450
+$Comp
+L Jumper JP3
+U 1 1 5971AAE6
+P 3400 10250
+F 0 "JP3" H 3400 10400 50  0000 C CNN
+F 1 "Jumper" H 3400 10170 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 3400 10250 50  0001 C CNN
+F 3 "http://eu.mouser.com/ProductDetail/Molex/22-28-5023/?qs=sGAEpiMZZMs%252bGHln7q6pm0R%252bIqgWC%252bQx%252bZP1khnW%252bIc%3d" H 3400 10250 50  0001 C CNN
+F 4 "22-28-5023" H 3400 10250 60  0001 C CNN "Part Number"
+	1    3400 10250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3100 10250 3100 10050
+Connection ~ 3100 10050
+Wire Wire Line
+	3100 10050 3050 10050
+Wire Wire Line
+	3700 10250 3800 10250
+Wire Wire Line
+	3800 10250 3800 10450
+Wire Wire Line
+	3800 10450 3850 10450
+$EndSCHEMATC

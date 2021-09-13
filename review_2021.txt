@@ -1,5 +1,13 @@
-* camera via Jetson TX2 connector
-* camera in From OpenSource MIPI RX board
+* camera in via Jetson TX2 connector
+? * camera in From OpenSource MIPI RX board (May be, if there is spare place on PCB)
 * camera out via Jetson TX2 connector
 
-All with LVDS interfaces
+All with LVDS interfaces + Full LP and HS modes
+
+
+This TS3DDR3812_RUA_42 switch is not good for handling SLVS signals!!!
+
+Check xapp1339-mipi-dphy page  16 for soultion. Use HD3SS3411 component or check TMUXHS4412 component
+
+About clock phase read section 5.7 High-Speed Clock Transmission in D-PHY specs in 
+MIPI_D-PHY_Specification_v01-00-00.pdf

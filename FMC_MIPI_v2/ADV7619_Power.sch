@@ -1,0 +1,811 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:microchip_pic12mcu
+LIBS:xilinx7
+LIBS:hdmi3dmix
+LIBS:TPD12S016_PW_24_TSSOP
+LIBS:TPD12S016_RKT_24_UQFN
+LIBS:crystal
+LIBS:SMA_SMD_from_Eagle
+LIBS:DDR3
+LIBS:HDMIInputBeagle-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 1250 1300 0    60   Input ~ 12
+BOARD_3V3
+Text HLabel 1450 2900 2    60   Output ~ 12
+ADV_CVDD
+Text Label 750  2900 0    60   ~ 0
+ADV_CVDD
+Text Label 750  3050 0    60   ~ 0
+ADV_DVDD
+Text Label 750  1900 0    60   ~ 0
+ADV_DVDDIO
+Text Label 750  2750 0    60   ~ 0
+ADV_PVDD
+Text Label 750  2050 0    60   ~ 0
+ADV_TVDD
+$Comp
+L R R1
+U 1 1 588A705D
+P 2350 1300
+F 0 "R1" V 2430 1300 50  0000 C CNN
+F 1 "0k" V 2350 1300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 2280 1300 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Panasonic/ERJ-6GEY0R00V/?qs=tQNqqtTOejLLHbaWAzeH1w==" H 2350 1300 50  0001 C CNN
+F 4 "5%" V 2350 1300 60  0001 C CNN "Tolerance"
+F 5 "NA" V 2350 1300 60  0001 C CNN "Power"
+F 6 "ERJ-6GEY0R00V" V 2350 1300 60  0001 C CNN "Part Number"
+	1    2350 1300
+	0    -1   -1   0   
+$EndComp
+Text Label 2650 1300 0    60   ~ 0
+ADV_VCC3V3
+Text Label 750  2200 0    60   ~ 0
+ADV_VCC3V3
+Text HLabel 1450 3050 2    60   Output ~ 12
+ADV_DVDD
+Text HLabel 1450 1900 2    60   Output ~ 12
+ADV_DVDDIO
+Text HLabel 1450 2750 2    60   Output ~ 12
+ADV_PVDD
+Text HLabel 1450 2050 2    60   Output ~ 12
+ADV_TVDD
+Text HLabel 1450 2200 2    60   Output ~ 12
+ADV_VCC3V3
+$Comp
+L INDUCTOR L1
+U 1 1 588BA1EE
+P 5200 1000
+F 0 "L1" V 5150 1000 50  0000 C CNN
+F 1 "FERRITE-220" V 5300 1000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 5200 1000 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Murata-Electronics/BLM21PG221SN1D/?qs=sGAEpiMZZMtdyQheitOmRdaiwhWWI9YttJulw31NHCk%3d" H 5200 1000 50  0001 C CNN
+F 4 "BLM21PG221SN1D" V 5200 1000 60  0001 C CNN "Part Number"
+F 5 "25%" V 5200 1000 60  0001 C CNN "Tolerance"
+F 6 "2 A" V 5200 1000 60  0001 C CNN "DC Current"
+	1    5200 1000
+	0    1    1    0   
+$EndComp
+$Comp
+L C C3
+U 1 1 588BA1F8
+P 5700 1250
+F 0 "C3" H 5725 1350 50  0000 L CNN
+F 1 "0.01 uF" H 5725 1150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 5738 1100 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Murata-Electronics/GRM155R71C103KA01D/?qs=sGAEpiMZZMs0AnBnWHyRQEzybnecWqjRNGPnnHIuwhw%3d" H 5700 1250 50  0001 C CNN
+F 4 "GRM155R71C103KA01D" H 5700 1250 60  0001 C CNN "Part Number"
+F 5 "10%" H 5700 1250 60  0001 C CNN "Tolerance"
+F 6 "16 VDC" H 5700 1250 60  0001 C CNN "Voltage"
+	1    5700 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 588BA202
+P 6100 1250
+F 0 "C4" H 6125 1350 50  0000 L CNN
+F 1 "0.1uF" H 6125 1150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 6138 1100 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Taiyo-Yuden/TMK105BJ104KV-F/?qs=PzICbMaShUcuRhf9Ji%2f5mA==" H 6100 1250 50  0001 C CNN
+F 4 "TMK105BJ104KV-F" H 6100 1250 60  0001 C CNN "Part Number"
+F 5 "10%" H 6100 1250 60  0001 C CNN "Tolerance"
+F 6 "25V" H 6100 1250 60  0001 C CNN "Voltage"
+	1    6100 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 588BA20C
+P 6500 1250
+F 0 "C5" H 6525 1350 50  0000 L CNN
+F 1 "10uF" H 6525 1150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 6538 1100 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Murata-Electronics/GRM219R61A106KE44D/?qs=sGAEpiMZZMs0AnBnWHyRQHSMLfoHgeTXxsJSLzlD0Z4%3d" H 6500 1250 50  0001 C CNN
+F 4 "GRM219R61A106KE44D" H 6500 1250 60  0001 C CNN "Part Number"
+F 5 "10%" H 6500 1250 60  0001 C CNN "Tolerance"
+F 6 "10V" H 6500 1250 60  0001 C CNN "Voltage"
+	1    6500 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR032
+U 1 1 588BA213
+P 5700 1700
+F 0 "#PWR032" H 5700 1450 50  0001 C CNN
+F 1 "Earth" H 5700 1550 50  0001 C CNN
+F 2 "" H 5700 1700 50  0000 C CNN
+F 3 "" H 5700 1700 50  0000 C CNN
+	1    5700 1700
+	1    0    0    -1  
+$EndComp
+Text Label 4200 1000 0    60   ~ 0
+REG_1V8
+Text Label 6950 1000 0    60   ~ 0
+ADV_PVDD
+$Comp
+L INDUCTOR L2
+U 1 1 588B91E5
+P 5200 2250
+F 0 "L2" V 5150 2250 50  0000 C CNN
+F 1 "FERRITE-220" V 5300 2250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 5200 2250 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Murata-Electronics/BLM21PG221SN1D/?qs=sGAEpiMZZMtdyQheitOmRdaiwhWWI9YttJulw31NHCk%3d" H 5200 2250 50  0001 C CNN
+F 4 "BLM21PG221SN1D" V 5200 2250 60  0001 C CNN "Part Number"
+F 5 "25%" V 5200 2250 60  0001 C CNN "Tolerance"
+F 6 "2 A" V 5200 2250 60  0001 C CNN "DC Current"
+	1    5200 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L C C6
+U 1 1 588B91EE
+P 5700 2500
+F 0 "C6" H 5725 2600 50  0000 L CNN
+F 1 "0.01 uF" H 5725 2400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 5738 2350 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Murata-Electronics/GRM155R71C103KA01D/?qs=sGAEpiMZZMs0AnBnWHyRQEzybnecWqjRNGPnnHIuwhw%3d" H 5700 2500 50  0001 C CNN
+F 4 "GRM155R71C103KA01D" H 5700 2500 60  0001 C CNN "Part Number"
+F 5 "10%" H 5700 2500 60  0001 C CNN "Tolerance"
+F 6 "16 VDC" H 5700 2500 60  0001 C CNN "Voltage"
+	1    5700 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C7
+U 1 1 588B91F7
+P 6100 2500
+F 0 "C7" H 6125 2600 50  0000 L CNN
+F 1 "0.1uF" H 6125 2400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 6138 2350 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Taiyo-Yuden/TMK105BJ104KV-F/?qs=PzICbMaShUcuRhf9Ji%2f5mA==" H 6100 2500 50  0001 C CNN
+F 4 "TMK105BJ104KV-F" H 6100 2500 60  0001 C CNN "Part Number"
+F 5 "10%" H 6100 2500 60  0001 C CNN "Tolerance"
+F 6 "25V" H 6100 2500 60  0001 C CNN "Voltage"
+	1    6100 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C8
+U 1 1 588B9200
+P 6500 2500
+F 0 "C8" H 6525 2600 50  0000 L CNN
+F 1 "10uF" H 6525 2400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 6538 2350 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Murata-Electronics/GRM219R61A106KE44D/?qs=sGAEpiMZZMs0AnBnWHyRQHSMLfoHgeTXxsJSLzlD0Z4%3d" H 6500 2500 50  0001 C CNN
+F 4 "GRM219R61A106KE44D" H 6500 2500 60  0001 C CNN "Part Number"
+F 5 "10%" H 6500 2500 60  0001 C CNN "Tolerance"
+F 6 "10V" H 6500 2500 60  0001 C CNN "Voltage"
+	1    6500 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR033
+U 1 1 588B9206
+P 5700 2950
+F 0 "#PWR033" H 5700 2700 50  0001 C CNN
+F 1 "Earth" H 5700 2800 50  0001 C CNN
+F 2 "" H 5700 2950 50  0000 C CNN
+F 3 "" H 5700 2950 50  0000 C CNN
+	1    5700 2950
+	1    0    0    -1  
+$EndComp
+Text Label 4200 2250 0    60   ~ 0
+REG_1V8
+Text Label 8100 2250 0    60   ~ 0
+ADV_CVDD
+$Comp
+L C C9
+U 1 1 588B961A
+P 6900 2500
+F 0 "C9" H 6925 2600 50  0000 L CNN
+F 1 "0.01 uF" H 6925 2400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 6938 2350 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Murata-Electronics/GRM155R71C103KA01D/?qs=sGAEpiMZZMs0AnBnWHyRQEzybnecWqjRNGPnnHIuwhw%3d" H 6900 2500 50  0001 C CNN
+F 4 "GRM155R71C103KA01D" H 6900 2500 60  0001 C CNN "Part Number"
+F 5 "10%" H 6900 2500 60  0001 C CNN "Tolerance"
+F 6 "16 VDC" H 6900 2500 60  0001 C CNN "Voltage"
+	1    6900 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C10
+U 1 1 588B9686
+P 7350 2500
+F 0 "C10" H 7375 2600 50  0000 L CNN
+F 1 "0.01 uF" H 7375 2400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 7388 2350 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Murata-Electronics/GRM155R71C103KA01D/?qs=sGAEpiMZZMs0AnBnWHyRQEzybnecWqjRNGPnnHIuwhw%3d" H 7350 2500 50  0001 C CNN
+F 4 "GRM155R71C103KA01D" H 7350 2500 60  0001 C CNN "Part Number"
+F 5 "10%" H 7350 2500 60  0001 C CNN "Tolerance"
+F 6 "16 VDC" H 7350 2500 60  0001 C CNN "Voltage"
+	1    7350 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C11
+U 1 1 588B96CF
+P 7800 2500
+F 0 "C11" H 7825 2600 50  0000 L CNN
+F 1 "0.1uF" H 7825 2400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 7838 2350 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Taiyo-Yuden/TMK105BJ104KV-F/?qs=PzICbMaShUcuRhf9Ji%2f5mA==" H 7800 2500 50  0001 C CNN
+F 4 "TMK105BJ104KV-F" H 7800 2500 60  0001 C CNN "Part Number"
+F 5 "10%" H 7800 2500 60  0001 C CNN "Tolerance"
+F 6 "25V" H 7800 2500 60  0001 C CNN "Voltage"
+	1    7800 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L3
+U 1 1 588BAFC4
+P 5200 3800
+F 0 "L3" V 5150 3800 50  0000 C CNN
+F 1 "FERRITE-220" V 5300 3800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 5200 3800 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Murata-Electronics/BLM21PG221SN1D/?qs=sGAEpiMZZMtdyQheitOmRdaiwhWWI9YttJulw31NHCk%3d" H 5200 3800 50  0001 C CNN
+F 4 "BLM21PG221SN1D" V 5200 3800 60  0001 C CNN "Part Number"
+F 5 "25%" V 5200 3800 60  0001 C CNN "Tolerance"
+F 6 "2 A" V 5200 3800 60  0001 C CNN "DC Current"
+	1    5200 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L C C13
+U 1 1 588BAFD6
+P 6100 4050
+F 0 "C13" H 6125 4150 50  0000 L CNN
+F 1 "0.1uF" H 6125 3950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 6138 3900 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Taiyo-Yuden/TMK105BJ104KV-F/?qs=PzICbMaShUcuRhf9Ji%2f5mA==" H 6100 4050 50  0001 C CNN
+F 4 "TMK105BJ104KV-F" H 6100 4050 60  0001 C CNN "Part Number"
+F 5 "10%" H 6100 4050 60  0001 C CNN "Tolerance"
+F 6 "25V" H 6100 4050 60  0001 C CNN "Voltage"
+	1    6100 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR034
+U 1 1 588BAFE5
+P 5700 4500
+F 0 "#PWR034" H 5700 4250 50  0001 C CNN
+F 1 "Earth" H 5700 4350 50  0001 C CNN
+F 2 "" H 5700 4500 50  0000 C CNN
+F 3 "" H 5700 4500 50  0000 C CNN
+	1    5700 4500
+	1    0    0    -1  
+$EndComp
+Text Label 4200 3800 0    60   ~ 0
+REG_1V8
+Text Label 8100 3800 0    60   ~ 0
+ADV_DVDD
+$Comp
+L C C17
+U 1 1 588BB010
+P 7800 4050
+F 0 "C17" H 7825 4150 50  0000 L CNN
+F 1 "0.1uF" H 7825 3950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 7838 3900 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Taiyo-Yuden/TMK105BJ104KV-F/?qs=PzICbMaShUcuRhf9Ji%2f5mA==" H 7800 4050 50  0001 C CNN
+F 4 "TMK105BJ104KV-F" H 7800 4050 60  0001 C CNN "Part Number"
+F 5 "10%" H 7800 4050 60  0001 C CNN "Tolerance"
+F 6 "25V" H 7800 4050 60  0001 C CNN "Voltage"
+	1    7800 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C12
+U 1 1 588BB763
+P 5700 4050
+F 0 "C12" H 5725 4150 50  0000 L CNN
+F 1 "0.1uF" H 5725 3950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 5738 3900 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Taiyo-Yuden/TMK105BJ104KV-F/?qs=PzICbMaShUcuRhf9Ji%2f5mA==" H 5700 4050 50  0001 C CNN
+F 4 "TMK105BJ104KV-F" H 5700 4050 60  0001 C CNN "Part Number"
+F 5 "10%" H 5700 4050 60  0001 C CNN "Tolerance"
+F 6 "25V" H 5700 4050 60  0001 C CNN "Voltage"
+	1    5700 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C14
+U 1 1 588BB7FF
+P 6500 4050
+F 0 "C14" H 6525 4150 50  0000 L CNN
+F 1 "0.1uF" H 6525 3950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 6538 3900 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Taiyo-Yuden/TMK105BJ104KV-F/?qs=PzICbMaShUcuRhf9Ji%2f5mA==" H 6500 4050 50  0001 C CNN
+F 4 "TMK105BJ104KV-F" H 6500 4050 60  0001 C CNN "Part Number"
+F 5 "10%" H 6500 4050 60  0001 C CNN "Tolerance"
+F 6 "25V" H 6500 4050 60  0001 C CNN "Voltage"
+	1    6500 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C15
+U 1 1 588BB884
+P 6900 4050
+F 0 "C15" H 6925 4150 50  0000 L CNN
+F 1 "0.1uF" H 6925 3950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 6938 3900 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Taiyo-Yuden/TMK105BJ104KV-F/?qs=PzICbMaShUcuRhf9Ji%2f5mA==" H 6900 4050 50  0001 C CNN
+F 4 "TMK105BJ104KV-F" H 6900 4050 60  0001 C CNN "Part Number"
+F 5 "10%" H 6900 4050 60  0001 C CNN "Tolerance"
+F 6 "25V" H 6900 4050 60  0001 C CNN "Voltage"
+	1    6900 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C16
+U 1 1 588BB8F4
+P 7350 4050
+F 0 "C16" H 7375 4150 50  0000 L CNN
+F 1 "0.1uF" H 7375 3950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 7388 3900 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Taiyo-Yuden/TMK105BJ104KV-F/?qs=PzICbMaShUcuRhf9Ji%2f5mA==" H 7350 4050 50  0001 C CNN
+F 4 "TMK105BJ104KV-F" H 7350 4050 60  0001 C CNN "Part Number"
+F 5 "10%" H 7350 4050 60  0001 C CNN "Tolerance"
+F 6 "25V" H 7350 4050 60  0001 C CNN "Voltage"
+	1    7350 4050
+	1    0    0    -1  
+$EndComp
+Text Notes 700  2550 0    60   ~ 0
+1.8 power lines
+$Comp
+L NCP1117DT18G U6
+U 1 1 588CB16C
+P 1900 3800
+F 0 "U6" H 1900 4025 50  0000 C CNN
+F 1 "NCP1117DT18G" H 1900 3950 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:TO-263-3Lead" H 1950 3550 50  0001 L CNN
+F 3 "" H 1900 3800 50  0000 C CNN
+	1    1900 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C18
+U 1 1 588CB30C
+P 1300 4050
+F 0 "C18" H 1325 4150 50  0000 L CNN
+F 1 "10uF" H 1325 3950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 1338 3900 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Murata-Electronics/GRM219R61A106KE44D/?qs=sGAEpiMZZMs0AnBnWHyRQHSMLfoHgeTXxsJSLzlD0Z4%3d" H 1300 4050 50  0001 C CNN
+F 4 "GRM219R61A106KE44D" H 1300 4050 60  0001 C CNN "Part Number"
+F 5 "10%" H 1300 4050 60  0001 C CNN "Tolerance"
+F 6 "10V" H 1300 4050 60  0001 C CNN "Voltage"
+	1    1300 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C19
+U 1 1 588CB3C1
+P 2400 4050
+F 0 "C19" H 2425 4150 50  0000 L CNN
+F 1 "10uF" H 2425 3950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2438 3900 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Murata-Electronics/GRM219R61A106KE44D/?qs=sGAEpiMZZMs0AnBnWHyRQHSMLfoHgeTXxsJSLzlD0Z4%3d" H 2400 4050 50  0001 C CNN
+F 4 "GRM219R61A106KE44D" H 2400 4050 60  0001 C CNN "Part Number"
+F 5 "10%" H 2400 4050 60  0001 C CNN "Tolerance"
+F 6 "10V" H 2400 4050 60  0001 C CNN "Voltage"
+	1    2400 4050
+	1    0    0    -1  
+$EndComp
+Text Label 850  3800 0    60   ~ 0
+ADV_VCC3V3
+$Comp
+L Earth #PWR035
+U 1 1 588CD057
+P 1300 4400
+F 0 "#PWR035" H 1300 4150 50  0001 C CNN
+F 1 "Earth" H 1300 4250 50  0001 C CNN
+F 2 "" H 1300 4400 50  0000 C CNN
+F 3 "" H 1300 4400 50  0000 C CNN
+	1    1300 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR036
+U 1 1 588CD972
+P 2400 4400
+F 0 "#PWR036" H 2400 4150 50  0001 C CNN
+F 1 "Earth" H 2400 4250 50  0001 C CNN
+F 2 "" H 2400 4400 50  0000 C CNN
+F 3 "" H 2400 4400 50  0000 C CNN
+	1    2400 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	700  2900 1450 2900
+Wire Wire Line
+	700  3050 1450 3050
+Wire Wire Line
+	700  1900 1450 1900
+Wire Wire Line
+	700  2750 1450 2750
+Wire Wire Line
+	700  2050 1450 2050
+Wire Wire Line
+	1250 1300 2200 1300
+Wire Wire Line
+	2500 1300 3200 1300
+Wire Wire Line
+	700  2200 1450 2200
+Wire Wire Line
+	4200 1000 4900 1000
+Wire Wire Line
+	5500 1000 6950 1000
+Wire Wire Line
+	6500 1000 6500 1100
+Wire Wire Line
+	5700 1100 5700 1000
+Connection ~ 5700 1000
+Wire Wire Line
+	6100 1100 6100 1000
+Connection ~ 6100 1000
+Wire Wire Line
+	5700 1500 6500 1500
+Wire Wire Line
+	6500 1500 6500 1400
+Wire Wire Line
+	5700 1400 5700 1700
+Wire Wire Line
+	6100 1400 6100 1500
+Connection ~ 6100 1500
+Connection ~ 5700 1500
+Connection ~ 6500 1000
+Wire Wire Line
+	4200 2250 4900 2250
+Wire Wire Line
+	5500 2250 8100 2250
+Wire Wire Line
+	6500 2250 6500 2350
+Wire Wire Line
+	5700 2350 5700 2250
+Connection ~ 5700 2250
+Wire Wire Line
+	6100 2350 6100 2250
+Connection ~ 6100 2250
+Wire Wire Line
+	5700 2750 7800 2750
+Wire Wire Line
+	6500 2750 6500 2650
+Wire Wire Line
+	5700 2650 5700 2950
+Wire Wire Line
+	6100 2650 6100 2750
+Connection ~ 6100 2750
+Connection ~ 5700 2750
+Connection ~ 6500 2250
+Wire Wire Line
+	7800 2750 7800 2650
+Connection ~ 6500 2750
+Wire Wire Line
+	7800 2350 7800 2250
+Connection ~ 7800 2250
+Wire Wire Line
+	7350 2350 7350 2250
+Connection ~ 7350 2250
+Wire Wire Line
+	7350 2650 7350 2750
+Connection ~ 7350 2750
+Wire Wire Line
+	6900 2350 6900 2250
+Connection ~ 6900 2250
+Wire Wire Line
+	6900 2650 6900 2750
+Connection ~ 6900 2750
+Wire Wire Line
+	4200 3800 4900 3800
+Wire Wire Line
+	5500 3800 8100 3800
+Wire Wire Line
+	6500 3800 6500 3900
+Wire Wire Line
+	5700 3900 5700 3800
+Connection ~ 5700 3800
+Wire Wire Line
+	6100 3900 6100 3800
+Connection ~ 6100 3800
+Wire Wire Line
+	5700 4300 7800 4300
+Wire Wire Line
+	6500 4300 6500 4200
+Wire Wire Line
+	5700 4200 5700 4500
+Wire Wire Line
+	6100 4200 6100 4300
+Connection ~ 6100 4300
+Connection ~ 5700 4300
+Connection ~ 6500 3800
+Wire Wire Line
+	7800 4300 7800 4200
+Connection ~ 6500 4300
+Wire Wire Line
+	7800 3900 7800 3800
+Connection ~ 7800 3800
+Wire Wire Line
+	7350 3900 7350 3800
+Connection ~ 7350 3800
+Wire Wire Line
+	7350 4200 7350 4300
+Connection ~ 7350 4300
+Wire Wire Line
+	6900 3900 6900 3800
+Connection ~ 6900 3800
+Wire Wire Line
+	6900 4200 6900 4300
+Connection ~ 6900 4300
+Wire Wire Line
+	850  3800 1600 3800
+Wire Wire Line
+	1300 3900 1300 3800
+Connection ~ 1300 3800
+Wire Wire Line
+	2200 3800 2800 3800
+Wire Wire Line
+	2400 3800 2400 3900
+Wire Wire Line
+	1900 4100 1900 4300
+Wire Wire Line
+	1900 4300 2400 4300
+Wire Wire Line
+	2400 4200 2400 4400
+Wire Wire Line
+	1300 4200 1300 4400
+Connection ~ 2400 4300
+Connection ~ 2400 3800
+Text Label 2800 3800 0    60   ~ 0
+REG_1V8
+Text Notes 700  1750 0    60   ~ 0
+3.3 power lines
+$Comp
+L INDUCTOR L4
+U 1 1 588D0A9D
+P 1800 5300
+F 0 "L4" V 1750 5300 50  0000 C CNN
+F 1 "FERRITE-220" V 1900 5300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 1800 5300 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Murata-Electronics/BLM21PG221SN1D/?qs=sGAEpiMZZMtdyQheitOmRdaiwhWWI9YttJulw31NHCk%3d" H 1800 5300 50  0001 C CNN
+F 4 "BLM21PG221SN1D" V 1800 5300 60  0001 C CNN "Part Number"
+F 5 "25%" V 1800 5300 60  0001 C CNN "Tolerance"
+F 6 "2 A" V 1800 5300 60  0001 C CNN "DC Current"
+	1    1800 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L C C21
+U 1 1 588D0AA6
+P 2700 5550
+F 0 "C21" H 2725 5650 50  0000 L CNN
+F 1 "0.1uF" H 2725 5450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 2738 5400 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Taiyo-Yuden/TMK105BJ104KV-F/?qs=PzICbMaShUcuRhf9Ji%2f5mA==" H 2700 5550 50  0001 C CNN
+F 4 "TMK105BJ104KV-F" H 2700 5550 60  0001 C CNN "Part Number"
+F 5 "10%" H 2700 5550 60  0001 C CNN "Tolerance"
+F 6 "25V" H 2700 5550 60  0001 C CNN "Voltage"
+	1    2700 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR037
+U 1 1 588D0AAC
+P 2300 6000
+F 0 "#PWR037" H 2300 5750 50  0001 C CNN
+F 1 "Earth" H 2300 5850 50  0001 C CNN
+F 2 "" H 2300 6000 50  0000 C CNN
+F 3 "" H 2300 6000 50  0000 C CNN
+	1    2300 6000
+	1    0    0    -1  
+$EndComp
+Text Label 800  5300 0    60   ~ 0
+ADV_VCC3V3
+$Comp
+L C C20
+U 1 1 588D0AC0
+P 2300 5550
+F 0 "C20" H 2325 5650 50  0000 L CNN
+F 1 "0.1uF" H 2325 5450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 2338 5400 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Taiyo-Yuden/TMK105BJ104KV-F/?qs=PzICbMaShUcuRhf9Ji%2f5mA==" H 2300 5550 50  0001 C CNN
+F 4 "TMK105BJ104KV-F" H 2300 5550 60  0001 C CNN "Part Number"
+F 5 "10%" H 2300 5550 60  0001 C CNN "Tolerance"
+F 6 "25V" H 2300 5550 60  0001 C CNN "Voltage"
+	1    2300 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C22
+U 1 1 588D0AC9
+P 3100 5550
+F 0 "C22" H 3125 5650 50  0000 L CNN
+F 1 "0.1uF" H 3125 5450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 3138 5400 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Taiyo-Yuden/TMK105BJ104KV-F/?qs=PzICbMaShUcuRhf9Ji%2f5mA==" H 3100 5550 50  0001 C CNN
+F 4 "TMK105BJ104KV-F" H 3100 5550 60  0001 C CNN "Part Number"
+F 5 "10%" H 3100 5550 60  0001 C CNN "Tolerance"
+F 6 "25V" H 3100 5550 60  0001 C CNN "Voltage"
+	1    3100 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C23
+U 1 1 588D0AD2
+P 3500 5550
+F 0 "C23" H 3525 5650 50  0000 L CNN
+F 1 "0.1uF" H 3525 5450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 3538 5400 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Taiyo-Yuden/TMK105BJ104KV-F/?qs=PzICbMaShUcuRhf9Ji%2f5mA==" H 3500 5550 50  0001 C CNN
+F 4 "TMK105BJ104KV-F" H 3500 5550 60  0001 C CNN "Part Number"
+F 5 "10%" H 3500 5550 60  0001 C CNN "Tolerance"
+F 6 "25V" H 3500 5550 60  0001 C CNN "Voltage"
+	1    3500 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C24
+U 1 1 588D0ADB
+P 3950 5550
+F 0 "C24" H 3975 5650 50  0000 L CNN
+F 1 "0.1uF" H 3975 5450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 3988 5400 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Taiyo-Yuden/TMK105BJ104KV-F/?qs=PzICbMaShUcuRhf9Ji%2f5mA==" H 3950 5550 50  0001 C CNN
+F 4 "TMK105BJ104KV-F" H 3950 5550 60  0001 C CNN "Part Number"
+F 5 "10%" H 3950 5550 60  0001 C CNN "Tolerance"
+F 6 "25V" H 3950 5550 60  0001 C CNN "Voltage"
+	1    3950 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  5300 1500 5300
+Wire Wire Line
+	2100 5300 4400 5300
+Wire Wire Line
+	3100 5300 3100 5400
+Wire Wire Line
+	2300 5400 2300 5300
+Connection ~ 2300 5300
+Wire Wire Line
+	2700 5400 2700 5300
+Connection ~ 2700 5300
+Wire Wire Line
+	2300 5800 3950 5800
+Wire Wire Line
+	3100 5800 3100 5700
+Wire Wire Line
+	2300 5700 2300 6000
+Wire Wire Line
+	2700 5700 2700 5800
+Connection ~ 2700 5800
+Connection ~ 2300 5800
+Connection ~ 3100 5300
+Connection ~ 3100 5800
+Wire Wire Line
+	3950 5400 3950 5300
+Connection ~ 3950 5300
+Wire Wire Line
+	3950 5800 3950 5700
+Connection ~ 3950 5800
+Wire Wire Line
+	3500 5400 3500 5300
+Connection ~ 3500 5300
+Wire Wire Line
+	3500 5700 3500 5800
+Connection ~ 3500 5800
+$Comp
+L INDUCTOR L5
+U 1 1 588D7336
+P 1800 6550
+F 0 "L5" V 1750 6550 50  0000 C CNN
+F 1 "FERRITE-220" V 1900 6550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 1800 6550 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Murata-Electronics/BLM21PG221SN1D/?qs=sGAEpiMZZMtdyQheitOmRdaiwhWWI9YttJulw31NHCk%3d" H 1800 6550 50  0001 C CNN
+F 4 "BLM21PG221SN1D" V 1800 6550 60  0001 C CNN "Part Number"
+F 5 "25%" V 1800 6550 60  0001 C CNN "Tolerance"
+F 6 "2 A" V 1800 6550 60  0001 C CNN "DC Current"
+	1    1800 6550
+	0    1    1    0   
+$EndComp
+$Comp
+L C C26
+U 1 1 588D733F
+P 2700 6800
+F 0 "C26" H 2725 6900 50  0000 L CNN
+F 1 "0.1uF" H 2725 6700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 2738 6650 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Taiyo-Yuden/TMK105BJ104KV-F/?qs=PzICbMaShUcuRhf9Ji%2f5mA==" H 2700 6800 50  0001 C CNN
+F 4 "TMK105BJ104KV-F" H 2700 6800 60  0001 C CNN "Part Number"
+F 5 "10%" H 2700 6800 60  0001 C CNN "Tolerance"
+F 6 "25V" H 2700 6800 60  0001 C CNN "Voltage"
+	1    2700 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR038
+U 1 1 588D7345
+P 2300 7250
+F 0 "#PWR038" H 2300 7000 50  0001 C CNN
+F 1 "Earth" H 2300 7100 50  0001 C CNN
+F 2 "" H 2300 7250 50  0000 C CNN
+F 3 "" H 2300 7250 50  0000 C CNN
+	1    2300 7250
+	1    0    0    -1  
+$EndComp
+Text Label 800  6550 0    60   ~ 0
+ADV_VCC3V3
+$Comp
+L C C25
+U 1 1 588D7350
+P 2300 6800
+F 0 "C25" H 2325 6900 50  0000 L CNN
+F 1 "0.1uF" H 2325 6700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 2338 6650 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Taiyo-Yuden/TMK105BJ104KV-F/?qs=PzICbMaShUcuRhf9Ji%2f5mA==" H 2300 6800 50  0001 C CNN
+F 4 "TMK105BJ104KV-F" H 2300 6800 60  0001 C CNN "Part Number"
+F 5 "10%" H 2300 6800 60  0001 C CNN "Tolerance"
+F 6 "25V" H 2300 6800 60  0001 C CNN "Voltage"
+	1    2300 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  6550 1500 6550
+Wire Wire Line
+	2100 6550 3000 6550
+Wire Wire Line
+	2300 6650 2300 6550
+Connection ~ 2300 6550
+Wire Wire Line
+	2700 6650 2700 6550
+Connection ~ 2700 6550
+Wire Wire Line
+	2300 6950 2300 7250
+Wire Wire Line
+	2700 6950 2700 7050
+Connection ~ 2300 7050
+Wire Wire Line
+	2700 7050 2300 7050
+Text Label 3000 6550 0    60   ~ 0
+ADV_TVDD
+Text Label 4400 5300 0    60   ~ 0
+ADV_DVDDIO
+$EndSCHEMATC

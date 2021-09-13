@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name FMC_MIPI_v1-rescue)(type Legacy)(uri ${KIPRJMOD}/FMC_MIPI_v1-rescue.lib)(options "")(descr ""))
+)

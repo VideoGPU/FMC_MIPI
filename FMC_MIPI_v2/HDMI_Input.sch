@@ -1,0 +1,1574 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:microchip_pic12mcu
+LIBS:xilinx7
+LIBS:hdmi3dmix
+LIBS:TPD12S016_PW_24_TSSOP
+LIBS:TPD12S016_RKT_24_UQFN
+LIBS:crystal
+LIBS:SMA_SMD_from_Eagle
+LIBS:DDR3
+LIBS:hiroseConnMichael
+LIBS:Ethernet_DP83867IRPAP
+LIBS:SN74AVC4T245PWR
+LIBS:Ethernet_7499111221A
+LIBS:VideoGPU
+LIBS:TPS74701DRCR
+LIBS:TPS82130
+LIBS:FMC_MIPI_v1-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 18
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L HDMI_685119134923 K1
+U 1 1 594EFC14
+P 1100 3750
+AR Path="/5827BA51/594EFC14" Ref="K1"  Part="1" 
+AR Path="/58C08CCE/594EFC14" Ref="K3"  Part="1" 
+AR Path="/58BF15ED/594EFC14" Ref="K4"  Part="1" 
+AR Path="/58BF179B/594EFC14" Ref="K5"  Part="1" 
+AR Path="/58BF7F30/594EFC14" Ref="K5"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFC14" Ref="K5"  Part="1" 
+F 0 "K5" H 1000 5100 45  0000 L BNN
+F 1 "HDMI_685119134923" H 700 1950 45  0000 L BNN
+F 2 "hdmi3dmix:hdmi3dmix-HDMI_19PIN_PACKAGE_685119134923" H 1100 3750 60  0001 C CNN
+F 3 "" H 1100 3750 60  0000 C CNN
+	1    1100 3750
+	1    0    0    -1  
+$EndComp
+Text Label 2100 2550 0    60   ~ 0
+HDMI_RX_CLK_P
+Text Label 2100 2650 0    60   ~ 0
+HDMI_RX_CLK_N
+$Comp
+L Earth #PWR3
+U 1 1 594EFC18
+P 2450 5750
+AR Path="/5827BA51/594EFC18" Ref="#PWR3"  Part="1" 
+AR Path="/58C08CCE/594EFC18" Ref="#PWR30"  Part="1" 
+AR Path="/58BF15ED/594EFC18" Ref="#PWR41"  Part="1" 
+AR Path="/58BF179B/594EFC18" Ref="#PWR52"  Part="1" 
+AR Path="/58BF7F30/594EFC18" Ref="#PWR52"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFC18" Ref="#PWR4"  Part="1" 
+F 0 "#PWR4" H 2450 5500 50  0001 C CNN
+F 1 "Earth" H 2450 5600 50  0001 C CNN
+F 2 "" H 2450 5750 50  0000 C CNN
+F 3 "" H 2450 5750 50  0000 C CNN
+	1    2450 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R882
+U 1 1 594EFC1B
+P 2100 5050
+AR Path="/5827BA51/594EFC1B" Ref="R882"  Part="1" 
+AR Path="/58C08CCE/594EFC1B" Ref="R5"  Part="1" 
+AR Path="/58BF15ED/594EFC1B" Ref="R28"  Part="1" 
+AR Path="/58BF179B/594EFC1B" Ref="R51"  Part="1" 
+AR Path="/58BF7F30/594EFC1B" Ref="R51"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFC1B" Ref="R51"  Part="1" 
+F 0 "R51" V 2180 5050 50  0000 C CNN
+F 1 "0k" V 2100 5050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 2030 5050 50  0001 C CNN
+F 3 "ERJ-2GE0R00X" H 2100 5050 50  0001 C CNN
+F 4 "5%" V 2100 5050 60  0001 C CNN "Tolerance"
+F 5 "1/10W" V 2100 5050 60  0001 C CNN "Power"
+	1    2100 5050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R892
+U 1 1 582EE7ED
+P 4050 5450
+AR Path="/5827BA51/582EE7ED" Ref="R892"  Part="1" 
+AR Path="/58C08CCE/582EE7ED" Ref="R8"  Part="1" 
+AR Path="/58BF15ED/582EE7ED" Ref="R31"  Part="1" 
+AR Path="/58BF179B/582EE7ED" Ref="R54"  Part="1" 
+AR Path="/58BF7F30/582EE7ED" Ref="R54"  Part="1" 
+AR Path="/594EBB46/5827BA51/582EE7ED" Ref="R54"  Part="1" 
+F 0 "R54" V 4130 5450 50  0000 C CNN
+F 1 "1.00k" V 4050 5450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 3980 5450 50  0001 C CNN
+F 3 "http://www.mouser.com/ProductDetail/Panasonic/ERA-2AED102X/?qs=nho8PGNfA6raHD%252baVdwGUw%3D%3D" H 4050 5450 50  0001 C CNN
+F 4 "0.5%" V 4050 5450 60  0001 C CNN "Tolerance"
+F 5 "1/16W" V 4050 5450 60  0001 C CNN "Power"
+F 6 "ERA-2AED102X" V 4050 5450 60  0001 C CNN "Part Number"
+	1    4050 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1003
+U 1 1 594EFC21
+P 2100 5450
+AR Path="/5827BA51/594EFC21" Ref="C1003"  Part="1" 
+AR Path="/58C08CCE/594EFC21" Ref="C3"  Part="1" 
+AR Path="/58BF15ED/594EFC21" Ref="C11"  Part="1" 
+AR Path="/58BF179B/594EFC21" Ref="C19"  Part="1" 
+AR Path="/58BF7F30/594EFC21" Ref="C19"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFC21" Ref="C19"  Part="1" 
+F 0 "C19" H 2125 5550 50  0000 L CNN
+F 1 "0.01uF" H 2125 5350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 2138 5300 50  0001 C CNN
+F 3 "04023D103KAT2A" H 2100 5450 50  0001 C CNN
+F 4 "10%" H 2100 5450 60  0001 C CNN "Tolerance"
+F 5 "25V" H 2100 5450 60  0001 C CNN "Voltage"
+	1    2100 5450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R891
+U 1 1 582EF701
+P 4750 5450
+AR Path="/5827BA51/582EF701" Ref="R891"  Part="1" 
+AR Path="/58C08CCE/582EF701" Ref="R13"  Part="1" 
+AR Path="/58BF15ED/582EF701" Ref="R36"  Part="1" 
+AR Path="/58BF179B/582EF701" Ref="R59"  Part="1" 
+AR Path="/58BF7F30/582EF701" Ref="R59"  Part="1" 
+AR Path="/594EBB46/5827BA51/582EF701" Ref="R59"  Part="1" 
+F 0 "R59" V 4830 5450 50  0000 C CNN
+F 1 "1.00k" V 4750 5450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 4680 5450 50  0001 C CNN
+F 3 "http://www.mouser.com/ProductDetail/Panasonic/ERA-2AED102X/?qs=nho8PGNfA6raHD%252baVdwGUw%3D%3D" H 4750 5450 50  0001 C CNN
+F 4 "0.5%" V 4750 5450 60  0001 C CNN "Tolerance"
+F 5 "1/16W" V 4750 5450 60  0001 C CNN "Power"
+F 6 "ERA-2AED102X" V 4750 5450 60  0001 C CNN "Part Number"
+	1    4750 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R890
+U 1 1 594EFC27
+P 5400 5450
+AR Path="/5827BA51/594EFC27" Ref="R890"  Part="1" 
+AR Path="/58C08CCE/594EFC27" Ref="R17"  Part="1" 
+AR Path="/58BF15ED/594EFC27" Ref="R40"  Part="1" 
+AR Path="/58BF179B/594EFC27" Ref="R63"  Part="1" 
+AR Path="/58BF7F30/594EFC27" Ref="R63"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFC27" Ref="R63"  Part="1" 
+F 0 "R63" V 5480 5450 50  0000 C CNN
+F 1 "1.00k" V 5400 5450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 5330 5450 50  0001 C CNN
+F 3 "http://www.mouser.com/ProductDetail/Panasonic/ERA-2AED102X/?qs=nho8PGNfA6raHD%252baVdwGUw%3D%3D" H 5400 5450 50  0001 C CNN
+F 4 "0.5%" V 5400 5450 60  0001 C CNN "Tolerance"
+F 5 "1/16W" V 5400 5450 60  0001 C CNN "Power"
+F 6 "ERA-2AED102X" V 5400 5450 60  0001 C CNN "Part Number"
+	1    5400 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R867
+U 1 1 594EFC2A
+P 4400 5700
+AR Path="/5827BA51/594EFC2A" Ref="R867"  Part="1" 
+AR Path="/58C08CCE/594EFC2A" Ref="R11"  Part="1" 
+AR Path="/58BF15ED/594EFC2A" Ref="R34"  Part="1" 
+AR Path="/58BF179B/594EFC2A" Ref="R57"  Part="1" 
+AR Path="/58BF7F30/594EFC2A" Ref="R57"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFC2A" Ref="R57"  Part="1" 
+F 0 "R57" V 4480 5700 50  0000 C CNN
+F 1 "10" V 4400 5700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 4330 5700 50  0001 C CNN
+F 3 "ERJ-2RKF10R0X" H 4400 5700 50  0001 C CNN
+F 4 "1%" V 4400 5700 60  0001 C CNN "Tolerance"
+F 5 "1/10W" V 4400 5700 60  0001 C CNN "Power"
+	1    4400 5700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MMBF170 Q45
+U 1 1 594EFC2D
+P 4850 6100
+AR Path="/5827BA51/594EFC2D" Ref="Q45"  Part="1" 
+AR Path="/58C08CCE/594EFC2D" Ref="Q1"  Part="1" 
+AR Path="/58BF15ED/594EFC2D" Ref="Q4"  Part="1" 
+AR Path="/58BF179B/594EFC2D" Ref="Q7"  Part="1" 
+AR Path="/58BF7F30/594EFC2D" Ref="Q7"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFC2D" Ref="Q7"  Part="1" 
+F 0 "Q7" H 5050 6175 50  0000 L CNN
+F 1 "2N7002_215" H 5050 6100 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 5050 6025 50  0001 L CIN
+F 3 "2N7002,215" H 4850 6100 50  0001 L CNN
+F 4 "771-2N7002-T/R" H 4850 6100 60  0001 C CNN "Mouser PN"
+	1    4850 6100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MMBF170 Q41
+U 1 1 594EFC31
+P 6150 6150
+AR Path="/5827BA51/594EFC31" Ref="Q41"  Part="1" 
+AR Path="/58C08CCE/594EFC31" Ref="Q2"  Part="1" 
+AR Path="/58BF15ED/594EFC31" Ref="Q5"  Part="1" 
+AR Path="/58BF179B/594EFC31" Ref="Q8"  Part="1" 
+AR Path="/58BF7F30/594EFC31" Ref="Q8"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFC31" Ref="Q8"  Part="1" 
+F 0 "Q8" H 6350 6225 50  0000 L CNN
+F 1 "2N7002_215" H 6350 6150 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 6350 6075 50  0001 L CIN
+F 3 "2N7002,215" H 6150 6150 50  0001 L CNN
+F 4 "771-2N7002-T/R" H 6150 6150 60  0001 C CNN "Mouser PN"
+	1    6150 6150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR4
+U 1 1 582F175F
+P 4750 6500
+AR Path="/5827BA51/582F175F" Ref="#PWR4"  Part="1" 
+AR Path="/58C08CCE/582F175F" Ref="#PWR31"  Part="1" 
+AR Path="/58BF15ED/582F175F" Ref="#PWR42"  Part="1" 
+AR Path="/58BF179B/582F175F" Ref="#PWR53"  Part="1" 
+AR Path="/58BF7F30/582F175F" Ref="#PWR53"  Part="1" 
+AR Path="/594EBB46/5827BA51/582F175F" Ref="#PWR5"  Part="1" 
+F 0 "#PWR5" H 4750 6250 50  0001 C CNN
+F 1 "Earth" H 4750 6350 50  0001 C CNN
+F 2 "" H 4750 6500 50  0000 C CNN
+F 3 "" H 4750 6500 50  0000 C CNN
+	1    4750 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR5
+U 1 1 582F1893
+P 6050 6550
+AR Path="/5827BA51/582F1893" Ref="#PWR5"  Part="1" 
+AR Path="/58C08CCE/582F1893" Ref="#PWR32"  Part="1" 
+AR Path="/58BF15ED/582F1893" Ref="#PWR43"  Part="1" 
+AR Path="/58BF179B/582F1893" Ref="#PWR54"  Part="1" 
+AR Path="/58BF7F30/582F1893" Ref="#PWR54"  Part="1" 
+AR Path="/594EBB46/5827BA51/582F1893" Ref="#PWR6"  Part="1" 
+F 0 "#PWR6" H 6050 6300 50  0001 C CNN
+F 1 "Earth" H 6050 6400 50  0001 C CNN
+F 2 "" H 6050 6550 50  0000 C CNN
+F 3 "" H 6050 6550 50  0000 C CNN
+	1    6050 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R888
+U 1 1 594EFC39
+P 6600 6450
+AR Path="/5827BA51/594EFC39" Ref="R888"  Part="1" 
+AR Path="/58C08CCE/594EFC39" Ref="R18"  Part="1" 
+AR Path="/58BF15ED/594EFC39" Ref="R41"  Part="1" 
+AR Path="/58BF179B/594EFC39" Ref="R64"  Part="1" 
+AR Path="/58BF7F30/594EFC39" Ref="R64"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFC39" Ref="R64"  Part="1" 
+F 0 "R64" V 6680 6450 50  0000 C CNN
+F 1 "100k" V 6600 6450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 6530 6450 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Panasonic/ERJ-2RKF1003X/?qs=%2fha2pyFadujciewGcSbxYJOA56ny1fqECTP0AcRmbHTZSqniIUcBDA%3d%3d" H 6600 6450 50  0001 C CNN
+F 4 "1%" V 6600 6450 60  0001 C CNN "Tolerance"
+F 5 "1/10W" V 6600 6450 60  0001 C CNN "Power"
+F 6 "ERJ-2RKF1003X" V 6600 6450 60  0001 C CNN "Part Number"
+	1    6600 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R884
+U 1 1 594EFC3B
+P 6950 6200
+AR Path="/5827BA51/594EFC3B" Ref="R884"  Part="1" 
+AR Path="/58C08CCE/594EFC3B" Ref="R19"  Part="1" 
+AR Path="/58BF15ED/594EFC3B" Ref="R42"  Part="1" 
+AR Path="/58BF179B/594EFC3B" Ref="R65"  Part="1" 
+AR Path="/58BF7F30/594EFC3B" Ref="R65"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFC3B" Ref="R65"  Part="1" 
+F 0 "R65" V 7030 6200 50  0000 C CNN
+F 1 "100" V 6950 6200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 6880 6200 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Panasonic/ERJ-2RKF1000X/?qs=1iN9QGIZ5R%2fx4uM9UolshQ==" H 6950 6200 50  0001 C CNN
+F 4 "1%" V 6950 6200 60  0001 C CNN "Tolerance"
+F 5 "1/10W" V 6950 6200 60  0001 C CNN "Power"
+F 6 "ERJ-2RKF1000X" V 6950 6200 60  0001 C CNN "Part Number"
+	1    6950 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L Earth #PWR6
+U 1 1 594EFC3E
+P 6600 6700
+AR Path="/5827BA51/594EFC3E" Ref="#PWR6"  Part="1" 
+AR Path="/58C08CCE/594EFC3E" Ref="#PWR33"  Part="1" 
+AR Path="/58BF15ED/594EFC3E" Ref="#PWR44"  Part="1" 
+AR Path="/58BF179B/594EFC3E" Ref="#PWR55"  Part="1" 
+AR Path="/58BF7F30/594EFC3E" Ref="#PWR55"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFC3E" Ref="#PWR7"  Part="1" 
+F 0 "#PWR7" H 6600 6450 50  0001 C CNN
+F 1 "Earth" H 6600 6550 50  0001 C CNN
+F 2 "" H 6600 6700 50  0000 C CNN
+F 3 "" H 6600 6700 50  0000 C CNN
+	1    6600 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C660
+U 1 1 58309108
+P 800 1700
+AR Path="/5827BA51/58309108" Ref="C660"  Part="1" 
+AR Path="/58C08CCE/58309108" Ref="C1"  Part="1" 
+AR Path="/58BF15ED/58309108" Ref="C9"  Part="1" 
+AR Path="/58BF179B/58309108" Ref="C17"  Part="1" 
+AR Path="/58BF7F30/58309108" Ref="C17"  Part="1" 
+AR Path="/594EBB46/5827BA51/58309108" Ref="C17"  Part="1" 
+F 0 "C17" H 825 1800 50  0000 L CNN
+F 1 "0.1uF" H 825 1600 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 838 1550 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Taiyo-Yuden/TMK105BJ104KV-F/?qs=PzICbMaShUcuRhf9Ji%2f5mA==" H 800 1700 50  0001 C CNN
+F 4 "TMK105BJ104KV-F" H 800 1700 60  0001 C CNN "Part Number"
+F 5 "10%" H 800 1700 60  0001 C CNN "Tolerance"
+F 6 "25V" H 800 1700 60  0001 C CNN "Voltage"
+	1    800  1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C668
+U 1 1 594EFC46
+P 1150 1700
+AR Path="/5827BA51/594EFC46" Ref="C668"  Part="1" 
+AR Path="/58C08CCE/594EFC46" Ref="C2"  Part="1" 
+AR Path="/58BF15ED/594EFC46" Ref="C10"  Part="1" 
+AR Path="/58BF179B/594EFC46" Ref="C18"  Part="1" 
+AR Path="/58BF7F30/594EFC46" Ref="C18"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFC46" Ref="C18"  Part="1" 
+F 0 "C18" H 1175 1800 50  0000 L CNN
+F 1 "1uF" H 1175 1600 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 1188 1550 50  0001 C CNN
+F 3 "GRM188R61E105KA12D" H 1150 1700 50  0001 C CNN
+F 4 "10%" H 1150 1700 60  0001 C CNN "Tolerance"
+F 5 "25V" H 1150 1700 60  0001 C CNN "Voltage"
+	1    1150 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR1
+U 1 1 594EFC48
+P 1150 2050
+AR Path="/5827BA51/594EFC48" Ref="#PWR1"  Part="1" 
+AR Path="/58C08CCE/594EFC48" Ref="#PWR28"  Part="1" 
+AR Path="/58BF15ED/594EFC48" Ref="#PWR39"  Part="1" 
+AR Path="/58BF179B/594EFC48" Ref="#PWR50"  Part="1" 
+AR Path="/58BF7F30/594EFC48" Ref="#PWR50"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFC48" Ref="#PWR2"  Part="1" 
+F 0 "#PWR2" H 1150 1800 50  0001 C CNN
+F 1 "Earth" V 1150 1900 50  0001 C CNN
+F 2 "" H 1150 2050 50  0000 C CNN
+F 3 "" H 1150 2050 50  0000 C CNN
+	1    1150 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L67
+U 1 1 594EFC4B
+P 1900 900
+AR Path="/5827BA51/594EFC4B" Ref="L67"  Part="1" 
+AR Path="/58C08CCE/594EFC4B" Ref="L1"  Part="1" 
+AR Path="/58BF15ED/594EFC4B" Ref="L10"  Part="1" 
+AR Path="/58BF179B/594EFC4B" Ref="L19"  Part="1" 
+AR Path="/58BF7F30/594EFC4B" Ref="L19"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFC4B" Ref="L19"  Part="1" 
+F 0 "L19" V 1850 900 50  0000 C CNN
+F 1 "FERRITE-120" V 2000 900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" H 1900 900 50  0001 C CNN
+F 3 "BLM15EG121SN1D" H 1900 900 50  0001 C CNN
+	1    1900 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L C C999
+U 1 1 5830C676
+P 2400 1150
+AR Path="/5827BA51/5830C676" Ref="C999"  Part="1" 
+AR Path="/58C08CCE/5830C676" Ref="C4"  Part="1" 
+AR Path="/58BF15ED/5830C676" Ref="C12"  Part="1" 
+AR Path="/58BF179B/5830C676" Ref="C20"  Part="1" 
+AR Path="/58BF7F30/5830C676" Ref="C20"  Part="1" 
+AR Path="/594EBB46/5827BA51/5830C676" Ref="C20"  Part="1" 
+F 0 "C20" H 2425 1250 50  0000 L CNN
+F 1 "0.1uF" H 2425 1050 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 2438 1000 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Taiyo-Yuden/TMK105BJ104KV-F/?qs=PzICbMaShUcuRhf9Ji%2f5mA==" H 2400 1150 50  0001 C CNN
+F 4 "TMK105BJ104KV-F" H 2400 1150 60  0001 C CNN "Part Number"
+F 5 "10%" H 2400 1150 60  0001 C CNN "Tolerance"
+F 6 "25V" H 2400 1150 60  0001 C CNN "Voltage"
+	1    2400 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C998
+U 1 1 594EFC51
+P 2800 1150
+AR Path="/5827BA51/594EFC51" Ref="C998"  Part="1" 
+AR Path="/58C08CCE/594EFC51" Ref="C5"  Part="1" 
+AR Path="/58BF15ED/594EFC51" Ref="C13"  Part="1" 
+AR Path="/58BF179B/594EFC51" Ref="C21"  Part="1" 
+AR Path="/58BF7F30/594EFC51" Ref="C21"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFC51" Ref="C21"  Part="1" 
+F 0 "C21" H 2825 1250 50  0000 L CNN
+F 1 "0.1uF" H 2825 1050 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 2838 1000 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Taiyo-Yuden/TMK105BJ104KV-F/?qs=PzICbMaShUcuRhf9Ji%2f5mA==" H 2800 1150 50  0001 C CNN
+F 4 "TMK105BJ104KV-F" H 2800 1150 60  0001 C CNN "Part Number"
+F 5 "10%" H 2800 1150 60  0001 C CNN "Tolerance"
+F 6 "25V" H 2800 1150 60  0001 C CNN "Voltage"
+	1    2800 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1009
+U 1 1 594EFC53
+P 3200 1150
+AR Path="/5827BA51/594EFC53" Ref="C1009"  Part="1" 
+AR Path="/58C08CCE/594EFC53" Ref="C6"  Part="1" 
+AR Path="/58BF15ED/594EFC53" Ref="C14"  Part="1" 
+AR Path="/58BF179B/594EFC53" Ref="C22"  Part="1" 
+AR Path="/58BF7F30/594EFC53" Ref="C22"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFC53" Ref="C22"  Part="1" 
+F 0 "C22" H 3225 1250 50  0000 L CNN
+F 1 "10uF" H 3225 1050 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 3238 1000 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Murata-Electronics/GRM219R61A106KE44D/?qs=sGAEpiMZZMs0AnBnWHyRQHSMLfoHgeTXxsJSLzlD0Z4%3d" H 3200 1150 50  0001 C CNN
+F 4 "GRM219R61A106KE44D" H 3200 1150 60  0001 C CNN "Part Number"
+F 5 "10%" H 3200 1150 60  0001 C CNN "Tolerance"
+F 6 "10V" H 3200 1150 60  0001 C CNN "Voltage"
+	1    3200 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR2
+U 1 1 594EFC58
+P 2400 1600
+AR Path="/5827BA51/594EFC58" Ref="#PWR2"  Part="1" 
+AR Path="/58C08CCE/594EFC58" Ref="#PWR29"  Part="1" 
+AR Path="/58BF15ED/594EFC58" Ref="#PWR40"  Part="1" 
+AR Path="/58BF179B/594EFC58" Ref="#PWR51"  Part="1" 
+AR Path="/58BF7F30/594EFC58" Ref="#PWR51"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFC58" Ref="#PWR3"  Part="1" 
+F 0 "#PWR3" H 2400 1350 50  0001 C CNN
+F 1 "Earth" H 2400 1450 50  0001 C CNN
+F 2 "" H 2400 1600 50  0000 C CNN
+F 3 "" H 2400 1600 50  0000 C CNN
+	1    2400 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R587
+U 1 1 594EFC5B
+P 3650 1500
+AR Path="/5827BA51/594EFC5B" Ref="R587"  Part="1" 
+AR Path="/58C08CCE/594EFC5B" Ref="R6"  Part="1" 
+AR Path="/58BF15ED/594EFC5B" Ref="R29"  Part="1" 
+AR Path="/58BF179B/594EFC5B" Ref="R52"  Part="1" 
+AR Path="/58BF7F30/594EFC5B" Ref="R52"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFC5B" Ref="R52"  Part="1" 
+F 0 "R52" V 3730 1500 50  0000 C CNN
+F 1 "49.9" V 3650 1500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 3580 1500 50  0001 C CNN
+F 3 "http://www.mouser.co.il/search/ProductDetail.aspx?R=0virtualkey0virtualkeyERJ-2RKF49R9X" H 3650 1500 50  0001 C CNN
+F 4 "1%" V 3650 1500 60  0001 C CNN "Tolerance"
+F 5 "1/10W" V 3650 1500 60  0001 C CNN "Power"
+F 6 "ERJ-2RKF49R9X" V 3650 1500 60  0001 C CNN "Part Number"
+	1    3650 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L68
+U 1 1 5830F48E
+P 3650 2150
+AR Path="/5827BA51/5830F48E" Ref="L68"  Part="1" 
+AR Path="/58C08CCE/5830F48E" Ref="L2"  Part="1" 
+AR Path="/58BF15ED/5830F48E" Ref="L11"  Part="1" 
+AR Path="/58BF179B/5830F48E" Ref="L20"  Part="1" 
+AR Path="/58BF7F30/5830F48E" Ref="L20"  Part="1" 
+AR Path="/594EBB46/5827BA51/5830F48E" Ref="L20"  Part="1" 
+F 0 "L20" V 3600 2150 50  0000 C CNN
+F 1 "20nH" V 3750 2150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" H 3650 2150 50  0001 C CNN
+F 3 "http://www.mouser.co.il/search/ProductDetail.aspx?R=0virtualkey0virtualkeyLQW15AN20NJ00D" H 3650 2150 50  0001 C CNN
+F 4 "LQW15AN20NJ00D" V 3650 2150 60  0001 C CNN "Part Number"
+	1    3650 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R597
+U 1 1 58310512
+P 3900 1500
+AR Path="/5827BA51/58310512" Ref="R597"  Part="1" 
+AR Path="/58C08CCE/58310512" Ref="R7"  Part="1" 
+AR Path="/58BF15ED/58310512" Ref="R30"  Part="1" 
+AR Path="/58BF179B/58310512" Ref="R53"  Part="1" 
+AR Path="/58BF7F30/58310512" Ref="R53"  Part="1" 
+AR Path="/594EBB46/5827BA51/58310512" Ref="R53"  Part="1" 
+F 0 "R53" V 3980 1500 50  0000 C CNN
+F 1 "49.9" V 3900 1500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 3830 1500 50  0001 C CNN
+F 3 "http://www.mouser.co.il/search/ProductDetail.aspx?R=0virtualkey0virtualkeyERJ-2RKF49R9X" H 3900 1500 50  0001 C CNN
+F 4 "1%" V 3900 1500 60  0001 C CNN "Tolerance"
+F 5 "1/10W" V 3900 1500 60  0001 C CNN "Power"
+F 6 "ERJ-2RKF49R9X" V 3900 1500 60  0001 C CNN "Part Number"
+	1    3900 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R598
+U 1 1 594EFC64
+P 4150 1500
+AR Path="/5827BA51/594EFC64" Ref="R598"  Part="1" 
+AR Path="/58C08CCE/594EFC64" Ref="R9"  Part="1" 
+AR Path="/58BF15ED/594EFC64" Ref="R32"  Part="1" 
+AR Path="/58BF179B/594EFC64" Ref="R55"  Part="1" 
+AR Path="/58BF7F30/594EFC64" Ref="R55"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFC64" Ref="R55"  Part="1" 
+F 0 "R55" V 4230 1500 50  0000 C CNN
+F 1 "49.9" V 4150 1500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 4080 1500 50  0001 C CNN
+F 3 "http://www.mouser.co.il/search/ProductDetail.aspx?R=0virtualkey0virtualkeyERJ-2RKF49R9X" H 4150 1500 50  0001 C CNN
+F 4 "1%" V 4150 1500 60  0001 C CNN "Tolerance"
+F 5 "1/10W" V 4150 1500 60  0001 C CNN "Power"
+F 6 "ERJ-2RKF49R9X" V 4150 1500 60  0001 C CNN "Part Number"
+	1    4150 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R621
+U 1 1 594EFC67
+P 4400 1500
+AR Path="/5827BA51/594EFC67" Ref="R621"  Part="1" 
+AR Path="/58C08CCE/594EFC67" Ref="R10"  Part="1" 
+AR Path="/58BF15ED/594EFC67" Ref="R33"  Part="1" 
+AR Path="/58BF179B/594EFC67" Ref="R56"  Part="1" 
+AR Path="/58BF7F30/594EFC67" Ref="R56"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFC67" Ref="R56"  Part="1" 
+F 0 "R56" V 4480 1500 50  0000 C CNN
+F 1 "49.9" V 4400 1500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 4330 1500 50  0001 C CNN
+F 3 "http://www.mouser.co.il/search/ProductDetail.aspx?R=0virtualkey0virtualkeyERJ-2RKF49R9X" H 4400 1500 50  0001 C CNN
+F 4 "1%" V 4400 1500 60  0001 C CNN "Tolerance"
+F 5 "1/10W" V 4400 1500 60  0001 C CNN "Power"
+F 6 "ERJ-2RKF49R9X" V 4400 1500 60  0001 C CNN "Part Number"
+	1    4400 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R622
+U 1 1 583107DB
+P 4650 1500
+AR Path="/5827BA51/583107DB" Ref="R622"  Part="1" 
+AR Path="/58C08CCE/583107DB" Ref="R12"  Part="1" 
+AR Path="/58BF15ED/583107DB" Ref="R35"  Part="1" 
+AR Path="/58BF179B/583107DB" Ref="R58"  Part="1" 
+AR Path="/58BF7F30/583107DB" Ref="R58"  Part="1" 
+AR Path="/594EBB46/5827BA51/583107DB" Ref="R58"  Part="1" 
+F 0 "R58" V 4730 1500 50  0000 C CNN
+F 1 "49.9" V 4650 1500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 4580 1500 50  0001 C CNN
+F 3 "http://www.mouser.co.il/search/ProductDetail.aspx?R=0virtualkey0virtualkeyERJ-2RKF49R9X" H 4650 1500 50  0001 C CNN
+F 4 "1%" V 4650 1500 60  0001 C CNN "Tolerance"
+F 5 "1/10W" V 4650 1500 60  0001 C CNN "Power"
+F 6 "ERJ-2RKF49R9X" V 4650 1500 60  0001 C CNN "Part Number"
+	1    4650 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R623
+U 1 1 594EFC6D
+P 4900 1500
+AR Path="/5827BA51/594EFC6D" Ref="R623"  Part="1" 
+AR Path="/58C08CCE/594EFC6D" Ref="R14"  Part="1" 
+AR Path="/58BF15ED/594EFC6D" Ref="R37"  Part="1" 
+AR Path="/58BF179B/594EFC6D" Ref="R60"  Part="1" 
+AR Path="/58BF7F30/594EFC6D" Ref="R60"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFC6D" Ref="R60"  Part="1" 
+F 0 "R60" V 4980 1500 50  0000 C CNN
+F 1 "49.9" V 4900 1500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 4830 1500 50  0001 C CNN
+F 3 "http://www.mouser.co.il/search/ProductDetail.aspx?R=0virtualkey0virtualkeyERJ-2RKF49R9X" H 4900 1500 50  0001 C CNN
+F 4 "1%" V 4900 1500 60  0001 C CNN "Tolerance"
+F 5 "1/10W" V 4900 1500 60  0001 C CNN "Power"
+F 6 "ERJ-2RKF49R9X" V 4900 1500 60  0001 C CNN "Part Number"
+	1    4900 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R624
+U 1 1 594EFC70
+P 5150 1500
+AR Path="/5827BA51/594EFC70" Ref="R624"  Part="1" 
+AR Path="/58C08CCE/594EFC70" Ref="R15"  Part="1" 
+AR Path="/58BF15ED/594EFC70" Ref="R38"  Part="1" 
+AR Path="/58BF179B/594EFC70" Ref="R61"  Part="1" 
+AR Path="/58BF7F30/594EFC70" Ref="R61"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFC70" Ref="R61"  Part="1" 
+F 0 "R61" V 5230 1500 50  0000 C CNN
+F 1 "49.9" V 5150 1500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 5080 1500 50  0001 C CNN
+F 3 "http://www.mouser.co.il/search/ProductDetail.aspx?R=0virtualkey0virtualkeyERJ-2RKF49R9X" H 5150 1500 50  0001 C CNN
+F 4 "1%" V 5150 1500 60  0001 C CNN "Tolerance"
+F 5 "1/10W" V 5150 1500 60  0001 C CNN "Power"
+F 6 "ERJ-2RKF49R9X" V 5150 1500 60  0001 C CNN "Part Number"
+	1    5150 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R625
+U 1 1 594EFC73
+P 5400 1500
+AR Path="/5827BA51/594EFC73" Ref="R625"  Part="1" 
+AR Path="/58C08CCE/594EFC73" Ref="R16"  Part="1" 
+AR Path="/58BF15ED/594EFC73" Ref="R39"  Part="1" 
+AR Path="/58BF179B/594EFC73" Ref="R62"  Part="1" 
+AR Path="/58BF7F30/594EFC73" Ref="R62"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFC73" Ref="R62"  Part="1" 
+F 0 "R62" V 5480 1500 50  0000 C CNN
+F 1 "49.9" V 5400 1500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 5330 1500 50  0001 C CNN
+F 3 "http://www.mouser.co.il/search/ProductDetail.aspx?R=0virtualkey0virtualkeyERJ-2RKF49R9X" H 5400 1500 50  0001 C CNN
+F 4 "1%" V 5400 1500 60  0001 C CNN "Tolerance"
+F 5 "1/10W" V 5400 1500 60  0001 C CNN "Power"
+F 6 "ERJ-2RKF49R9X" V 5400 1500 60  0001 C CNN "Part Number"
+	1    5400 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L69
+U 1 1 594EFC75
+P 3900 2150
+AR Path="/5827BA51/594EFC75" Ref="L69"  Part="1" 
+AR Path="/58C08CCE/594EFC75" Ref="L3"  Part="1" 
+AR Path="/58BF15ED/594EFC75" Ref="L12"  Part="1" 
+AR Path="/58BF179B/594EFC75" Ref="L21"  Part="1" 
+AR Path="/58BF7F30/594EFC75" Ref="L21"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFC75" Ref="L21"  Part="1" 
+F 0 "L21" V 3850 2150 50  0000 C CNN
+F 1 "20nH" V 4000 2150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" H 3900 2150 50  0001 C CNN
+F 3 "http://www.mouser.co.il/search/ProductDetail.aspx?R=0virtualkey0virtualkeyLQW15AN20NJ00D" H 3900 2150 50  0001 C CNN
+F 4 "LQW15AN20NJ00D" V 3900 2150 60  0001 C CNN "Part Number"
+	1    3900 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L INDUCTOR L70
+U 1 1 594EFC77
+P 4150 2150
+AR Path="/5827BA51/594EFC77" Ref="L70"  Part="1" 
+AR Path="/58C08CCE/594EFC77" Ref="L4"  Part="1" 
+AR Path="/58BF15ED/594EFC77" Ref="L13"  Part="1" 
+AR Path="/58BF179B/594EFC77" Ref="L22"  Part="1" 
+AR Path="/58BF7F30/594EFC77" Ref="L22"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFC77" Ref="L22"  Part="1" 
+F 0 "L22" V 4100 2150 50  0000 C CNN
+F 1 "20nH" V 4250 2150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" H 4150 2150 50  0001 C CNN
+F 3 "http://www.mouser.co.il/search/ProductDetail.aspx?R=0virtualkey0virtualkeyLQW15AN20NJ00D" H 4150 2150 50  0001 C CNN
+F 4 "LQW15AN20NJ00D" V 4150 2150 60  0001 C CNN "Part Number"
+	1    4150 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L INDUCTOR L71
+U 1 1 594EFC7A
+P 4400 2150
+AR Path="/5827BA51/594EFC7A" Ref="L71"  Part="1" 
+AR Path="/58C08CCE/594EFC7A" Ref="L5"  Part="1" 
+AR Path="/58BF15ED/594EFC7A" Ref="L14"  Part="1" 
+AR Path="/58BF179B/594EFC7A" Ref="L23"  Part="1" 
+AR Path="/58BF7F30/594EFC7A" Ref="L23"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFC7A" Ref="L23"  Part="1" 
+F 0 "L23" V 4350 2150 50  0000 C CNN
+F 1 "20nH" V 4500 2150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" H 4400 2150 50  0001 C CNN
+F 3 "http://www.mouser.co.il/search/ProductDetail.aspx?R=0virtualkey0virtualkeyLQW15AN20NJ00D" H 4400 2150 50  0001 C CNN
+F 4 "LQW15AN20NJ00D" V 4400 2150 60  0001 C CNN "Part Number"
+	1    4400 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L INDUCTOR L72
+U 1 1 594EFC7D
+P 4650 2150
+AR Path="/5827BA51/594EFC7D" Ref="L72"  Part="1" 
+AR Path="/58C08CCE/594EFC7D" Ref="L6"  Part="1" 
+AR Path="/58BF15ED/594EFC7D" Ref="L15"  Part="1" 
+AR Path="/58BF179B/594EFC7D" Ref="L24"  Part="1" 
+AR Path="/58BF7F30/594EFC7D" Ref="L24"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFC7D" Ref="L24"  Part="1" 
+F 0 "L24" V 4600 2150 50  0000 C CNN
+F 1 "20nH" V 4750 2150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" H 4650 2150 50  0001 C CNN
+F 3 "http://www.mouser.co.il/search/ProductDetail.aspx?R=0virtualkey0virtualkeyLQW15AN20NJ00D" H 4650 2150 50  0001 C CNN
+F 4 "LQW15AN20NJ00D" V 4650 2150 60  0001 C CNN "Part Number"
+	1    4650 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L INDUCTOR L73
+U 1 1 58312604
+P 4900 2150
+AR Path="/5827BA51/58312604" Ref="L73"  Part="1" 
+AR Path="/58C08CCE/58312604" Ref="L7"  Part="1" 
+AR Path="/58BF15ED/58312604" Ref="L16"  Part="1" 
+AR Path="/58BF179B/58312604" Ref="L25"  Part="1" 
+AR Path="/58BF7F30/58312604" Ref="L25"  Part="1" 
+AR Path="/594EBB46/5827BA51/58312604" Ref="L25"  Part="1" 
+F 0 "L25" V 4850 2150 50  0000 C CNN
+F 1 "20nH" V 5000 2150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" H 4900 2150 50  0001 C CNN
+F 3 "http://www.mouser.co.il/search/ProductDetail.aspx?R=0virtualkey0virtualkeyLQW15AN20NJ00D" H 4900 2150 50  0001 C CNN
+F 4 "LQW15AN20NJ00D" V 4900 2150 60  0001 C CNN "Part Number"
+	1    4900 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L INDUCTOR L74
+U 1 1 58312679
+P 5150 2150
+AR Path="/5827BA51/58312679" Ref="L74"  Part="1" 
+AR Path="/58C08CCE/58312679" Ref="L8"  Part="1" 
+AR Path="/58BF15ED/58312679" Ref="L17"  Part="1" 
+AR Path="/58BF179B/58312679" Ref="L26"  Part="1" 
+AR Path="/58BF7F30/58312679" Ref="L26"  Part="1" 
+AR Path="/594EBB46/5827BA51/58312679" Ref="L26"  Part="1" 
+F 0 "L26" V 5100 2150 50  0000 C CNN
+F 1 "20nH" V 5250 2150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" H 5150 2150 50  0001 C CNN
+F 3 "http://www.mouser.co.il/search/ProductDetail.aspx?R=0virtualkey0virtualkeyLQW15AN20NJ00D" H 5150 2150 50  0001 C CNN
+F 4 "LQW15AN20NJ00D" V 5150 2150 60  0001 C CNN "Part Number"
+	1    5150 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L INDUCTOR L75
+U 1 1 594EFC88
+P 5400 2150
+AR Path="/5827BA51/594EFC88" Ref="L75"  Part="1" 
+AR Path="/58C08CCE/594EFC88" Ref="L9"  Part="1" 
+AR Path="/58BF15ED/594EFC88" Ref="L18"  Part="1" 
+AR Path="/58BF179B/594EFC88" Ref="L27"  Part="1" 
+AR Path="/58BF7F30/594EFC88" Ref="L27"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFC88" Ref="L27"  Part="1" 
+F 0 "L27" V 5350 2150 50  0000 C CNN
+F 1 "20nH" V 5500 2150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" H 5400 2150 50  0001 C CNN
+F 3 "http://www.mouser.co.il/search/ProductDetail.aspx?R=0virtualkey0virtualkeyLQW15AN20NJ00D" H 5400 2150 50  0001 C CNN
+F 4 "LQW15AN20NJ00D" V 5400 2150 60  0001 C CNN "Part Number"
+	1    5400 2150
+	-1   0    0    1   
+$EndComp
+Text Label 2100 2850 0    60   ~ 0
+HDMI_RX0_P
+Text Label 2100 2950 0    60   ~ 0
+HDMI_RX0_N
+Text Label 2100 3150 0    60   ~ 0
+HDMI_RX1_P
+Text Label 2100 3250 0    60   ~ 0
+HDMI_RX1_N
+Text Label 2100 3450 0    60   ~ 0
+HDMI_RX2_P
+Text Label 2100 3550 0    60   ~ 0
+HDMI_RX2_N
+$Comp
+L TPD12S016_RKT_24 U2
+U 1 1 5835C754
+P 8750 3700
+AR Path="/5827BA51/5835C754" Ref="U2"  Part="1" 
+AR Path="/58C08CCE/5835C754" Ref="U1"  Part="1" 
+AR Path="/58BF15ED/5835C754" Ref="U5"  Part="1" 
+AR Path="/58BF179B/5835C754" Ref="U6"  Part="1" 
+AR Path="/58BF7F30/5835C754" Ref="U6"  Part="1" 
+AR Path="/594EBB46/5827BA51/5835C754" Ref="U6"  Part="1" 
+F 0 "U6" H 7864 5059 45  0000 L BNN
+F 1 "TPD12S016" H 7739 2359 45  0000 L BNN
+F 2 "tpd12s016:TPD12S016_PW_24_TSSOP-PW24-L" H 8750 3700 60  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Texas-Instruments/TPD12S016PWR/?qs=sGAEpiMZZMtjJbtednZihmzjjLQZWZsa" H 8750 3700 60  0001 C CNN
+F 4 "TPD12S016PWR" H 8750 3700 60  0001 C CNN "Part Number"
+	1    8750 3700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7450 2700
+NoConn ~ 1700 3850
+$Comp
+L Earth #PWR7
+U 1 1 58366650
+P 7400 4750
+AR Path="/5827BA51/58366650" Ref="#PWR7"  Part="1" 
+AR Path="/58C08CCE/58366650" Ref="#PWR34"  Part="1" 
+AR Path="/58BF15ED/58366650" Ref="#PWR45"  Part="1" 
+AR Path="/58BF179B/58366650" Ref="#PWR56"  Part="1" 
+AR Path="/58BF7F30/58366650" Ref="#PWR56"  Part="1" 
+AR Path="/594EBB46/5827BA51/58366650" Ref="#PWR8"  Part="1" 
+F 0 "#PWR8" H 7400 4500 50  0001 C CNN
+F 1 "Earth" H 7400 4600 50  0001 C CNN
+F 2 "" H 7400 4750 50  0000 C CNN
+F 3 "" H 7400 4750 50  0000 C CNN
+	1    7400 4750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 10050 4100
+NoConn ~ 10050 4200
+NoConn ~ 10050 4300
+NoConn ~ 10050 4400
+NoConn ~ 10050 4500
+NoConn ~ 10050 4600
+NoConn ~ 10050 4700
+NoConn ~ 10050 4800
+$Comp
+L C C680
+U 1 1 594EFC91
+P 9250 1950
+AR Path="/5827BA51/594EFC91" Ref="C680"  Part="1" 
+AR Path="/58C08CCE/594EFC91" Ref="C7"  Part="1" 
+AR Path="/58BF15ED/594EFC91" Ref="C15"  Part="1" 
+AR Path="/58BF179B/594EFC91" Ref="C23"  Part="1" 
+AR Path="/58BF7F30/594EFC91" Ref="C23"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFC91" Ref="C23"  Part="1" 
+F 0 "C23" H 9275 2050 50  0000 L CNN
+F 1 "0.1uF" H 9275 1850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 9288 1800 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Taiyo-Yuden/TMK105BJ104KV-F/?qs=PzICbMaShUcuRhf9Ji%2f5mA==" H 9250 1950 50  0001 C CNN
+F 4 "TMK105BJ104KV-F" H 9250 1950 60  0001 C CNN "Part Number"
+F 5 "10%" H 9250 1950 60  0001 C CNN "Tolerance"
+F 6 "25V" H 9250 1950 60  0001 C CNN "Voltage"
+	1    9250 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR10
+U 1 1 594EFC93
+P 9100 1650
+AR Path="/5827BA51/594EFC93" Ref="#PWR10"  Part="1" 
+AR Path="/58C08CCE/594EFC93" Ref="#PWR37"  Part="1" 
+AR Path="/58BF15ED/594EFC93" Ref="#PWR48"  Part="1" 
+AR Path="/58BF179B/594EFC93" Ref="#PWR59"  Part="1" 
+AR Path="/58BF7F30/594EFC93" Ref="#PWR59"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFC93" Ref="#PWR11"  Part="1" 
+F 0 "#PWR11" H 9100 1400 50  0001 C CNN
+F 1 "Earth" H 9100 1500 50  0001 C CNN
+F 2 "" H 9100 1650 50  0000 C CNN
+F 3 "" H 9100 1650 50  0000 C CNN
+	1    9100 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C678
+U 1 1 594EFC96
+P 10750 1950
+AR Path="/5827BA51/594EFC96" Ref="C678"  Part="1" 
+AR Path="/58C08CCE/594EFC96" Ref="C8"  Part="1" 
+AR Path="/58BF15ED/594EFC96" Ref="C16"  Part="1" 
+AR Path="/58BF179B/594EFC96" Ref="C24"  Part="1" 
+AR Path="/58BF7F30/594EFC96" Ref="C24"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFC96" Ref="C24"  Part="1" 
+F 0 "C24" H 10775 2050 50  0000 L CNN
+F 1 "0.1uF" H 10775 1850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 10788 1800 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Taiyo-Yuden/TMK105BJ104KV-F/?qs=PzICbMaShUcuRhf9Ji%2f5mA==" H 10750 1950 50  0001 C CNN
+F 4 "TMK105BJ104KV-F" H 10750 1950 60  0001 C CNN "Part Number"
+F 5 "10%" H 10750 1950 60  0001 C CNN "Tolerance"
+F 6 "25V" H 10750 1950 60  0001 C CNN "Voltage"
+	1    10750 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR11
+U 1 1 594EFC99
+P 10750 2200
+AR Path="/5827BA51/594EFC99" Ref="#PWR11"  Part="1" 
+AR Path="/58C08CCE/594EFC99" Ref="#PWR38"  Part="1" 
+AR Path="/58BF15ED/594EFC99" Ref="#PWR49"  Part="1" 
+AR Path="/58BF179B/594EFC99" Ref="#PWR60"  Part="1" 
+AR Path="/58BF7F30/594EFC99" Ref="#PWR60"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFC99" Ref="#PWR12"  Part="1" 
+F 0 "#PWR12" H 10750 1950 50  0001 C CNN
+F 1 "Earth" H 10750 2050 50  0001 C CNN
+F 2 "" H 10750 2200 50  0000 C CNN
+F 3 "" H 10750 2200 50  0000 C CNN
+	1    10750 2200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 10050 3500
+$Comp
+L R R660
+U 1 1 58372713
+P 10500 3650
+AR Path="/5827BA51/58372713" Ref="R660"  Part="1" 
+AR Path="/58C08CCE/58372713" Ref="R26"  Part="1" 
+AR Path="/58BF15ED/58372713" Ref="R49"  Part="1" 
+AR Path="/58BF179B/58372713" Ref="R72"  Part="1" 
+AR Path="/58BF7F30/58372713" Ref="R72"  Part="1" 
+AR Path="/594EBB46/5827BA51/58372713" Ref="R72"  Part="1" 
+F 0 "R72" V 10580 3650 50  0000 C CNN
+F 1 "10.0k" V 10500 3650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 10430 3650 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Panasonic/ERJ-2RKF1002X/?qs=H7k1u0Mp9JRzR4nj0ZFtQQ==" H 10500 3650 50  0001 C CNN
+F 4 "1%" V 10500 3650 60  0001 C CNN "Tolerance"
+F 5 "1/10W" V 10500 3650 60  0001 C CNN "Power"
+F 6 "ERJ-2RKF1002X" V 10500 3650 60  0001 C CNN "Part Number"
+	1    10500 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R920
+U 1 1 594EFCA0
+P 10750 3650
+AR Path="/5827BA51/594EFCA0" Ref="R920"  Part="1" 
+AR Path="/58C08CCE/594EFCA0" Ref="R27"  Part="1" 
+AR Path="/58BF15ED/594EFCA0" Ref="R50"  Part="1" 
+AR Path="/58BF179B/594EFCA0" Ref="R73"  Part="1" 
+AR Path="/58BF7F30/594EFCA0" Ref="R73"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFCA0" Ref="R73"  Part="1" 
+F 0 "R73" V 10830 3650 50  0000 C CNN
+F 1 "10.0k" V 10750 3650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 10680 3650 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Panasonic/ERJ-2RKF1002X/?qs=H7k1u0Mp9JRzR4nj0ZFtQQ==" H 10750 3650 50  0001 C CNN
+F 4 "1%" V 10750 3650 60  0001 C CNN "Tolerance"
+F 5 "1/10W" V 10750 3650 60  0001 C CNN "Power"
+F 6 "ERJ-2RKF1002X" V 10750 3650 60  0001 C CNN "Part Number"
+	1    10750 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 2550 5500 2550
+Wire Wire Line
+	1700 2650 5500 2650
+Wire Wire Line
+	1700 2850 5500 2850
+Wire Wire Line
+	1700 2950 5500 2950
+Wire Wire Line
+	1700 3150 5500 3150
+Wire Wire Line
+	1700 3250 5500 3250
+Wire Wire Line
+	1700 3450 5500 3450
+Wire Wire Line
+	1700 3550 5500 3550
+Wire Wire Line
+	1700 4450 1800 4450
+Wire Wire Line
+	1700 4550 1800 4550
+Connection ~ 1800 4550
+Wire Wire Line
+	1800 4650 1700 4650
+Connection ~ 1800 4650
+Wire Wire Line
+	1800 4750 1700 4750
+Connection ~ 1800 4750
+Wire Wire Line
+	1700 4850 2450 4850
+Connection ~ 1800 4850
+Wire Wire Line
+	1700 5050 1950 5050
+Connection ~ 1800 5050
+Wire Wire Line
+	1700 5150 1800 5150
+Connection ~ 1800 5150
+Wire Wire Line
+	1800 5250 1700 5250
+Connection ~ 1800 5250
+Wire Wire Line
+	1800 5350 1700 5350
+Connection ~ 1800 5350
+Wire Wire Line
+	1800 4450 1800 4850
+Wire Wire Line
+	1800 5050 1800 5450
+Wire Wire Line
+	2450 4850 2450 5750
+Wire Wire Line
+	2250 5050 2450 5050
+Connection ~ 2450 5050
+Wire Wire Line
+	1800 5450 1950 5450
+Wire Wire Line
+	2250 5450 2450 5450
+Connection ~ 2450 5450
+Wire Wire Line
+	1700 4250 3750 4250
+Wire Wire Line
+	3300 5050 5400 5050
+Wire Wire Line
+	4050 5050 4050 5300
+Wire Wire Line
+	2900 4250 2900 5700
+Wire Wire Line
+	2900 5700 4250 5700
+Wire Wire Line
+	4050 5700 4050 5600
+Connection ~ 2900 4250
+Wire Wire Line
+	4750 5050 4750 5300
+Connection ~ 4050 5050
+Wire Wire Line
+	5400 5050 5400 5300
+Connection ~ 4750 5050
+Connection ~ 4050 5700
+Wire Wire Line
+	4550 5700 4750 5700
+Wire Wire Line
+	4750 5600 4750 5900
+Connection ~ 4750 5700
+Wire Wire Line
+	5400 6150 5050 6150
+Wire Wire Line
+	5400 5600 5400 6150
+Wire Wire Line
+	5400 5750 6050 5750
+Wire Wire Line
+	6050 5750 6050 5950
+Connection ~ 5400 5750
+Wire Wire Line
+	4750 6300 4750 6500
+Wire Wire Line
+	6050 6350 6050 6550
+Wire Wire Line
+	6350 6200 6800 6200
+Wire Wire Line
+	6600 6300 6600 6200
+Connection ~ 6600 6200
+Wire Wire Line
+	7100 6200 7900 6200
+Wire Wire Line
+	1700 3950 2500 3950
+Wire Wire Line
+	800  1850 800  1950
+Wire Wire Line
+	800  1950 1150 1950
+Wire Wire Line
+	1150 1850 1150 2050
+Connection ~ 1150 1950
+Wire Wire Line
+	800  1550 800  1450
+Wire Wire Line
+	800  1450 1900 1450
+Wire Wire Line
+	1150 1450 1150 1550
+Connection ~ 1150 1450
+Wire Wire Line
+	1200 650  2000 650 
+Wire Wire Line
+	1500 650  1500 900 
+Wire Wire Line
+	1500 900  1600 900 
+Wire Wire Line
+	2200 900  4300 900 
+Wire Wire Line
+	3200 900  3200 1000
+Wire Wire Line
+	2400 1000 2400 900 
+Connection ~ 2400 900 
+Wire Wire Line
+	2800 1000 2800 900 
+Connection ~ 2800 900 
+Wire Wire Line
+	2400 1400 3200 1400
+Wire Wire Line
+	3200 1400 3200 1300
+Wire Wire Line
+	2400 1300 2400 1600
+Wire Wire Line
+	2800 1300 2800 1400
+Connection ~ 2800 1400
+Connection ~ 2400 1400
+Connection ~ 3200 900 
+Wire Wire Line
+	3650 1650 3650 1850
+Connection ~ 3650 900 
+Wire Wire Line
+	3650 1250 5400 1250
+Wire Wire Line
+	5400 1250 5400 1350
+Connection ~ 3650 1250
+Wire Wire Line
+	3900 1250 3900 1350
+Connection ~ 3900 1250
+Wire Wire Line
+	4150 1250 4150 1350
+Connection ~ 4150 1250
+Wire Wire Line
+	4400 1250 4400 1350
+Connection ~ 4400 1250
+Wire Wire Line
+	4650 1250 4650 1350
+Connection ~ 4650 1250
+Wire Wire Line
+	4900 1250 4900 1350
+Connection ~ 4900 1250
+Wire Wire Line
+	5150 1250 5150 1350
+Connection ~ 5150 1250
+Wire Wire Line
+	3900 1650 3900 1850
+Wire Wire Line
+	4150 1650 4150 1850
+Wire Wire Line
+	4400 1650 4400 1850
+Wire Wire Line
+	4650 1650 4650 1850
+Wire Wire Line
+	4900 1650 4900 1850
+Wire Wire Line
+	5150 1650 5150 1850
+Wire Wire Line
+	5400 1650 5400 1850
+Wire Wire Line
+	3650 900  3650 1350
+Wire Wire Line
+	3650 2550 3650 2450
+Wire Wire Line
+	3900 2650 3900 2450
+Wire Wire Line
+	4150 2850 4150 2450
+Wire Wire Line
+	4400 2950 4400 2450
+Wire Wire Line
+	4650 3150 4650 2450
+Wire Wire Line
+	4900 3250 4900 2450
+Wire Wire Line
+	5150 3450 5150 2450
+Wire Wire Line
+	5400 3550 5400 2450
+Connection ~ 3650 2550
+Connection ~ 4150 2850
+Connection ~ 4650 3150
+Connection ~ 5150 3450
+Connection ~ 3900 2650
+Connection ~ 4400 2950
+Connection ~ 4900 3250
+Connection ~ 5400 3550
+Wire Wire Line
+	6400 3500 7450 3500
+Wire Wire Line
+	1700 3750 2500 3750
+Wire Wire Line
+	6700 3000 7450 3000
+Wire Wire Line
+	1700 4050 2500 4050
+Wire Wire Line
+	1700 4150 2500 4150
+Wire Wire Line
+	6600 6600 6600 6700
+Wire Wire Line
+	7450 4400 7400 4400
+Wire Wire Line
+	7400 4400 7400 4750
+Wire Wire Line
+	7450 4500 7400 4500
+Connection ~ 7400 4500
+Wire Wire Line
+	7450 4600 7400 4600
+Connection ~ 7400 4600
+Wire Wire Line
+	8550 2200 10150 2200
+Wire Wire Line
+	10150 2200 10150 2700
+Wire Wire Line
+	10150 2700 10050 2700
+Wire Wire Line
+	10350 1750 10350 2500
+Wire Wire Line
+	10050 2500 10500 2500
+Wire Wire Line
+	9250 2200 9250 2100
+Connection ~ 9250 2200
+Wire Wire Line
+	9100 1650 9100 1550
+Wire Wire Line
+	9100 1550 9250 1550
+Wire Wire Line
+	9250 1550 9250 1800
+Wire Wire Line
+	9850 1750 10750 1750
+Wire Wire Line
+	10750 1750 10750 1800
+Connection ~ 10350 1750
+Wire Wire Line
+	10750 2100 10750 2200
+Wire Wire Line
+	10050 2900 11150 2900
+Wire Wire Line
+	10750 3450 10750 3500
+Wire Wire Line
+	10500 3450 10750 3450
+Wire Wire Line
+	10500 2500 10500 3500
+Connection ~ 10350 2500
+Connection ~ 10500 3450
+Wire Wire Line
+	10500 3800 10300 3800
+Wire Wire Line
+	10300 3800 10300 3700
+Wire Wire Line
+	10300 3700 10050 3700
+Wire Wire Line
+	10750 3800 10750 3900
+Wire Wire Line
+	10750 3900 10200 3900
+Wire Wire Line
+	10200 3900 10200 3800
+Wire Wire Line
+	10200 3800 10050 3800
+Text Notes 6250 750  0    60   ~ 0
+To FPGA 3.3 Volt Bank
+Wire Wire Line
+	6300 900  7450 900 
+Wire Wire Line
+	6300 1050 7450 1050
+Wire Wire Line
+	6300 1200 7450 1200
+Wire Wire Line
+	6300 1350 7450 1350
+Wire Notes Line
+	6150 600  6150 1750
+Wire Notes Line
+	6150 1750 8700 1750
+Wire Notes Line
+	8700 1750 8700 600 
+Wire Notes Line
+	8700 600  6150 600 
+Wire Notes Line
+	5450 2400 5450 4200
+Wire Notes Line
+	5450 4200 6300 4200
+Wire Notes Line
+	6300 4200 6300 2400
+Wire Notes Line
+	6300 2400 5450 2400
+Text Notes 5500 3850 0    47   ~ 0
+FPGA MGT + Clock
+$Comp
+L R R916
+U 1 1 5837DBD8
+P 9700 5250
+AR Path="/5827BA51/5837DBD8" Ref="R916"  Part="1" 
+AR Path="/58C08CCE/5837DBD8" Ref="R23"  Part="1" 
+AR Path="/58BF15ED/5837DBD8" Ref="R46"  Part="1" 
+AR Path="/58BF179B/5837DBD8" Ref="R69"  Part="1" 
+AR Path="/58BF7F30/5837DBD8" Ref="R69"  Part="1" 
+AR Path="/594EBB46/5827BA51/5837DBD8" Ref="R69"  Part="1" 
+F 0 "R69" V 9780 5250 50  0000 C CNN
+F 1 "10.0k" V 9700 5250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 9630 5250 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Panasonic/ERJ-2RKF1002X/?qs=H7k1u0Mp9JRzR4nj0ZFtQQ==" H 9700 5250 50  0001 C CNN
+F 4 "1%" V 9700 5250 60  0001 C CNN "Tolerance"
+F 5 "1/10W" V 9700 5250 60  0001 C CNN "Power"
+F 6 "ERJ-2RKF1002X" V 9700 5250 60  0001 C CNN "Part Number"
+	1    9700 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R917
+U 1 1 5837F34C
+P 8650 6050
+AR Path="/5827BA51/5837F34C" Ref="R917"  Part="1" 
+AR Path="/58C08CCE/5837F34C" Ref="R22"  Part="1" 
+AR Path="/58BF15ED/5837F34C" Ref="R45"  Part="1" 
+AR Path="/58BF179B/5837F34C" Ref="R68"  Part="1" 
+AR Path="/58BF7F30/5837F34C" Ref="R68"  Part="1" 
+AR Path="/594EBB46/5827BA51/5837F34C" Ref="R68"  Part="1" 
+F 0 "R68" V 8730 6050 50  0000 C CNN
+F 1 "10.0k" V 8650 6050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 8580 6050 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Panasonic/ERJ-2RKF1002X/?qs=H7k1u0Mp9JRzR4nj0ZFtQQ==" H 8650 6050 50  0001 C CNN
+F 4 "1%" V 8650 6050 60  0001 C CNN "Tolerance"
+F 5 "1/10W" V 8650 6050 60  0001 C CNN "Power"
+F 6 "ERJ-2RKF1002X" V 8650 6050 60  0001 C CNN "Part Number"
+	1    8650 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 5600 8650 5600
+Wire Wire Line
+	8650 5600 8650 5900
+$Comp
+L Earth #PWR8
+U 1 1 594EFCA8
+P 8650 6300
+AR Path="/5827BA51/594EFCA8" Ref="#PWR8"  Part="1" 
+AR Path="/58C08CCE/594EFCA8" Ref="#PWR35"  Part="1" 
+AR Path="/58BF15ED/594EFCA8" Ref="#PWR46"  Part="1" 
+AR Path="/58BF179B/594EFCA8" Ref="#PWR57"  Part="1" 
+AR Path="/58BF7F30/594EFCA8" Ref="#PWR57"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFCA8" Ref="#PWR9"  Part="1" 
+F 0 "#PWR9" H 8650 6050 50  0001 C CNN
+F 1 "Earth" H 8650 6150 50  0001 C CNN
+F 2 "" H 8650 6300 50  0000 C CNN
+F 3 "" H 8650 6300 50  0000 C CNN
+	1    8650 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 6200 8650 6300
+$Comp
+L MMBF170 Q46
+U 1 1 58383D30
+P 8950 5750
+AR Path="/5827BA51/58383D30" Ref="Q46"  Part="1" 
+AR Path="/58C08CCE/58383D30" Ref="Q3"  Part="1" 
+AR Path="/58BF15ED/58383D30" Ref="Q6"  Part="1" 
+AR Path="/58BF179B/58383D30" Ref="Q9"  Part="1" 
+AR Path="/58BF7F30/58383D30" Ref="Q9"  Part="1" 
+AR Path="/594EBB46/5827BA51/58383D30" Ref="Q9"  Part="1" 
+F 0 "Q9" H 9150 5825 50  0000 L CNN
+F 1 "2N7002_215" H 9150 5750 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 9150 5675 50  0001 L CIN
+F 3 "2N7002,215" H 8950 5750 50  0001 L CNN
+F 4 "771-2N7002-T/R" H 8950 5750 60  0001 C CNN "Mouser PN"
+	1    8950 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 5800 8650 5800
+Connection ~ 8650 5800
+$Comp
+L Earth #PWR9
+U 1 1 594EFCAF
+P 9050 6100
+AR Path="/5827BA51/594EFCAF" Ref="#PWR9"  Part="1" 
+AR Path="/58C08CCE/594EFCAF" Ref="#PWR36"  Part="1" 
+AR Path="/58BF15ED/594EFCAF" Ref="#PWR47"  Part="1" 
+AR Path="/58BF179B/594EFCAF" Ref="#PWR58"  Part="1" 
+AR Path="/58BF7F30/594EFCAF" Ref="#PWR58"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFCAF" Ref="#PWR10"  Part="1" 
+F 0 "#PWR10" H 9050 5850 50  0001 C CNN
+F 1 "Earth" H 9050 5950 50  0001 C CNN
+F 2 "" H 9050 6100 50  0000 C CNN
+F 3 "" H 9050 6100 50  0000 C CNN
+	1    9050 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 5950 9050 6100
+Wire Wire Line
+	9050 5550 9050 5450
+Wire Wire Line
+	9050 5450 10800 5450
+Wire Wire Line
+	9700 5400 9700 5450
+Connection ~ 9700 5450
+Wire Wire Line
+	8800 5100 9700 5100
+Wire Wire Line
+	6300 1500 7450 1500
+Text HLabel 1200 650  0    60   Input ~ 12
+BOARD_3V3
+Connection ~ 1500 650 
+Text Label 1600 650  0    60   ~ 0
+BOARD_3V3
+Text Label 9850 1750 0    60   ~ 0
+BOARD_3V3
+Text Label 8850 5100 0    60   ~ 0
+BOARD_3V3
+Text Label 8700 2200 0    60   ~ 0
+UTIL_5V0
+Text HLabel 8550 2200 0    60   Input ~ 0
+UTIL_5V0
+$Comp
+L R R3
+U 1 1 594EFCB9
+P 10250 3200
+AR Path="/5827BA51/594EFCB9" Ref="R3"  Part="1" 
+AR Path="/58C08CCE/594EFCB9" Ref="R24"  Part="1" 
+AR Path="/58BF15ED/594EFCB9" Ref="R47"  Part="1" 
+AR Path="/58BF179B/594EFCB9" Ref="R70"  Part="1" 
+AR Path="/58BF7F30/594EFCB9" Ref="R70"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFCB9" Ref="R70"  Part="1" 
+F 0 "R70" V 10330 3200 50  0000 C CNN
+F 1 "0k" V 10250 3200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 10180 3200 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Panasonic/ERJ-6GEY0R00V/?qs=tQNqqtTOejLLHbaWAzeH1w==" H 10250 3200 50  0001 C CNN
+F 4 "5%" V 10250 3200 60  0001 C CNN "Tolerance"
+F 5 "NA" V 10250 3200 60  0001 C CNN "Power"
+F 6 "ERJ-6GEY0R00V" V 10250 3200 60  0001 C CNN "Part Number"
+	1    10250 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R4
+U 1 1 58BD288F
+P 10250 3300
+AR Path="/5827BA51/58BD288F" Ref="R4"  Part="1" 
+AR Path="/58C08CCE/58BD288F" Ref="R25"  Part="1" 
+AR Path="/58BF15ED/58BD288F" Ref="R48"  Part="1" 
+AR Path="/58BF179B/58BD288F" Ref="R71"  Part="1" 
+AR Path="/58BF7F30/58BD288F" Ref="R71"  Part="1" 
+AR Path="/594EBB46/5827BA51/58BD288F" Ref="R71"  Part="1" 
+F 0 "R71" V 10150 3350 50  0000 C CNN
+F 1 "0k" V 10250 3300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 10180 3300 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Panasonic/ERJ-6GEY0R00V/?qs=tQNqqtTOejLLHbaWAzeH1w==" H 10250 3300 50  0001 C CNN
+F 4 "5%" V 10250 3300 60  0001 C CNN "Tolerance"
+F 5 "NA" V 10250 3300 60  0001 C CNN "Power"
+F 6 "ERJ-6GEY0R00V" V 10250 3300 60  0001 C CNN "Part Number"
+	1    10250 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10050 3200 10100 3200
+Wire Wire Line
+	10050 3300 10100 3300
+Wire Wire Line
+	10400 3200 11150 3200
+Wire Wire Line
+	10400 3300 11150 3300
+$Comp
+L R R1
+U 1 1 594EFCC0
+P 7200 3200
+AR Path="/5827BA51/594EFCC0" Ref="R1"  Part="1" 
+AR Path="/58C08CCE/594EFCC0" Ref="R20"  Part="1" 
+AR Path="/58BF15ED/594EFCC0" Ref="R43"  Part="1" 
+AR Path="/58BF179B/594EFCC0" Ref="R66"  Part="1" 
+AR Path="/58BF7F30/594EFCC0" Ref="R66"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFCC0" Ref="R66"  Part="1" 
+F 0 "R66" V 7280 3200 50  0000 C CNN
+F 1 "0k" V 7200 3200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 7130 3200 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Panasonic/ERJ-6GEY0R00V/?qs=tQNqqtTOejLLHbaWAzeH1w==" H 7200 3200 50  0001 C CNN
+F 4 "5%" V 7200 3200 60  0001 C CNN "Tolerance"
+F 5 "NA" V 7200 3200 60  0001 C CNN "Power"
+F 6 "ERJ-6GEY0R00V" V 7200 3200 60  0001 C CNN "Part Number"
+	1    7200 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R2
+U 1 1 594EFCC3
+P 7200 3300
+AR Path="/5827BA51/594EFCC3" Ref="R2"  Part="1" 
+AR Path="/58C08CCE/594EFCC3" Ref="R21"  Part="1" 
+AR Path="/58BF15ED/594EFCC3" Ref="R44"  Part="1" 
+AR Path="/58BF179B/594EFCC3" Ref="R67"  Part="1" 
+AR Path="/58BF7F30/594EFCC3" Ref="R67"  Part="1" 
+AR Path="/594EBB46/5827BA51/594EFCC3" Ref="R67"  Part="1" 
+F 0 "R67" V 7100 3350 50  0000 C CNN
+F 1 "0k" V 7200 3300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 7130 3300 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Panasonic/ERJ-6GEY0R00V/?qs=tQNqqtTOejLLHbaWAzeH1w==" H 7200 3300 50  0001 C CNN
+F 4 "5%" V 7200 3300 60  0001 C CNN "Tolerance"
+F 5 "NA" V 7200 3300 60  0001 C CNN "Power"
+F 6 "ERJ-6GEY0R00V" V 7200 3300 60  0001 C CNN "Part Number"
+	1    7200 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6400 3200 7050 3200
+Wire Wire Line
+	6400 3300 7050 3300
+Wire Wire Line
+	7350 3200 7450 3200
+Wire Wire Line
+	7350 3300 7450 3300
+Text HLabel 5500 2550 2    60   Output ~ 0
+HDMI_RX_CLK_P
+Text HLabel 5500 2650 2    60   Output ~ 0
+HDMI_RX_CLK_N
+Text HLabel 5500 2850 2    60   Output ~ 0
+HDMI_RX0_P
+Text HLabel 5500 2950 2    60   Output ~ 0
+HDMI_RX0_N
+Text HLabel 5500 3150 2    60   Output ~ 0
+HDMI_RX1_P
+Text HLabel 5500 3250 2    60   Output ~ 0
+HDMI_RX1_N
+Text HLabel 5500 3450 2    60   Output ~ 0
+HDMI_RX2_P
+Text HLabel 5500 3550 2    60   Output ~ 0
+HDMI_RX2_N
+Text Label 2500 3750 2    60   ~ 0
+RX_CEC_SINK
+Text Label 6700 3000 0    60   ~ 0
+RX_CEC_SINK
+Text Label 2500 4050 2    60   ~ 0
+HDMI_RX_SCL
+Text Label 6400 3200 0    60   ~ 0
+HDMI_RX_SCL
+Text Label 6400 3300 0    60   ~ 0
+HDMI_RX_SDA
+Text Label 2500 4150 2    60   ~ 0
+HDMI_RX_SDA
+Text Label 2500 3950 2    60   ~ 0
+HDMI_5V0_RX
+Text Label 3300 5050 0    60   ~ 0
+HDMI_5V0_RX
+Text Label 1900 1450 2    60   ~ 0
+HDMI_5V0_RX
+Text Label 7950 5600 0    60   ~ 0
+HDMI_5V0_RX
+Text Label 3750 4250 2    60   ~ 0
+HDMI_RX_HPD_OUT
+Text Label 6400 3500 0    60   ~ 0
+HDMI_RX_HPD_OUT
+Text Label 7900 6200 2    60   ~ 0
+HDMI_RX_HPD
+Text Label 6300 1350 0    60   ~ 0
+HDMI_RX_HPD
+Text Label 10800 5450 2    60   ~ 0
+HDMI_RX_PWR_DET
+Text Label 6300 1500 0    60   ~ 0
+HDMI_RX_PWR_DET
+Text Label 6300 1200 0    60   ~ 0
+HDMI_RX_SNK_SDA
+Text Label 11150 3300 2    39   ~ 0
+HDMI_RX_SNK_SDA
+Text Label 11150 3200 2    39   ~ 0
+HDMI_RX_SNK_SCL
+Text Label 6300 1050 0    60   ~ 0
+HDMI_RX_SNK_SCL
+Text Label 6300 900  0    60   ~ 0
+HDMI_RX_CEC_SINK
+Text Label 11150 2900 2    60   ~ 0
+HDMI_RX_CEC_SINK
+Text HLabel 7450 900  2    60   BiDi ~ 0
+HDMI_RX_CEC_SINK
+Text HLabel 7450 1050 2    60   Output ~ 0
+HDMI_RX_SNK_SCL
+Text HLabel 7450 1200 2    60   BiDi ~ 0
+HDMI_RX_SNK_SDA
+Text HLabel 7450 1350 2    60   Output ~ 0
+HDMI_RX_HPD
+Text HLabel 7450 1500 2    60   Output ~ 0
+HDMI_RX_PWR_DET
+Text Label 4300 900  2    60   ~ 0
+HDMI_RX_3V3
+$EndSCHEMATC
