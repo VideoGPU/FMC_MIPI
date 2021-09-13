@@ -1,0 +1,5 @@
+* camera via Jetson TX2 connector
+* camera in From OpenSource MIPI RX board
+* camera out via Jetson TX2 connector
+
+All with LVDS interfaces
