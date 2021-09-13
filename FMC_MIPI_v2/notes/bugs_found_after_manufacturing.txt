@@ -1,4 +1,0 @@
-
-*Part of the signals connected to FMC connector are not populated,
-and not connected to FPGA pins in Kintex eval board.
-TODO: change these pins, manwhile can use Virtex 6 board for debugging.
