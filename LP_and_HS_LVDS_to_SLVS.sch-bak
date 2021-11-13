@@ -1,0 +1,294 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L FMC_MIPI_v2:PI3WVR628XBEX IC?
+U 1 1 61943BD3
+P 7750 2850
+AR Path="/61943BD3" Ref="IC?"  Part="1" 
+AR Path="/6193F705/61943BD3" Ref="IC?"  Part="1" 
+F 0 "IC?" H 7750 3700 50  0000 C CNN
+F 1 "PI3WVR628XBEX" H 7750 3550 50  0000 C CNN
+F 2 "BGA24C40P4X6_170X240X50" H 8800 2950 50  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/PI3WVR628.pdf" H 8800 2850 50  0001 L CNN
+F 4 "Multiplexer Switch ICs MIPI Switch X1-LGA2417-24 T&R 5K" H 8800 2750 50  0001 L CNN "Description"
+F 5 "0.5" H 8800 2650 50  0001 L CNN "Height"
+F 6 "621-PI3WVR628XBEX" H 8800 2550 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/PI3WVR628XBEX?qs=DPoM0jnrROVbwpsJAUoaSg%3D%3D" H 8800 2450 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Diodes Inc." H 8800 2350 50  0001 L CNN "Manufacturer_Name"
+F 9 "PI3WVR628XBEX" H 8800 2250 50  0001 L CNN "Manufacturer_Part_Number"
+	1    7750 2850
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 4900 2200 1050 300 
+U 61946DF5
+F0 "LVDS_2_SLVS" 50
+F1 "LVDS_2_SLVS.sch" 50
+F2 "LVDS_IN_P" I L 4900 2300 50 
+F3 "LVDS_IN_N" I L 4900 2400 50 
+F4 "SLVS_OUT_P" O R 5950 2300 50 
+F5 "SLVS_OUT_N" O R 5950 2400 50 
+$EndSheet
+Wire Wire Line
+	5950 2300 7150 2300
+Wire Wire Line
+	5950 2400 7150 2400
+$Sheet
+S 3750 2550 1050 300 
+U 61958A60
+F0 "sheet61958A5A" 50
+F1 "LVDS_2_SLVS.sch" 50
+F2 "LVDS_IN_P" I L 3750 2650 50 
+F3 "LVDS_IN_N" I L 3750 2750 50 
+F4 "SLVS_OUT_P" O R 4800 2650 50 
+F5 "SLVS_OUT_N" O R 4800 2750 50 
+$EndSheet
+$Sheet
+S 3750 3100 1050 300 
+U 61958BD7
+F0 "sheet61958BD1" 50
+F1 "LVDS_2_SLVS.sch" 50
+F2 "LVDS_IN_P" I L 3750 3200 50 
+F3 "LVDS_IN_N" I L 3750 3300 50 
+F4 "SLVS_OUT_P" O R 4800 3200 50 
+F5 "SLVS_OUT_N" O R 4800 3300 50 
+$EndSheet
+$Sheet
+S 3750 3800 1050 300 
+U 61958D9F
+F0 "sheet61958D99" 50
+F1 "LVDS_2_SLVS.sch" 50
+F2 "LVDS_IN_P" I L 3750 3900 50 
+F3 "LVDS_IN_N" I L 3750 4000 50 
+F4 "SLVS_OUT_P" O R 4800 3900 50 
+F5 "SLVS_OUT_N" O R 4800 4000 50 
+$EndSheet
+$Sheet
+S 3800 4450 1050 300 
+U 61958F85
+F0 "sheet61958F7F" 50
+F1 "LVDS_2_SLVS.sch" 50
+F2 "LVDS_IN_P" I L 3800 4550 50 
+F3 "LVDS_IN_N" I L 3800 4650 50 
+F4 "SLVS_OUT_P" O R 4850 4550 50 
+F5 "SLVS_OUT_N" O R 4850 4650 50 
+$EndSheet
+$Sheet
+S 3800 5100 1050 300 
+U 61959195
+F0 "sheet6195918F" 50
+F1 "LVDS_2_SLVS.sch" 50
+F2 "LVDS_IN_P" I L 3800 5200 50 
+F3 "LVDS_IN_N" I L 3800 5300 50 
+F4 "SLVS_OUT_P" O R 4850 5200 50 
+F5 "SLVS_OUT_N" O R 4850 5300 50 
+$EndSheet
+Wire Wire Line
+	6050 2650 6050 2500
+Wire Wire Line
+	6050 2500 7150 2500
+Wire Wire Line
+	4800 2650 6050 2650
+Wire Wire Line
+	6200 2750 6200 2600
+Wire Wire Line
+	6200 2600 7150 2600
+Wire Wire Line
+	4800 2750 6200 2750
+Wire Wire Line
+	6300 3200 6300 2700
+Wire Wire Line
+	6300 2700 7150 2700
+Wire Wire Line
+	4800 3200 6300 3200
+Wire Wire Line
+	6400 3300 6400 2800
+Wire Wire Line
+	6400 2800 7150 2800
+Wire Wire Line
+	4800 3300 6400 3300
+Wire Wire Line
+	6550 3900 6550 2950
+Wire Wire Line
+	6550 2950 7150 2950
+Wire Wire Line
+	4800 3900 6550 3900
+Wire Wire Line
+	6650 4000 6650 3050
+Wire Wire Line
+	6650 3050 7150 3050
+Wire Wire Line
+	4800 4000 6650 4000
+Wire Wire Line
+	6750 4550 6750 3150
+Wire Wire Line
+	6750 3150 7150 3150
+Wire Wire Line
+	4850 4550 6750 4550
+Wire Wire Line
+	6850 4650 6850 3250
+Wire Wire Line
+	6850 3250 7150 3250
+Wire Wire Line
+	4850 4650 6850 4650
+Wire Wire Line
+	6950 5200 6950 3350
+Wire Wire Line
+	6950 3350 7150 3350
+Wire Wire Line
+	4850 5200 6950 5200
+Wire Wire Line
+	7050 5300 7050 3450
+Wire Wire Line
+	7050 3450 7150 3450
+Wire Wire Line
+	4850 5300 7050 5300
+Text HLabel 9200 2650 2    50   Input ~ 0
+JETSON_MIPI_CLK_P
+Text HLabel 9200 2750 2    50   Input ~ 0
+JETSON_MIPI_CLK_N
+Text HLabel 9200 2850 2    50   Input ~ 0
+JETSON_MIPI_D0_P
+Text HLabel 9200 3050 2    50   Input ~ 0
+JETSON_MIPI_D1_P
+Text HLabel 9200 3150 2    50   Input ~ 0
+JETSON_MIPI_D1_N
+Text HLabel 9200 2950 2    50   Input ~ 0
+JETSON_MIPI_D0_N
+Wire Wire Line
+	8350 2650 9200 2650
+Wire Wire Line
+	8350 2750 9200 2750
+Wire Wire Line
+	8350 2850 9200 2850
+Wire Wire Line
+	8350 2950 9200 2950
+Wire Wire Line
+	8350 3050 9200 3050
+Wire Wire Line
+	8350 3150 9200 3150
+$Comp
+L FMC_MIPI_v2:Earth #PWR?
+U 1 1 6197263A
+P 8500 3650
+F 0 "#PWR?" H 8500 3400 50  0001 C CNN
+F 1 "Earth" H 8500 3500 50  0001 C CNN
+F 2 "" H 8500 3650 50  0001 C CNN
+F 3 "~" H 8500 3650 50  0001 C CNN
+	1    8500 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 3500 8500 3500
+Wire Wire Line
+	8500 3500 8500 3650
+Text HLabel 1750 2400 0    50   Input ~ 0
+HS_CLK_P
+Text HLabel 1750 2500 0    50   Input ~ 0
+HS_CLK_N
+Text HLabel 1750 2600 0    50   Input ~ 0
+HS_D0_P
+Text HLabel 1750 2800 0    50   Input ~ 0
+HS_D1_P
+Text HLabel 1750 2900 0    50   Input ~ 0
+HS_D1_N
+Text HLabel 1750 2700 0    50   Input ~ 0
+HS_D0_N
+Text HLabel 1900 4400 0    50   Input ~ 0
+LP_CLK_P
+Text HLabel 1900 4500 0    50   Input ~ 0
+LP_CLK_N
+Text HLabel 1900 4600 0    50   Input ~ 0
+LP_D0_P
+Text HLabel 1900 4800 0    50   Input ~ 0
+LP_D1_P
+Text HLabel 1900 4900 0    50   Input ~ 0
+LP_D1_N
+Text HLabel 1900 4700 0    50   Input ~ 0
+LP_D0_N
+Wire Wire Line
+	2750 4900 1900 4900
+Wire Wire Line
+	2700 2900 2700 3300
+Wire Wire Line
+	2700 3300 3750 3300
+Wire Wire Line
+	1750 2900 2700 2900
+Wire Wire Line
+	2800 2800 2800 3200
+Wire Wire Line
+	2800 3200 3750 3200
+Wire Wire Line
+	1750 2800 2800 2800
+Wire Wire Line
+	3300 2600 3300 2650
+Wire Wire Line
+	3300 2650 3750 2650
+Wire Wire Line
+	1750 2600 3300 2600
+Wire Wire Line
+	3200 2700 3200 2750
+Wire Wire Line
+	3200 2750 3750 2750
+Wire Wire Line
+	1750 2700 3200 2700
+Wire Wire Line
+	3300 2500 3300 2400
+Wire Wire Line
+	3300 2400 4900 2400
+Wire Wire Line
+	1750 2500 3300 2500
+Wire Wire Line
+	3200 2300 4900 2300
+Wire Wire Line
+	1750 2400 3200 2400
+Wire Wire Line
+	3200 2400 3200 2300
+Wire Wire Line
+	2850 4400 2850 3900
+Wire Wire Line
+	2850 3900 3750 3900
+Wire Wire Line
+	1900 4400 2850 4400
+Wire Wire Line
+	2950 4500 2950 4000
+Wire Wire Line
+	2950 4000 3750 4000
+Wire Wire Line
+	1900 4500 2950 4500
+Wire Wire Line
+	3350 4600 3350 4550
+Wire Wire Line
+	3350 4550 3800 4550
+Wire Wire Line
+	1900 4600 3350 4600
+Wire Wire Line
+	3450 4700 3450 4650
+Wire Wire Line
+	3450 4650 3800 4650
+Wire Wire Line
+	1900 4700 3450 4700
+Wire Wire Line
+	2750 4900 2750 5300
+Wire Wire Line
+	2750 5300 3800 5300
+Wire Wire Line
+	2850 4800 2850 5200
+Wire Wire Line
+	2850 5200 3800 5200
+Wire Wire Line
+	1900 4800 2850 4800
+$EndSCHEMATC

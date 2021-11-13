@@ -1,4 +1,47 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 900  850  2800 1450
+U 6170B975
+F0 "FMC_Connector" 50
+F1 "FMC_Connector.sch" 50
+$EndSheet
+$Sheet
+S 7700 2850 2650 1500
+U 61ACA102
+F0 "Jetson_connector" 50
+F1 "Jetson_connector.sch" 50
+$EndSheet
+$Comp
+L FMC_MIPI_v2:Earth #PWR0101
+U 1 1 61B01356
+P 4600 4650
+F 0 "#PWR0101" H 4600 4400 50  0001 C CNN
+F 1 "Earth" H 4600 4500 50  0001 C CNN
+F 2 "" H 4600 4650 50  0001 C CNN
+F 3 "~" H 4600 4650 50  0001 C CNN
+	1    4600 4650
+	1    0    0    -1  
+$EndComp
+Text Notes 6850 5350 0    50   ~ 0
+PI3WVR646 is 10 lines!!! use it!! when available\n\nPI3WVR626	PI3WVR626 Datasheet	2:1 MIPI 2-Data Lane, 1.5Gbps(D-PHY) Switch\nPI3WVR628	PI3WVR628 Datasheet	2:1 MIPI 2-Data Lane, 4.5Gbps(D-PHY) switch\nPI3WVR646	PI3WVR646 Datasheet	2:1 MIPI 4-Data Lane, 2.5Gbps(D-PHY) Switch\nPI3WVR648	PI3WVR648 Product brief	2:1 MIPI 4-Data Lane, 4.5Gbps(D-PHY) Switch\n		\n\n\n\nConsider using SNx5DPHY440SS retimer (no stock)
+$Sheet
+S 1800 3750 1950 1150
+U 6193F705
+F0 "LP_and_HS_LVDS_to_SLVS" 50
+F1 "LP_and_HS_LVDS_to_SLVS.sch" 50
+$EndSheet
 $EndSCHEMATC

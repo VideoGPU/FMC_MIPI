@@ -33,3 +33,11 @@ I2C switches:
 https://www.ti.com/interface/i2c/switches-and-multiplexers/products.html?keyMatch=I2C
 
 check this one: PCA9546A
+
+
+Symbol paths:
+FMC_MIPI_v2
+desc_FMC_MIPI_v2
+${KIPRJMOD}/Libraries/Symbols/FMC_MIPI_v2.lib
+
+hdmi3dmix:hdmi3dmix-ASP-134488-01_VER2

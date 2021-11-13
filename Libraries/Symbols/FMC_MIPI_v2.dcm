@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP HD3SS3411TRWARQ1
+D PCI Express Switch Mux/Demux 1-CH Automotive 14-Pin WQFN EP T/R
+F https://www.ti.com/lit/ds/symlink/hd3ss3411-q1.pdf?ts=1613729922486&ref_url=https%253A%252F%252Fwww.ti.com%252Fstore%252Fti%252Fen%252Fp%252Fproduct%252F%253Fp%253DHD3SS3411TRWARQ1
+$ENDCMP
+#
+$CMP PI3WVR628XBEX
+D Multiplexer Switch ICs MIPI Switch X1-LGA2417-24 T&R 5K
+F https://www.diodes.com/assets/Datasheets/PI3WVR628.pdf
+$ENDCMP
+#
+#End Doc Library
