@@ -1,5 +1,2 @@
 # FMC_MIPI
-FMC card to allow interfacing Xilinx FPGA boards with Jetson TX2 or TX1 via CSI-2 camera interface.
-Made with KiCad
-
-Copyright: free for non-commercial use. Please contact michael@videogpu.com for commercial licence.
+Work in progress. The goal is to interface the Jetson TX2 board from Xililnx FPGA via the camera CSI interface
