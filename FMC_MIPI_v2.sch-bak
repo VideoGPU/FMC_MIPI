@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 10
+Sheet 1 32
 Title ""
 Date ""
 Rev ""
@@ -28,20 +28,20 @@ $EndSheet
 $Comp
 L FMC_MIPI_v2:Earth #PWR0101
 U 1 1 61B01356
-P 4600 4650
-F 0 "#PWR0101" H 4600 4400 50  0001 C CNN
-F 1 "Earth" H 4600 4500 50  0001 C CNN
-F 2 "" H 4600 4650 50  0001 C CNN
-F 3 "~" H 4600 4650 50  0001 C CNN
-	1    4600 4650
+P 5950 5600
+F 0 "#PWR0101" H 5950 5350 50  0001 C CNN
+F 1 "Earth" H 5950 5450 50  0001 C CNN
+F 2 "" H 5950 5600 50  0001 C CNN
+F 3 "~" H 5950 5600 50  0001 C CNN
+	1    5950 5600
 	1    0    0    -1  
 $EndComp
 Text Notes 6850 5350 0    50   ~ 0
 PI3WVR646 is 10 lines!!! use it!! when available\n\nPI3WVR626	PI3WVR626 Datasheet	2:1 MIPI 2-Data Lane, 1.5Gbps(D-PHY) Switch\nPI3WVR628	PI3WVR628 Datasheet	2:1 MIPI 2-Data Lane, 4.5Gbps(D-PHY) switch\nPI3WVR646	PI3WVR646 Datasheet	2:1 MIPI 4-Data Lane, 2.5Gbps(D-PHY) Switch\nPI3WVR648	PI3WVR648 Product brief	2:1 MIPI 4-Data Lane, 4.5Gbps(D-PHY) Switch\n		\n\n\n\nConsider using SNx5DPHY440SS retimer (no stock)
 $Sheet
-S 1800 3750 1950 1150
-U 6193F705
-F0 "LP_and_HS_LVDS_to_SLVS" 50
-F1 "LP_and_HS_LVDS_to_SLVS.sch" 50
+S 4600 2900 1650 850 
+U 6191D89C
+F0 "LVDS_to_Jetson_lines" 50
+F1 "LVDS_to_Jetson_lines.sch" 50
 $EndSheet
 $EndSCHEMATC
