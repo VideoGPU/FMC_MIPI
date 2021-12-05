@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 46
+Sheet 2 32
 Title ""
 Date ""
 Rev ""
@@ -124,10 +124,10 @@ F 3 "https://www.mouser.com/ProductDetail/Samtec/ASP-134488-01?qs=jyzYFa4oMQiB2F
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR0102
+L power:Earth #PWR02
 U 1 1 61B20ADE
 P 1950 1450
-F 0 "#PWR0102" H 1950 1200 50  0001 C CNN
+F 0 "#PWR02" H 1950 1200 50  0001 C CNN
 F 1 "Earth" H 1950 1300 50  0001 C CNN
 F 2 "" H 1950 1450 50  0001 C CNN
 F 3 "~" H 1950 1450 50  0001 C CNN
