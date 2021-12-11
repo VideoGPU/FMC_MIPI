@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 4 7
+Sheet 4 15
 Title ""
 Date ""
 Rev ""
@@ -20,11 +20,11 @@ Wire Wire Line
 Text Label 1750 650  0    50   ~ 0
 VDD_VADJ
 Text HLabel 1350 1250 0    50   Input ~ 0
-SWITCH_SEL_CAM_A
+SWITCH_CAM_C_D
 Wire Wire Line
 	1350 1250 1800 1250
 Text Label 1800 1250 0    50   ~ 0
-SWITCH_SEL_CAM_A
+SWITCH_CAM_C_D
 Text HLabel 1350 1400 0    50   Input ~ 0
 SWITCH_SEL_CAM_B
 Wire Wire Line
@@ -83,17 +83,17 @@ Wire Wire Line
 	1300 950  1750 950 
 Text Label 1750 950  0    50   ~ 0
 VOLT_3P3
-Text GLabel 10050 3450 2    50   Output ~ 0
+Text GLabel 5500 3450 2    50   Output ~ 0
 CSI_D_D0_P
-Text GLabel 10050 3550 2    50   Output ~ 0
+Text GLabel 5500 3550 2    50   Output ~ 0
 CSI_D_D0_N
-Text GLabel 10050 3250 2    50   Output ~ 0
+Text GLabel 5500 3250 2    50   Output ~ 0
 CSI_D_CLK_P
-Text GLabel 10050 3350 2    50   Output ~ 0
+Text GLabel 5500 3350 2    50   Output ~ 0
 CSI_D_CLK_N
-Text GLabel 10050 3650 2    50   Output ~ 0
+Text GLabel 5500 3650 2    50   Output ~ 0
 CSI_D_D1_P
-Text GLabel 10050 3750 2    50   Output ~ 0
+Text GLabel 5500 3750 2    50   Output ~ 0
 CSI_D_D1_N
 Text GLabel 15150 3450 2    50   Output ~ 0
 CSI_F_D0_P
@@ -107,17 +107,17 @@ Text GLabel 15150 3650 2    50   Output ~ 0
 CSI_F_D1_P
 Text GLabel 15150 3750 2    50   Output ~ 0
 CSI_F_D1_N
-Text GLabel 10050 2750 2    50   Output ~ 0
+Text GLabel 5500 2750 2    50   Output ~ 0
 CSI_C_D0_P
-Text GLabel 10050 2850 2    50   Output ~ 0
+Text GLabel 5500 2850 2    50   Output ~ 0
 CSI_C_D0_N
-Text GLabel 10050 2550 2    50   Output ~ 0
+Text GLabel 5500 2550 2    50   Output ~ 0
 CSI_C_CLK_P
-Text GLabel 10050 2650 2    50   Output ~ 0
+Text GLabel 5500 2650 2    50   Output ~ 0
 CSI_C_CLK_N
-Text GLabel 10050 2950 2    50   Output ~ 0
+Text GLabel 5500 2950 2    50   Output ~ 0
 CSI_C_D1_P
-Text GLabel 10050 3050 2    50   Output ~ 0
+Text GLabel 5500 3050 2    50   Output ~ 0
 CSI_C_D1_N
 Text GLabel 15150 2750 2    50   Output ~ 0
 CSI_E_D0_P
@@ -132,37 +132,35 @@ CSI_E_D1_P
 Text GLabel 15150 3050 2    50   Output ~ 0
 CSI_E_D1_N
 Wire Wire Line
-	9750 2550 10050 2550
+	5200 2550 5500 2550
 Wire Wire Line
-	9750 2650 10050 2650
+	5200 2650 5500 2650
 Wire Wire Line
-	9750 2750 10050 2750
+	5200 2750 5500 2750
 Wire Wire Line
-	9750 2850 10050 2850
+	5200 2850 5500 2850
 Wire Wire Line
-	9750 2950 10050 2950
+	5200 2950 5500 2950
 Wire Wire Line
-	9750 3050 10050 3050
+	5200 3050 5500 3050
 Wire Wire Line
-	9750 3250 10050 3250
+	5200 3250 5500 3250
 Wire Wire Line
-	9750 3350 10050 3350
+	5200 3350 5500 3350
 Wire Wire Line
-	9750 3450 10050 3450
+	5200 3450 5500 3450
 Wire Wire Line
-	9750 3550 10050 3550
+	5200 3550 5500 3550
 Wire Wire Line
-	9750 3650 10050 3650
+	5200 3650 5500 3650
 Wire Wire Line
-	9750 3750 10050 3750
+	5200 3750 5500 3750
 Wire Wire Line
 	2200 2700 3100 2700
 Text Label 2200 2600 0    50   ~ 0
 VOLT_3P3
 Wire Wire Line
 	2200 2600 3100 2600
-Text Notes 2900 2150 0    50   ~ 0
-TODO: Not mandatory, but good idea to add level shifters to SWITCH_HS_0_LP_1_3V3_3V3\nhttp://cdn.sparkfun.com/datasheets/BreakoutBoards/Logic_Level_Bidirectional.pdf\nTest it!!
 Wire Wire Line
 	14700 2550 15150 2550
 Wire Wire Line
@@ -231,55 +229,59 @@ F37 "BOT_VADJ_LP_D0_N" I L 3100 5300 50
 F38 "BOT_VADJ_LP_D1_P" I L 3100 5400 50 
 F39 "BOT_VADJ_LP_D1_N" I L 3100 5500 50 
 F40 "VOLT_2P5" I L 3100 2400 50 
-F41 "SWITCH_HS_0_LP_1_3V3" I L 3100 2800 50 
+F41 "SWITCH_HS_0_LP_1_VADJ" I L 3100 2800 50 
 F42 "VOLT_3P3" I L 3100 2600 50 
 $EndSheet
-Text GLabel 5500 3550 2    50   Output ~ 0
+Text GLabel 8650 3500 2    50   Output ~ 0
 CSI_B_D0_N
-Text GLabel 5500 3450 2    50   Output ~ 0
+Text GLabel 8650 3400 2    50   Output ~ 0
 CSI_B_D0_P
-Text GLabel 5500 2750 2    50   Output ~ 0
+Text GLabel 8650 2700 2    50   Output ~ 0
 CSI_A_D0_P
-Text GLabel 5500 2850 2    50   Output ~ 0
+Text GLabel 8650 2800 2    50   Output ~ 0
 CSI_A_D0_N
-Text GLabel 5500 2650 2    50   Output ~ 0
+Text GLabel 8650 2600 2    50   Output ~ 0
 CSI_A_CLK_N
-Text GLabel 5500 2550 2    50   Output ~ 0
+Text GLabel 8650 2500 2    50   Output ~ 0
 CSI_A_CLK_P
-Text GLabel 5500 3050 2    50   Output ~ 0
+Text GLabel 8650 3000 2    50   Output ~ 0
 CSI_A_D1_N
-Text GLabel 5500 2950 2    50   Output ~ 0
+Text GLabel 8650 2900 2    50   Output ~ 0
 CSI_A_D1_P
-Text GLabel 5500 3350 2    50   Output ~ 0
+Text GLabel 8650 3300 2    50   Output ~ 0
 CSI_B_CLK_N
-Text GLabel 5500 3250 2    50   Output ~ 0
+Text GLabel 8650 3200 2    50   Output ~ 0
 CSI_B_CLK_P
-Text GLabel 5500 3750 2    50   Output ~ 0
+Text GLabel 8650 3700 2    50   Output ~ 0
 CSI_B_D1_N
-Text GLabel 5500 3650 2    50   Output ~ 0
+Text GLabel 8650 3600 2    50   Output ~ 0
 CSI_B_D1_P
 Wire Wire Line
-	5200 2550 5500 2550
+	8350 2500 8650 2500
 Wire Wire Line
-	5200 2650 5500 2650
+	8350 2600 8650 2600
 Wire Wire Line
-	5200 2750 5500 2750
+	8350 2700 8650 2700
 Wire Wire Line
-	5200 2850 5500 2850
+	8350 2800 8650 2800
 Wire Wire Line
-	5200 2950 5500 2950
+	8350 2900 8650 2900
 Wire Wire Line
-	5200 3050 5500 3050
+	8350 3000 8650 3000
 Wire Wire Line
-	5200 3250 5500 3250
+	8350 3200 8650 3200
 Wire Wire Line
-	5200 3350 5500 3350
+	8350 3300 8650 3300
 Wire Wire Line
-	5200 3450 5500 3450
+	8350 3400 8650 3400
 Wire Wire Line
-	5200 3550 5500 3550
+	8350 3500 8650 3500
 Wire Wire Line
-	5200 3650 5500 3650
+	8350 3600 8650 3600
 Wire Wire Line
-	5200 3750 5500 3750
+	8350 3700 8650 3700
+Text Label 2200 2800 0    50   ~ 0
+SWITCH_CAM_C_D
+Wire Wire Line
+	3100 2800 2200 2800
 $EndSCHEMATC

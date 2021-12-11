@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 15
 Title ""
 Date ""
 Rev ""
@@ -44,7 +44,7 @@ U 6191D89C
 F0 "LVDS_to_Jetson_lines" 50
 F1 "LVDS_to_Jetson_lines.sch" 50
 F2 "VDD_VADJ" I L 2450 3000 50 
-F3 "SWITCH_SEL_CAM_A" I L 2450 3500 50 
+F3 "SWITCH_CAM_C_D" I L 2450 3500 50 
 F4 "SWITCH_SEL_CAM_B" I L 2450 3600 50 
 F5 "SWITCH_SEL_CAM_C" I L 2450 3700 50 
 F6 "SWITCH_SEL_CAM_D" I L 2450 3800 50 
@@ -58,4 +58,6 @@ Text Notes 1450 4650 0    50   ~ 0
 TODO: check level switching  with FPGA when OE and DIR are tied to ground without resistor
 Text Notes 3800 2600 0    118  ~ 0
 FORGOT LVDS TO SLVS SHIFT after re-driver !!!
+Text Notes 1450 5250 0    50   ~ 0
+For I2C level shifting we will use TCA9406
 $EndSCHEMATC
