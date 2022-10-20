@@ -138,4 +138,6 @@ Wire Wire Line
 	1600 1350 1950 1350
 Wire Wire Line
 	1950 1350 1950 1450
+Text Notes 1400 -100 0    59   ~ 12
+NOTE!!  I (i) and J rows in FMC HPC symbol  correspond to footprint row J K because no I (i) row in footprint
 $EndSCHEMATC

@@ -44,20 +44,21 @@ U 6191D89C
 F0 "LVDS_to_Jetson_lines" 50
 F1 "LVDS_to_Jetson_lines.sch" 50
 F2 "VDD_VADJ" I L 2450 3000 50 
-F3 "SWITCH_CAM_C_D" I L 2450 3500 50 
-F4 "SWITCH_SEL_CAM_B" I L 2450 3600 50 
-F5 "SWITCH_SEL_CAM_C" I L 2450 3700 50 
-F6 "SWITCH_SEL_CAM_D" I L 2450 3800 50 
-F7 "SWITCH_SEL_CAM_E" I L 2450 3900 50 
-F8 "SWITCH_SEL_CAM_F" I L 2450 4000 50 
-F9 "VOLT_1P2" I L 2450 3100 50 
-F10 "VOLT_2P5" I L 2450 3200 50 
-F11 "VOLT_3P3" I L 2450 3300 50 
+F3 "SWITCH_HS_LV_CAM_C" I L 2450 3500 50 
+F4 "VOLT_1P2" I L 2450 3100 50 
+F5 "VOLT_2P5" I L 2450 3200 50 
+F6 "VOLT_3P3" I L 2450 3300 50 
 $EndSheet
 Text Notes 1450 4650 0    50   ~ 0
 TODO: check level switching  with FPGA when OE and DIR are tied to ground without resistor
-Text Notes 3800 2600 0    118  ~ 0
-FORGOT LVDS TO SLVS SHIFT after re-driver !!!
 Text Notes 1450 5250 0    50   ~ 0
 For I2C level shifting we will use TCA9406
+Text Notes -100 -400 0    118  ~ 0
+To switch cameras simply use: TS5MP645\n\nhttps://www.ti.com/lit/ds/symlink/ts5mp645.pdf?ts=1639239156409&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTS5MP645
+Text Notes 1450 5750 0    50   ~ 0
+Add another solution using PI3WVR646 or similar switch
+Text Notes 1450 6050 0    50   ~ 0
+For low power (LP) lines use only one livel shifter, and connect the output to multiple\nswitches. If needed, merge to pins to get more power.
+Text Notes 4100 1850 0    118  ~ 24
+Looks like we need 15 Ohm resistor after re-driver!!! With 12 Ohm the swing is only 115 mVolt!!!\n\nCheck it!!!\n\nFor direct convertion BLVDS to SLVS we will use 9.1 Ohm resistor .Oct 10, 2022
 $EndSCHEMATC
