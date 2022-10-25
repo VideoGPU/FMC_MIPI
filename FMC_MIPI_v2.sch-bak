@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 16
+Sheet 1 10
 Title ""
 Date ""
 Rev ""
@@ -39,15 +39,14 @@ $EndComp
 Text Notes 6850 5350 0    50   ~ 0
 PI3WVR646 is 10 lines!!! use it!! when available\n\nPI3WVR626	PI3WVR626 Datasheet	2:1 MIPI 2-Data Lane, 1.5Gbps(D-PHY) Switch\nPI3WVR628	PI3WVR628 Datasheet	2:1 MIPI 2-Data Lane, 4.5Gbps(D-PHY) switch\nPI3WVR646	PI3WVR646 Datasheet	2:1 MIPI 4-Data Lane, 2.5Gbps(D-PHY) Switch\nPI3WVR648	PI3WVR648 Product brief	2:1 MIPI 4-Data Lane, 4.5Gbps(D-PHY) Switch\n		\n\n\n\nConsider using SNx5DPHY440SS retimer (no stock)
 $Sheet
-S 2450 2950 900  1300
+S 1150 2950 1350 750 
 U 6191D89C
 F0 "LVDS_to_Jetson_lines" 50
 F1 "LVDS_to_Jetson_lines.sch" 50
-F2 "VDD_VADJ" I L 2450 3000 50 
-F3 "SWITCH_HS_LV_CAM_C" I L 2450 3500 50 
-F4 "VOLT_1P2" I L 2450 3100 50 
-F5 "VOLT_2P5" I L 2450 3200 50 
-F6 "VOLT_3P3" I L 2450 3300 50 
+F2 "VDD_VADJ" I L 1150 3000 50 
+F3 "VOLT_1P2" I L 1150 3100 50 
+F4 "VOLT_2P5" I L 1150 3200 50 
+F5 "VOLT_3P3" I L 1150 3300 50 
 $EndSheet
 Text Notes 1450 4650 0    50   ~ 0
 TODO: check level switching  with FPGA when OE and DIR are tied to ground without resistor
