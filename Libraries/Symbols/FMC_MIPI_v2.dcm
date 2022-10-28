@@ -5,6 +5,16 @@ D WURTH ELEKTRONIK - 694106301002 - CONNECTOR, POWER ENTRY, JACK, 3A, 20VDC
 F https://datasheet.datasheetarchive.com/originals/distributors/Datasheets_SAMA/1c153bd2ba42bb51bda59ee4cd9765cd.pdf
 $ENDCMP
 #
+$CMP AT24MAC402-MAHM-T
+D MICROCHIP - AT24MAC402-MAHM-T - EEPROM, 2KBIT, -40 TO 85DEG C
+F http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8807-SEEPROM-AT24MAC402-602-Datasheet.pdf
+$ENDCMP
+#
+$CMP ECLAMP2398P.TCT
+D ESD Suppressors / TVS Diodes ESD/EMI PROT FOR COLOR LCD INT
+F https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-DGA5/402218.pdf
+$ENDCMP
+#
 $CMP HD3SS3411TRWARQ1
 D PCI Express Switch Mux/Demux 1-CH Automotive 14-Pin WQFN EP T/R
 F https://www.ti.com/lit/ds/symlink/hd3ss3411-q1.pdf?ts=1613729922486&ref_url=https%253A%252F%252Fwww.ti.com%252Fstore%252Fti%252Fen%252Fp%252Fproduct%252F%253Fp%253DHD3SS3411TRWARQ1

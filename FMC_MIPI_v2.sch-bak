@@ -60,4 +60,6 @@ Text Notes 1450 6050 0    50   ~ 0
 For low power (LP) lines use only one livel shifter, and connect the output to multiple\nswitches. If needed, merge to pins to get more power.
 Text Notes 4100 1850 0    118  ~ 24
 Looks like we need 15 Ohm resistor after re-driver!!! With 12 Ohm the swing is only 115 mVolt!!!\n\nCheck it!!!\n\nFor direct convertion BLVDS to SLVS we will use 9.1 Ohm resistor .Oct 10, 2022
+Text Notes 3450 3100 0    79   ~ 0
+TODO!!! Add 1.8 level shifter to interface the jetson pins!!!
 $EndSCHEMATC
