@@ -40,4 +40,9 @@ D Multiplexer Switch ICs MIPI Switch X1-LGA2417-24 T&R 5K
 F https://www.diodes.com/assets/Datasheets/PI3WVR628.pdf
 $ENDCMP
 #
+$CMP UCLAMP0501H.TCT
+D SEMTECH - UCLAMP0501H.TCT - TVS DIODE, 240W, 5V, SOD-523, FULL REEL
+F https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-30/DSA-588575.pdf
+$ENDCMP
+#
 #End Doc Library

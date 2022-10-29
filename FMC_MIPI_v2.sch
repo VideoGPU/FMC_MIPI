@@ -24,6 +24,7 @@ S 7700 2850 2650 1500
 U 61ACA102
 F0 "Jetson_connector" 50
 F1 "Jetson_connector.sch" 50
+F2 "VOLT_1P8" I L 7700 3000 50 
 $EndSheet
 $Comp
 L FMC_MIPI_v2:Earth #PWR01
@@ -51,7 +52,7 @@ $EndSheet
 Text Notes 1450 4650 0    50   ~ 0
 TODO: check level switching  with FPGA when OE and DIR are tied to ground without resistor
 Text Notes 1450 5250 0    50   ~ 0
-For I2C level shifting we will use TCA9406
+For I2C level shifting we will use TCA9406DCUR
 Text Notes -100 -400 0    118  ~ 0
 To switch cameras simply use: TS5MP645\n\nhttps://www.ti.com/lit/ds/symlink/ts5mp645.pdf?ts=1639239156409&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTS5MP645
 Text Notes 1450 5750 0    50   ~ 0
