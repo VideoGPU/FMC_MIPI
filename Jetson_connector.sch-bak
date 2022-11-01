@@ -419,13 +419,13 @@ Wire Wire Line
 Wire Wire Line
 	8250 4700 8250 4850
 Wire Wire Line
-	9250 4850 9250 4500
+	9250 4850 9250 4700
 Wire Wire Line
-	9250 4500 9550 4500
+	9250 4700 9550 4700
 $Comp
 L FMC_MIPI_v2:Earth #PWR?
 U 1 1 636686FB
-P 8900 4000
+P 9500 4250
 AR Path="/6193F705/636686FB" Ref="#PWR?"  Part="1" 
 AR Path="/6191D89C/6191EB86/636686FB" Ref="#PWR?"  Part="1" 
 AR Path="/6191D89C/6191F185/636686FB" Ref="#PWR?"  Part="1" 
@@ -439,43 +439,43 @@ AR Path="/6191D89C/61A38142/636686FB" Ref="#PWR?"  Part="1"
 AR Path="/6191D89C/61A4C646/636686FB" Ref="#PWR?"  Part="1" 
 AR Path="/6191D89C/62016C67/636686FB" Ref="#PWR?"  Part="1" 
 AR Path="/61ACA102/636686FB" Ref="#PWR0131"  Part="1" 
-F 0 "#PWR0131" H 8900 3750 50  0001 C CNN
-F 1 "Earth" H 8900 3850 50  0001 C CNN
-F 2 "" H 8900 4000 50  0001 C CNN
-F 3 "~" H 8900 4000 50  0001 C CNN
-	1    8900 4000
+F 0 "#PWR0131" H 9500 4000 50  0001 C CNN
+F 1 "Earth" H 9500 4100 50  0001 C CNN
+F 2 "" H 9500 4250 50  0001 C CNN
+F 3 "~" H 9500 4250 50  0001 C CNN
+	1    9500 4250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8900 4000 8900 3900
+	9500 4250 9500 4150
 $Comp
 L FMC_MIPI_v2:C C?
 U 1 1 63668706
-P 9250 4200
+P 9250 4450
 AR Path="/6191D89C/61A814B9/63668706" Ref="C?"  Part="1" 
 AR Path="/6191D89C/61A38142/63668706" Ref="C?"  Part="1" 
 AR Path="/6191D89C/61A4C646/63668706" Ref="C?"  Part="1" 
 AR Path="/6191D89C/63668706" Ref="C?"  Part="1" 
 AR Path="/6191D89C/62016C67/63668706" Ref="C?"  Part="1" 
 AR Path="/61ACA102/63668706" Ref="C3"  Part="1" 
-F 0 "C3" H 9365 4246 50  0000 L CNN
-F 1 "0.1uF" H 9365 4155 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 9288 4050 50  0001 C CNN
-F 3 "http://www.mouser.co.il/ProductDetail/Taiyo-Yuden/TMK105BJ104KV-F/?qs=PzICbMaShUcuRhf9Ji%2f5mA==" H 9250 4200 50  0001 C CNN
-F 4 "TMK105BJ104KV-F" H 9250 4200 50  0001 C CNN "Part Number"
-F 5 "10%" H 9250 4200 50  0001 C CNN "Tolerance"
-F 6 "25V" H 9250 4200 50  0001 C CNN "Voltage"
-	1    9250 4200
+F 0 "C3" H 9365 4496 50  0000 L CNN
+F 1 "0.1uF" H 9365 4405 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 9288 4300 50  0001 C CNN
+F 3 "http://www.mouser.co.il/ProductDetail/Taiyo-Yuden/TMK105BJ104KV-F/?qs=PzICbMaShUcuRhf9Ji%2f5mA==" H 9250 4450 50  0001 C CNN
+F 4 "TMK105BJ104KV-F" H 9250 4450 50  0001 C CNN "Part Number"
+F 5 "10%" H 9250 4450 50  0001 C CNN "Tolerance"
+F 6 "25V" H 9250 4450 50  0001 C CNN "Voltage"
+	1    9250 4450
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	9250 4350 9250 4500
+	9250 4600 9250 4700
 Wire Wire Line
-	9250 4050 9250 3900
+	9250 4300 9250 4150
 Wire Wire Line
-	8900 3900 9250 3900
-Connection ~ 9250 4500
-Text Label 9550 4500 0    50   ~ 0
+	9500 4150 9250 4150
+Connection ~ 9250 4700
+Text Label 9550 4700 0    50   ~ 0
 VCC_1V8_EEPROM
 $Comp
 L Device:R R?
@@ -784,9 +784,9 @@ Wire Wire Line
 Text Notes 8450 3050 0    79   ~ 0
 TODO: Need to decide where we are taking from the 1.8 Volt source VCC_1V8_EEPROM\n1) From  Jetson\n2) From FPGA\nBest looking solution: add jumber, to enable both configurations
 Wire Wire Line
-	6750 5950 7850 5950
-Text Label 7850 5950 0    50   ~ 0
-DVDD_CAM_IO_1V8
+	6750 5950 7200 5950
+Text Label 7200 5950 0    50   ~ 0
+JT_VDD_1V8
 Text Notes 600  1000 0    79   ~ 0
 Power selection for EEPROM:\nPin (1) From FPGA (default)\nPin (3) From Jetson\nOutput pin (2) powers the EEPROM\n
 $Comp
@@ -956,7 +956,7 @@ Wire Wire Line
 Connection ~ 7050 6750
 Text Label 7350 6750 0    50   ~ 0
 JT_VDD_5V
-Text Notes 8650 5950 0    50   ~ 0
+Text Notes 7750 5950 0    50   ~ 0
 (Programmable, 2 A maximum)
 Wire Wire Line
 	5100 6350 4500 6350
@@ -967,7 +967,7 @@ Proper power sequence is required in order not to damage the Jetson TX1/TX2 modu
 Text Notes 7800 6750 0    50   ~ 0
 (Always on, 6 A maximum)
 Text Label 2200 2350 0    50   ~ 0
-DVDD_CAM_IO_1V8
+JT_VDD_1V8
 Wire Wire Line
 	3950 3150 3950 3350
 $Comp
