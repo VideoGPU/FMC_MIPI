@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 11 10
+Sheet 10 11
 Title ""
 Date ""
 Rev ""
@@ -1122,4 +1122,6 @@ F 6 "" V 3350 1950 60  0001 C CNN "Part Number"
 	1    3350 1950
 	-1   0    0    1   
 $EndComp
+Text Notes 1100 3000 0    79   ~ 16
+NOTE: Every such block consumes around 20mA.\n\nFor 18 blocks (Six (6) 2 lanes CSI + 6 clocks) = 6*2 + 6 = 18 we need 18*0.02A = 0.36 A ,around 0.5 A
 $EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 10
+Sheet 3 11
 Title ""
 Date ""
 Rev ""
@@ -171,25 +171,6 @@ CSI_F_D1_P
 Text GLabel 7300 3350 2    50   Input ~ 0
 CSI_F_D1_N
 $Comp
-L FMC_MIPI_v2:ECLAMP2398P.TCT IC1
-U 1 1 635967C9
-P 1850 6300
-F 0 "IC1" H 2450 6565 50  0000 C CNN
-F 1 "ECLAMP2398P.TCT" H 2450 6474 50  0000 C CNN
-F 2 "SON50P160X400X65-17N" H 2900 6400 50  0001 L CNN
-F 3 "https://www.mouser.com/ProductDetail/Semtech/ECLAMP2398P.TCT?qs=rBWM4%252BvDhIf9J6mVxL%252BxBA%3D%3D" H 2900 6300 50  0001 L CNN
-F 4 "ESD Suppressors / TVS Diodes ESD/EMI PROT FOR COLOR LCD INT" H 2900 6200 50  0001 L CNN "Description"
-F 5 "0.65" H 2900 6100 50  0001 L CNN "Height"
-F 6 "947-ECLAMP2398P.TCT" H 2900 6000 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Semtech/ECLAMP2398PTCT?qs=rBWM4%252BvDhIf9J6mVxL%252BxBA%3D%3D" H 2900 5900 50  0001 L CNN "Mouser Price/Stock"
-F 8 "SEMTECH" H 2900 5800 50  0001 L CNN "Manufacturer_Name"
-F 9 "ECLAMP2398P.TCT" H 2900 5700 50  0001 L CNN "Manufacturer_Part_Number"
-	1    1850 6300
-	1    0    0    -1  
-$EndComp
-Text Notes 2200 5950 0    50   ~ 0
-Protecting diodes
-$Comp
 L FMC_MIPI_v2:AT24MAC402-MAHM-T IC2
 U 1 1 635D772F
 P 8250 4800
@@ -207,85 +188,19 @@ F 9 "AT24MAC402-MAHM-T" H 9100 4200 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5100 4650 4200 4650
+	5100 4650 4800 4650
 Wire Wire Line
-	5100 4750 4200 4750
+	5100 4750 4800 4750
 Wire Wire Line
-	5100 5450 4200 5450
+	5100 5450 4800 5450
 Wire Wire Line
-	5100 5550 4200 5550
+	5100 5550 4800 5550
 Wire Wire Line
-	5100 5650 4200 5650
+	5100 5650 4800 5650
 Wire Wire Line
 	6750 6450 7200 6450
 Wire Wire Line
-	4300 6750 5100 6750
-Text Label 4300 6750 0    50   ~ 0
-JT_1p8V_GPIO17_IN
-Text Label 7200 6450 0    50   ~ 0
-JT_1p8V_GPIO9_IN
-Wire Wire Line
-	1850 6900 750  6900
-Wire Wire Line
-	1850 6800 750  6800
-Wire Wire Line
-	1850 6700 750  6700
-Wire Wire Line
-	1850 6600 750  6600
-Wire Wire Line
-	1850 6500 750  6500
-Wire Wire Line
-	1850 6400 750  6400
-Wire Wire Line
-	1850 6300 750  6300
-Text Label 750  6700 0    50   ~ 0
-JT_1p8V_GPIO17_IN
-Text Label 750  6800 0    50   ~ 0
-JT_1p8V_GPIO9_IN
-Text Label 4200 4650 0    50   ~ 0
-JT_1p8V_I2C_CAM_CLK
-Text Label 4200 4750 0    50   ~ 0
-JT_1p8V_I2C_CAM_DAT
-Text Label 4200 5450 0    50   ~ 0
-JT_1p8V_CAM0_MCLK
-Text Label 4200 5550 0    50   ~ 0
-JT_1p8V_CAM0_PWR
-Text Label 4200 5650 0    50   ~ 0
-JT_1p8V_CAM0_RST
-Text Label 750  6300 0    50   ~ 0
-JT_1p8V_I2C_CAM_CLK
-Text Label 750  6900 0    50   ~ 0
-JT_1p8V_I2C_CAM_DAT
-Text Label 750  6600 0    50   ~ 0
-JT_1p8V_CAM0_MCLK
-Text Label 750  6400 0    50   ~ 0
-JT_1p8V_CAM0_PWR
-Text Label 750  6500 0    50   ~ 0
-JT_1p8V_CAM0_RST
-NoConn ~ 1850 7000
-NoConn ~ 3050 7000
-Wire Wire Line
-	3050 6800 3500 6800
-Wire Wire Line
-	3050 6700 3500 6700
-Wire Wire Line
-	3050 6600 4150 6600
-Wire Wire Line
-	3050 6500 4150 6500
-Wire Wire Line
-	3050 6400 4150 6400
-Wire Wire Line
-	3050 6300 4150 6300
-Text Label 4150 6300 2    50   ~ 0
-V1p8_I2C_CAM_CLK
-Text Label 4150 6950 2    50   ~ 0
-V1p8_I2C_CAM_DAT
-Text Label 4150 6600 2    50   ~ 0
-v1p8_CAM0_MCLK
-Text Label 4150 6400 2    50   ~ 0
-V1p8_CAM0_PWR
-Text Label 4150 6500 2    50   ~ 0
-V1p8_CAM0_RST
+	4800 6750 5100 6750
 $Comp
 L Device:R R?
 U 1 1 6364464F
@@ -874,7 +789,7 @@ Wire Wire Line
 	11050 4900 10250 4900
 Wire Wire Line
 	11050 5100 10250 5100
-Text Notes 8200 3750 0    79   ~ 0
+Text Notes 8450 3050 0    79   ~ 0
 TODO: Need to decide where we are taking from the 1.8 Volt source VDD_CAM_1V8_CAM:\n1) From  Jetson\n2) From FPGA\nBest looking solution: add jumber, to enable both configurations
 Wire Wire Line
 	6750 5950 7850 5950
@@ -882,27 +797,23 @@ Text Label 7850 5950 0    50   ~ 0
 DVDD_CAM_IO_1V8
 Text Notes 600  1000 0    79   ~ 0
 Power selection for EEPROM:\nPin (1) From FPGA (default)\nPin (3) From Jetson\nOutput pin (2) powers the EEPROM\n
-Text Label 1850 2350 0    50   ~ 0
+Text Label 1850 2700 0    50   ~ 0
 VDD_CAM_1V8_CAM
 $Comp
 L Jumper:Jumper_3_Bridged12 JP1
 U 1 1 635CF999
-P 1650 2000
-F 0 "JP1" H 1600 2100 50  0000 C CNN
-F 1 "Jumper_3_Bridged12" H 1650 2113 50  0001 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 1650 2000 50  0001 C CNN
-F 3 "~" H 1650 2000 50  0001 C CNN
-	1    1650 2000
+P 1650 2350
+F 0 "JP1" H 1600 2450 50  0000 C CNN
+F 1 "Jumper_3_Bridged12" H 1650 2463 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 1650 2350 50  0001 C CNN
+F 3 "~" H 1650 2350 50  0001 C CNN
+	1    1650 2350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1650 2150 1650 2350
+	1650 2500 1650 2700
 Wire Wire Line
-	1650 2350 1850 2350
-Text HLabel 1100 2000 0    50   Input ~ 0
-VOLT_1P8
-Wire Wire Line
-	1100 2000 1400 2000
+	1650 2700 1850 2700
 $Comp
 L FMC_MIPI_v2:UCLAMP0501H.TCT D1
 U 1 1 635D4CE0
@@ -1063,118 +974,118 @@ Wire Wire Line
 	5100 6350 4500 6350
 Text Label 4500 6350 0    50   ~ 0
 JT_VDD_5V
-Text Notes 8200 1450 0    79   ~ 0
+Text Notes 8400 1650 0    79   ~ 0
 Proper power sequence is required in order not to damage the Jetson TX1/TX2 module.\n* All camera powers except 1.8V for EEPROM should be ‘Off’ by default\n* Powers should be controlled by Jetson TX1/TX2\n\nRead: GOOD_Jetson_Camera_Module_Hardware_Design_Guide.pdf
 Text Notes 7800 6750 0    50   ~ 0
 (Always on, 6 A maximum)
 $Comp
 L Regulator_Linear:LP5907MFX-1.8 U1
 U 1 1 63666EA2
-P 2100 3050
-F 0 "U1" H 2100 3417 50  0000 C CNN
-F 1 "LP5907MFX-1.8" H 2100 3326 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 2100 3400 50  0001 C CNN
-F 3 "https://www.mouser.com/ProductDetail/Texas-Instruments/LP5907MFX-1.8-NOPB?qs=biyDIajrTn5jh5ArkSZeqw%3D%3D" H 2100 3550 50  0001 C CNN
-F 4 "LP5907MFX-1.8/NOPB" H 2100 3050 50  0001 C CNN "Part number"
-	1    2100 3050
+P 2100 3350
+F 0 "U1" H 2100 3717 50  0000 C CNN
+F 1 "LP5907MFX-1.8" H 2100 3626 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 2100 3700 50  0001 C CNN
+F 3 "https://www.mouser.com/ProductDetail/Texas-Instruments/LP5907MFX-1.8-NOPB?qs=biyDIajrTn5jh5ArkSZeqw%3D%3D" H 2100 3850 50  0001 C CNN
+F 4 "LP5907MFX-1.8/NOPB" H 2100 3350 50  0001 C CNN "Part number"
+	1    2100 3350
 	1    0    0    -1  
 $EndComp
-Text Label 700  2950 0    50   ~ 0
+Text Label 700  3250 0    50   ~ 0
 JT_VDD_5V
 Wire Wire Line
-	2400 2950 2650 2950
-Text Label 2800 2950 0    50   ~ 0
+	2400 3250 2650 3250
+Text Label 2800 3250 0    50   ~ 0
 LDO_1V8
 $Comp
 L power:Earth #PWR0134
 U 1 1 6368695E
-P 2100 3500
-F 0 "#PWR0134" H 2100 3250 50  0001 C CNN
-F 1 "Earth" H 2100 3350 50  0001 C CNN
-F 2 "" H 2100 3500 50  0001 C CNN
-F 3 "~" H 2100 3500 50  0001 C CNN
-	1    2100 3500
+P 2100 3800
+F 0 "#PWR0134" H 2100 3550 50  0001 C CNN
+F 1 "Earth" H 2100 3650 50  0001 C CNN
+F 2 "" H 2100 3800 50  0001 C CNN
+F 3 "~" H 2100 3800 50  0001 C CNN
+	1    2100 3800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2100 3350 2100 3500
+	2100 3650 2100 3800
 $Comp
 L FMC_MIPI_v2:C C?
 U 1 1 636902F3
-P 2650 3150
+P 2650 3450
 AR Path="/6191D89C/61A814B9/636902F3" Ref="C?"  Part="1" 
 AR Path="/6191D89C/61A38142/636902F3" Ref="C?"  Part="1" 
 AR Path="/6191D89C/61A4C646/636902F3" Ref="C?"  Part="1" 
 AR Path="/6191D89C/636902F3" Ref="C?"  Part="1" 
 AR Path="/6191D89C/62016C67/636902F3" Ref="C?"  Part="1" 
 AR Path="/61ACA102/636902F3" Ref="C8"  Part="1" 
-F 0 "C8" H 2765 3196 50  0000 L CNN
-F 1 "1uF" H 2765 3105 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 2688 3000 50  0001 C CNN
-F 3 "https://www.mouser.com/ProductDetail/Taiyo-Yuden/UMK212B7105KG-T?qs=PzICbMaShUdi76GLXMVYcA%3D%3D" H 2650 3150 50  0001 C CNN
-F 4 "UMK212B7105KG-T" H 2650 3150 50  0001 C CNN "Part Number"
-F 5 "10%" H 2650 3150 50  0001 C CNN "Tolerance"
-F 6 "50 VDC" H 2650 3150 50  0001 C CNN "Voltage"
-	1    2650 3150
+F 0 "C8" H 2765 3496 50  0000 L CNN
+F 1 "1uF" H 2765 3405 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2688 3300 50  0001 C CNN
+F 3 "https://www.mouser.com/ProductDetail/Taiyo-Yuden/UMK212B7105KG-T?qs=PzICbMaShUdi76GLXMVYcA%3D%3D" H 2650 3450 50  0001 C CNN
+F 4 "UMK212B7105KG-T" H 2650 3450 50  0001 C CNN "Part Number"
+F 5 "10%" H 2650 3450 50  0001 C CNN "Tolerance"
+F 6 "50 VDC" H 2650 3450 50  0001 C CNN "Voltage"
+	1    2650 3450
 	-1   0    0    1   
 $EndComp
 $Comp
 L FMC_MIPI_v2:C C?
 U 1 1 636906C0
-P 1300 3250
+P 1300 3550
 AR Path="/6191D89C/61A814B9/636906C0" Ref="C?"  Part="1" 
 AR Path="/6191D89C/61A38142/636906C0" Ref="C?"  Part="1" 
 AR Path="/6191D89C/61A4C646/636906C0" Ref="C?"  Part="1" 
 AR Path="/6191D89C/636906C0" Ref="C?"  Part="1" 
 AR Path="/6191D89C/62016C67/636906C0" Ref="C?"  Part="1" 
 AR Path="/61ACA102/636906C0" Ref="C7"  Part="1" 
-F 0 "C7" H 1415 3296 50  0000 L CNN
-F 1 "1uF" H 1415 3205 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 1338 3100 50  0001 C CNN
-F 3 "https://www.mouser.com/ProductDetail/Taiyo-Yuden/UMK212B7105KG-T?qs=PzICbMaShUdi76GLXMVYcA%3D%3D" H 1300 3250 50  0001 C CNN
-F 4 "UMK212B7105KG-T" H 1300 3250 50  0001 C CNN "Part Number"
-F 5 "10%" H 1300 3250 50  0001 C CNN "Tolerance"
-F 6 "50 VDC" H 1300 3250 50  0001 C CNN "Voltage"
-	1    1300 3250
+F 0 "C7" H 1415 3596 50  0000 L CNN
+F 1 "1uF" H 1415 3505 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 1338 3400 50  0001 C CNN
+F 3 "https://www.mouser.com/ProductDetail/Taiyo-Yuden/UMK212B7105KG-T?qs=PzICbMaShUdi76GLXMVYcA%3D%3D" H 1300 3550 50  0001 C CNN
+F 4 "UMK212B7105KG-T" H 1300 3550 50  0001 C CNN "Part Number"
+F 5 "10%" H 1300 3550 50  0001 C CNN "Tolerance"
+F 6 "50 VDC" H 1300 3550 50  0001 C CNN "Voltage"
+	1    1300 3550
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:Earth #PWR0135
 U 1 1 63691131
-P 1300 3500
-F 0 "#PWR0135" H 1300 3250 50  0001 C CNN
-F 1 "Earth" H 1300 3350 50  0001 C CNN
-F 2 "" H 1300 3500 50  0001 C CNN
-F 3 "~" H 1300 3500 50  0001 C CNN
-	1    1300 3500
+P 1300 3800
+F 0 "#PWR0135" H 1300 3550 50  0001 C CNN
+F 1 "Earth" H 1300 3650 50  0001 C CNN
+F 2 "" H 1300 3800 50  0001 C CNN
+F 3 "~" H 1300 3800 50  0001 C CNN
+	1    1300 3800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:Earth #PWR0136
 U 1 1 6369160B
-P 2650 3400
-F 0 "#PWR0136" H 2650 3150 50  0001 C CNN
-F 1 "Earth" H 2650 3250 50  0001 C CNN
-F 2 "" H 2650 3400 50  0001 C CNN
-F 3 "~" H 2650 3400 50  0001 C CNN
-	1    2650 3400
+P 2650 3700
+F 0 "#PWR0136" H 2650 3450 50  0001 C CNN
+F 1 "Earth" H 2650 3550 50  0001 C CNN
+F 2 "" H 2650 3700 50  0001 C CNN
+F 3 "~" H 2650 3700 50  0001 C CNN
+	1    2650 3700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2650 3300 2650 3400
+	2650 3600 2650 3700
 Wire Wire Line
-	1300 3400 1300 3500
+	1300 3700 1300 3800
 Wire Wire Line
-	1300 3100 1300 2950
+	1300 3400 1300 3250
 Wire Wire Line
-	2650 3000 2650 2950
-Connection ~ 2650 2950
+	2650 3300 2650 3250
+Connection ~ 2650 3250
 Wire Wire Line
-	2650 2950 2800 2950
+	2650 3250 2800 3250
 $Comp
 L Device:R R?
 U 1 1 636ACD82
-P 1500 3200
+P 1500 3500
 AR Path="/595357E2/59539608/636ACD82" Ref="R?"  Part="1" 
 AR Path="/595357E2/5953B622/636ACD82" Ref="R?"  Part="1" 
 AR Path="/595357E2/5953B846/636ACD82" Ref="R?"  Part="1" 
@@ -1247,63 +1158,61 @@ AR Path="/6191D89C/61A38142/636ACD82" Ref="R?"  Part="1"
 AR Path="/6191D89C/62016C67/636ACD82" Ref="R?"  Part="1" 
 AR Path="/6191D89C/636ACD82" Ref="R?"  Part="1" 
 AR Path="/61ACA102/636ACD82" Ref="R8"  Part="1" 
-F 0 "R8" V 1400 3200 50  0000 C CNN
-F 1 "0" V 1500 3200 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 1430 3200 50  0001 C CNN
-F 3 "https://www.mouser.com/ProductDetail/YAGEO/RC0805JR-070RL?qs=3ldFlDWnkKyEhdaPjQHEFA%3D%3D" H 1500 3200 50  0001 C CNN
-F 4 "5%" V 1500 3200 60  0001 C CNN "Tolerance"
-F 5 "1/8W" V 1500 3200 60  0001 C CNN "Power"
-F 6 "RC0805JR-070RL" V 1500 3200 60  0001 C CNN "Part Number"
-	1    1500 3200
+F 0 "R8" V 1400 3500 50  0000 C CNN
+F 1 "0" V 1500 3500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 1430 3500 50  0001 C CNN
+F 3 "https://www.mouser.com/ProductDetail/YAGEO/RC0805JR-070RL?qs=3ldFlDWnkKyEhdaPjQHEFA%3D%3D" H 1500 3500 50  0001 C CNN
+F 4 "5%" V 1500 3500 60  0001 C CNN "Tolerance"
+F 5 "1/8W" V 1500 3500 60  0001 C CNN "Power"
+F 6 "RC0805JR-070RL" V 1500 3500 60  0001 C CNN "Part Number"
+	1    1500 3500
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1500 2950 1500 3050
-Connection ~ 1500 2950
+	1500 3250 1500 3350
+Connection ~ 1500 3250
 Wire Wire Line
-	1500 2950 1800 2950
+	1500 3250 1800 3250
 Wire Wire Line
-	1500 3350 1700 3350
+	1500 3650 1700 3650
 Wire Wire Line
-	1700 3350 1700 3050
+	1700 3650 1700 3350
 Wire Wire Line
-	1700 3050 1800 3050
-Connection ~ 1300 2950
+	1700 3350 1800 3350
+Connection ~ 1300 3250
 Wire Wire Line
-	1300 2950 1500 2950
+	1300 3250 1500 3250
 Wire Wire Line
-	700  2950 1300 2950
-Text Label 1650 1800 0    50   ~ 0
+	700  3250 1300 3250
+Text Label 1650 2150 0    50   ~ 0
 JETSON_1V8
 $Comp
 L Jumper:Jumper_3_Bridged12 JP2
 U 1 1 636F5DCE
-P 1650 1500
-F 0 "JP2" H 1600 1600 50  0000 C CNN
-F 1 "Jumper_3_Bridged12" H 1650 1613 50  0001 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 1650 1500 50  0001 C CNN
-F 3 "~" H 1650 1500 50  0001 C CNN
-	1    1650 1500
+P 1650 1850
+F 0 "JP2" H 1600 1950 50  0000 C CNN
+F 1 "Jumper_3_Bridged12" H 1650 1963 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 1650 1850 50  0001 C CNN
+F 3 "~" H 1650 1850 50  0001 C CNN
+	1    1650 1850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	650  1250 1900 1250
+	650  1600 1900 1600
 Wire Wire Line
-	1900 1250 1900 1500
+	1900 1600 1900 1850
 Wire Wire Line
-	650  1500 1400 1500
-Text Label 650  1250 0    50   ~ 0
+	650  1850 1400 1850
+Text Label 650  1600 0    50   ~ 10
 LDO_1V8
-Text Label 650  1500 0    50   ~ 0
+Text Label 650  1850 0    50   ~ 0
 DVDD_CAM_IO_1V8
 Wire Wire Line
-	1650 1650 1650 1800
+	1650 2000 1650 2150
 Wire Wire Line
-	1650 1800 1900 1800
+	1650 2150 1900 2150
 Wire Wire Line
-	1900 1800 1900 2000
-Text GLabel 3500 6700 2    50   Input ~ 0
-V1p8_GPIO17_IN
+	1900 2150 1900 2350
 Wire Wire Line
 	3950 3150 3950 3350
 $Comp
@@ -1317,12 +1226,57 @@ F 3 "" H 5300 6850 60  0001 C CNN
 	1    5650 3850
 	1    0    0    -1  
 $EndComp
-Text GLabel 3500 6800 2    50   Input ~ 0
-V1p8_GPIO9_IN
+$Comp
+L power:Earth #PWR0140
+U 1 1 63618A1B
+P 2450 7650
+F 0 "#PWR0140" H 2450 7400 50  0001 C CNN
+F 1 "Earth" H 2450 7500 50  0001 C CNN
+F 2 "" H 2450 7650 50  0001 C CNN
+F 3 "~" H 2450 7650 50  0001 C CNN
+	1    2450 7650
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	3050 6900 3300 6900
+	2450 7600 2450 7650
+Text HLabel 1050 1100 0    50   Input ~ 0
+VDD_VADJ
 Wire Wire Line
-	3300 6900 3300 6950
+	1050 1100 1500 1100
+Text Label 1500 1100 0    50   ~ 10
+VDD_VADJ
+Wire Notes Line
+	550  2850 3200 2850
+Wire Notes Line
+	3200 2850 3200 4000
+Wire Notes Line
+	3200 4000 550  4000
+Wire Notes Line
+	550  4000 550  2850
+Text HLabel 1050 1200 0    50   Input ~ 0
+VOLT_1P8
 Wire Wire Line
-	3300 6950 4150 6950
+	1050 1200 1500 1200
+Text Label 1500 1200 0    50   ~ 10
+VOLT_1P8
+Text Label 650  2350 0    50   ~ 10
+VOLT_1P8
+Wire Wire Line
+	650  2350 1400 2350
+Text GLabel 4800 6750 0    50   Input ~ 0
+JT_1p8V_GPIO17_IN
+Text GLabel 7200 6450 2    50   Input ~ 0
+JT_1p8V_GPIO9_IN
+Text GLabel 4800 4650 0    50   BiDi ~ 0
+JT_1p8V_I2C_CAM_CLK
+Text GLabel 4800 4750 0    50   BiDi ~ 0
+JT_1p8V_I2C_CAM_DAT
+Text Notes 650  2950 0    50   ~ 0
+Power LDO 1.8 Volt, 250 mA
+Text GLabel 4800 5450 0    50   Output ~ 0
+JT_1p8V_CAM0_MCLK
+Text GLabel 4800 5550 0    50   Output ~ 0
+JT_1p8V_CAM0_PWR
+Text GLabel 4800 5650 0    50   Output ~ 0
+JT_1p8V_CAM0_RST
 $EndSCHEMATC
