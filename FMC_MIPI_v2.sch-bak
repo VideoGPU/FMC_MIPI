@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 11
+Sheet 1 12
 Title ""
 Date ""
 Rev ""
@@ -27,22 +27,19 @@ F1 "Jetson_connector.sch" 50
 F2 "VOLT_1P8" I L 7700 3050 50 
 F3 "VDD_VADJ" I L 7700 2950 50 
 $EndSheet
-Text Notes 6850 5350 0    50   ~ 0
+Text Notes 7750 5600 0    50   ~ 0
 PI3WVR646 is 10 lines!!! use it!! when available\n\nPI3WVR626	PI3WVR626 Datasheet	2:1 MIPI 2-Data Lane, 1.5Gbps(D-PHY) Switch\nPI3WVR628	PI3WVR628 Datasheet	2:1 MIPI 2-Data Lane, 4.5Gbps(D-PHY) switch\nPI3WVR646	PI3WVR646 Datasheet	2:1 MIPI 4-Data Lane, 2.5Gbps(D-PHY) Switch\nPI3WVR648	PI3WVR648 Product brief	2:1 MIPI 4-Data Lane, 4.5Gbps(D-PHY) Switch\n		\n\n\n\nConsider using SNx5DPHY440SS retimer (no stock)
 $Sheet
 S 1150 2950 1350 750 
 U 6191D89C
 F0 "LVDS_to_Jetson_lines" 50
 F1 "LVDS_to_Jetson_lines.sch" 50
-F2 "VDD_VADJ" I L 1150 3000 50 
-F3 "VOLT_1P2" I L 1150 3100 50 
-F4 "VOLT_2P5" I L 1150 3200 50 
-F5 "VOLT_3P3" I L 1150 3300 50 
+F2 "VDD_VADJ" I L 1150 3250 50 
+F3 "VOLT_1P2" I L 1150 3050 50 
+F4 "VOLT_2P5" I L 1150 3350 50 
+F5 "VOLT_3P3" I L 1150 3450 50 
+F6 "VOLT_1P8" I L 1150 3150 50 
 $EndSheet
-Text Notes 900  4450 0    50   ~ 0
-TODO: check level switching  with FPGA when OE and DIR are tied to ground without resistor
-Text Notes 900  4600 0    50   ~ 0
-For I2C level shifting we will use TCA9406DCUR
 Text Notes -100 -400 0    118  ~ 0
 To switch cameras simply use: TS5MP645\n\nhttps://www.ti.com/lit/ds/symlink/ts5mp645.pdf?ts=1639239156409&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTS5MP645
 Text Notes 900  4700 0    50   ~ 0
@@ -61,10 +58,15 @@ F1 "Slow_signals_level_shifters.sch" 50
 F2 "VDD_VADJ" I L 1000 5400 50 
 F3 "VOLT_1P8" I L 1000 5500 50 
 $EndSheet
-Wire Notes Line
-	500  6900 2500 6900
-Wire Notes Line
-	2500 6900 2500 7800
-Text Notes 550  7100 0    50   ~ 0
-Power requirements: \nVOLT_2P5 -> 0.5 A\n
+$Sheet
+S 5050 5300 1650 950 
+U 637747EF
+F0 "Power" 50
+F1 "Power.sch" 50
+F2 "VDD_VADJ" O R 6700 5600 50 
+F3 "VOLT_1P2" O R 6700 5400 50 
+F4 "VOLT_2P5" O R 6700 5700 50 
+F5 "VOLT_3P3" O R 6700 5800 50 
+F6 "VOLT_1P8" O R 6700 5500 50 
+$EndSheet
 $EndSCHEMATC
