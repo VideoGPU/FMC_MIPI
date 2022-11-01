@@ -1851,12 +1851,6 @@ Text Notes 1050 3250 0    50   ~ 0
 Decoupling capacitors  U2
 Text Label 1900 2650 0    50   ~ 0
 DIR_U2
-Text HLabel 1300 1050 0    50   Input ~ 0
-VOLT_1P8
-Wire Wire Line
-	1300 1050 1750 1050
-Text Label 1750 1050 0    50   ~ 0
-VOLT_1P8
 Wire Wire Line
 	3200 9600 3200 10200
 Wire Wire Line
