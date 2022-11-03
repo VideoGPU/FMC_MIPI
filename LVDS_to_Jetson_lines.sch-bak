@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 4 12
+Sheet 4 19
 Title ""
 Date ""
 Rev ""
@@ -41,98 +41,10 @@ Text GLabel 14750 7100 2    50   Output ~ 0
 CSI_D_CLK_P
 Text GLabel 14750 7000 2    50   Output ~ 0
 CSI_D_CLK_N
-Text GLabel 17700 3400 2    50   Output ~ 0
-CSI_F_D0_P
-Text GLabel 17700 3500 2    50   Output ~ 0
-CSI_F_D0_N
-Text GLabel 17700 3200 2    50   Output ~ 0
-CSI_F_CLK_P
-Text GLabel 17700 3300 2    50   Output ~ 0
-CSI_F_CLK_N
-Text GLabel 17700 3600 2    50   Output ~ 0
-CSI_F_D1_P
-Text GLabel 17700 3700 2    50   Output ~ 0
-CSI_F_D1_N
-Text GLabel 17800 6550 2    50   Output ~ 0
-CSI_E_D0_P
-Text GLabel 17800 6450 2    50   Output ~ 0
-CSI_E_D0_N
-Text GLabel 17850 7250 2    50   Output ~ 0
-CSI_E_CLK_P
-Text GLabel 17850 7350 2    50   Output ~ 0
-CSI_E_CLK_N
-Text GLabel 17800 6350 2    50   Output ~ 0
-CSI_E_D1_P
-Text GLabel 17800 6250 2    50   Output ~ 0
-CSI_E_D1_N
 Wire Wire Line
 	14450 6700 14750 6700
 Wire Wire Line
 	14450 6600 14750 6600
-Wire Wire Line
-	17250 3200 17700 3200
-Wire Wire Line
-	17250 3300 17700 3300
-Wire Wire Line
-	17250 3400 17700 3400
-Wire Wire Line
-	17250 3500 17700 3500
-Wire Wire Line
-	17250 3600 17700 3600
-Wire Wire Line
-	17250 3700 17700 3700
-Text GLabel 17750 5950 2    50   Output ~ 0
-CSI_A_D0_N
-Text GLabel 17750 7000 2    50   Output ~ 0
-CSI_A_CLK_N
-Text GLabel 17750 6900 2    50   Output ~ 0
-CSI_A_CLK_P
-Text GLabel 17750 5750 2    50   Output ~ 0
-CSI_A_D1_N
-Text GLabel 17750 5850 2    50   Output ~ 0
-CSI_A_D1_P
-Text GLabel 17750 5150 2    50   Output ~ 0
-CSI_B_D0_N
-Text GLabel 17750 5050 2    50   Output ~ 0
-CSI_B_D0_P
-Text GLabel 17750 4950 2    50   Output ~ 0
-CSI_B_CLK_N
-Text GLabel 17750 4850 2    50   Output ~ 0
-CSI_B_CLK_P
-Text GLabel 17750 4750 2    50   Output ~ 0
-CSI_B_D1_N
-Text GLabel 17750 4650 2    50   Output ~ 0
-CSI_B_D1_P
-Wire Wire Line
-	17450 4950 17750 4950
-Wire Wire Line
-	17450 4850 17750 4850
-Wire Wire Line
-	17450 5150 17750 5150
-Wire Wire Line
-	17450 5050 17750 5050
-Wire Wire Line
-	17450 4750 17750 4750
-Wire Wire Line
-	17450 4650 17750 4650
-Wire Wire Line
-	17500 6450 17800 6450
-Wire Wire Line
-	17500 6550 17800 6550
-Wire Wire Line
-	17500 6250 17800 6250
-Wire Wire Line
-	17500 6350 17800 6350
-Wire Wire Line
-	17450 5750 17750 5750
-Wire Wire Line
-	17450 5850 17750 5850
-Wire Wire Line
-	17450 5950 17750 5950
-Wire Wire Line
-	17450 6050 17750 6050
-Text GLabel 17750 6050 2    50   Output ~ 0
-CSI_A_D0_P
 $Comp
 L FMC_MIPI_v2:TS3DDR3812_RUA_42 U?
 U 1 1 6351A86E
@@ -148,14 +60,6 @@ F 3 "" H 12150 6200 60  0001 C CNN
 	1    12150 6200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	17550 7250 17850 7250
-Wire Wire Line
-	17550 7350 17850 7350
-Wire Wire Line
-	17450 6900 17750 6900
-Wire Wire Line
-	17450 7000 17750 7000
 Text Notes 3950 1450 0    157  ~ 31
 NOTE: use CSI A and CSI B from the same IC, since they can form 4 lane configuration\n
 Wire Wire Line
@@ -2063,4 +1967,39 @@ F 6 "CR0805-JW-472ELF" V 1600 2650 60  0001 C CNN "Part Number"
 $EndComp
 Wire Wire Line
 	1750 2650 2200 2650
+NoConn ~ 12050 2550
+NoConn ~ 12050 2650
+NoConn ~ 12050 3550
+NoConn ~ 12050 3650
+NoConn ~ 14450 2550
+NoConn ~ 14450 2650
+NoConn ~ 14450 3550
+NoConn ~ 14450 3650
+NoConn ~ 12050 3950
+NoConn ~ 12050 4050
+NoConn ~ 12050 4950
+NoConn ~ 12050 5050
+NoConn ~ 12050 6200
+NoConn ~ 12050 6300
+NoConn ~ 12050 6400
+NoConn ~ 12050 6500
+NoConn ~ 12050 6800
+NoConn ~ 12050 6900
+NoConn ~ 12050 7200
+NoConn ~ 12050 7300
+NoConn ~ 14450 6200
+NoConn ~ 14450 6300
+NoConn ~ 14450 6400
+NoConn ~ 14450 6500
+NoConn ~ 14450 6800
+NoConn ~ 14450 6900
+NoConn ~ 14450 7200
+NoConn ~ 14450 7300
+NoConn ~ 12050 7600
+NoConn ~ 12050 7700
+NoConn ~ 12050 7800
+NoConn ~ 12050 8200
+NoConn ~ 12050 8300
+NoConn ~ 12050 8600
+NoConn ~ 12050 8700
 $EndSCHEMATC

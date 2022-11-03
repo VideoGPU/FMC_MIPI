@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 12
+Sheet 3 19
 Title ""
 Date ""
 Rev ""
@@ -1036,4 +1036,38 @@ Text Label 1850 2700 0    50   ~ 0
 VCC_1V8_EEPROM
 Text Label 7900 5200 0    50   ~ 0
 VCC_1V8_EEPROM
+Text GLabel 12700 4250 2    50   Output ~ 0
+CSI_F_D0_P
+Text GLabel 12700 4350 2    50   Output ~ 0
+CSI_F_D0_N
+Text GLabel 12700 4150 2    50   Output ~ 0
+CSI_F_CLK_P
+Text GLabel 12700 4050 2    50   Output ~ 0
+CSI_F_CLK_N
+Text GLabel 12700 4450 2    50   Output ~ 0
+CSI_F_D1_P
+Text GLabel 12700 4550 2    50   Output ~ 0
+CSI_F_D1_N
+Wire Wire Line
+	12250 4050 12700 4050
+Wire Wire Line
+	12250 4150 12700 4150
+Wire Wire Line
+	12250 4250 12700 4250
+Wire Wire Line
+	12250 4350 12700 4350
+Wire Wire Line
+	12250 4450 12700 4450
+Wire Wire Line
+	12250 4550 12700 4550
+Text Notes 12400 3900 0    50   ~ 0
+NOT CONNECTED!!
+Wire Notes Line
+	12150 3750 13350 3750
+Wire Notes Line
+	13350 3750 13350 4650
+Wire Notes Line
+	13350 4650 12150 4650
+Wire Notes Line
+	12150 4650 12150 3750
 $EndSCHEMATC
