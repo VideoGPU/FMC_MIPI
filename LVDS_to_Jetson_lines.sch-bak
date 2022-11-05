@@ -60,8 +60,6 @@ F 3 "" H 12150 6200 60  0001 C CNN
 	1    12150 6200
 	1    0    0    -1  
 $EndComp
-Text Notes 3950 1450 0    157  ~ 31
-NOTE: use CSI A and CSI B from the same IC, since they can form 4 lane configuration\n
 Wire Wire Line
 	14450 7000 14750 7000
 Wire Wire Line
@@ -380,7 +378,7 @@ $EndComp
 $Comp
 L FMC_MIPI_v2:Earth #PWR?
 U 1 1 636800C8
-P 3200 10200
+P 3200 10250
 AR Path="/6193F705/636800C8" Ref="#PWR?"  Part="1" 
 AR Path="/6191D89C/6191EB86/636800C8" Ref="#PWR?"  Part="1" 
 AR Path="/6191D89C/6191F185/636800C8" Ref="#PWR?"  Part="1" 
@@ -393,11 +391,11 @@ AR Path="/6191D89C/61A814B9/636800C8" Ref="#PWR?"  Part="1"
 AR Path="/6191D89C/61A38142/636800C8" Ref="#PWR?"  Part="1" 
 AR Path="/6191D89C/61A4C646/636800C8" Ref="#PWR?"  Part="1" 
 AR Path="/6191D89C/62016C67/636800C8" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0109" H 3200 9950 50  0001 C CNN
-F 1 "Earth" H 3200 10050 50  0001 C CNN
-F 2 "" H 3200 10200 50  0001 C CNN
-F 3 "~" H 3200 10200 50  0001 C CNN
-	1    3200 10200
+F 0 "#PWR0109" H 3200 10000 50  0001 C CNN
+F 1 "Earth" H 3200 10100 50  0001 C CNN
+F 2 "" H 3200 10250 50  0001 C CNN
+F 3 "~" H 3200 10250 50  0001 C CNN
+	1    3200 10250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1731,7 +1729,7 @@ Decoupling capacitors  IC1
 Text Label 1750 2650 0    50   ~ 0
 DIR_IC1
 Wire Wire Line
-	3200 9600 3200 10200
+	3200 9600 3200 10250
 Wire Wire Line
 	4050 7600 3600 7600
 Wire Wire Line

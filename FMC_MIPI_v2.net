@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source E:\KicadProjects\FMC_MIPI\FMC_MIPI_v2.sch)
-    (date "11/05/22 16:45:33")
+    (date "11/05/22 16:56:52")
     (tool "Eeschema (5.1.10)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
