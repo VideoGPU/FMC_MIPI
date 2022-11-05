@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 19
+Sheet 1 12
 Title ""
 Date ""
 Rev ""
@@ -120,14 +120,14 @@ Text Label 800  2600 0    50   ~ 0
 VDD_VADJ
 Text Label 800  2700 0    50   ~ 0
 VOLT_1P8
-$Sheet
-S 7750 2250 1250 750 
-U 6366AF3A
-F0 "LVDS_to_Jetson_LP_common" 50
-F1 "LVDS_to_Jetson_LP_common.sch" 50
-F2 "VDD_VADJ" I L 7750 2350 50 
-F3 "VOLT_1P2" I L 7750 2650 50 
-F4 "VOLT_2P5" I L 7750 2750 50 
-F5 "VOLT_3P3" I L 7750 2450 50 
-$EndSheet
+Text Notes 1000 6150 0    50   ~ 0
+Stackup:\n---High speed signal\n---Ground\n---Slow signals\n---Power\n---Ground\n---High speed signals
+Wire Notes Line
+	850  5500 2000 5500
+Wire Notes Line
+	2000 5500 2000 6250
+Wire Notes Line
+	2000 6250 850  6250
+Wire Notes Line
+	850  6250 850  5500
 $EndSCHEMATC
