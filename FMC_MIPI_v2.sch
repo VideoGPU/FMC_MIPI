@@ -28,6 +28,8 @@ F0 "Jetson_connector" 50
 F1 "Jetson_connector.sch" 50
 F2 "VOLT_1P8" I L 4950 2700 50 
 F3 "VDD_VADJ" I L 4950 2600 50 
+F4 "VOLT_1P2" I L 4950 2800 50 
+F5 "VOLT_3P3" I L 4950 2900 50 
 $EndSheet
 Text Notes 7750 5600 0    50   ~ 0
 PI3WVR646 is 10 lines!!! use it!! when available\n\nPI3WVR626	PI3WVR626 Datasheet	2:1 MIPI 2-Data Lane, 1.5Gbps(D-PHY) Switch\nPI3WVR628	PI3WVR628 Datasheet	2:1 MIPI 2-Data Lane, 4.5Gbps(D-PHY) switch\nPI3WVR646	PI3WVR646 Datasheet	2:1 MIPI 4-Data Lane, 2.5Gbps(D-PHY) Switch\nPI3WVR648	PI3WVR648 Product brief	2:1 MIPI 4-Data Lane, 4.5Gbps(D-PHY) Switch\n		\n\n\n\nConsider using SNx5DPHY440SS retimer (no stock)
@@ -130,4 +132,12 @@ Wire Notes Line
 	2000 6250 850  6250
 Wire Notes Line
 	850  6250 850  5500
+Text Label 4400 2800 0    50   ~ 0
+VOLT_1P2
+Wire Wire Line
+	4400 2800 4950 2800
+Text Label 4400 2900 0    50   ~ 0
+VOLT_3P3
+Wire Wire Line
+	4400 2900 4950 2900
 $EndSCHEMATC

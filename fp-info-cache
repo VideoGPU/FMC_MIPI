@@ -1,4 +1,4 @@
-596948316222747
+598654148282432
 Battery_Holders
 Bulgin_BX0036_1xC
 
@@ -21468,6 +21468,13 @@ Integrated Circuit
 0
 16
 16
+FMC_MIPI_v2_sym
+SOT65P210X110-6N
+DCK (R-PDSO-G6)
+Integrated Circuit
+0
+6
+6
 FMC_MIPI_v2_sym
 SOT230P700X190-4N
 ST SOT-223-1
