@@ -1434,8 +1434,6 @@ Wire Wire Line
 	650  8900 1250 8900
 Text GLabel 1250 8900 2    50   Output ~ 0
 JT_VDD_1V8
-Text Label 2800 9950 0    50   ~ 0
-FMC_1P2V_MONITOR
 Wire Notes Line
 	600  9150 3650 9150
 Wire Notes Line
@@ -1769,8 +1767,6 @@ Text Label 5450 10600 2    50   ~ 10
 VDD_VADJ
 Wire Wire Line
 	6250 10050 6400 10050
-Text Label 6400 10050 0    50   ~ 0
-FMC_2P8V_MONITOR
 Wire Notes Line
 	3850 9150 7200 9150
 Wire Notes Line
@@ -1802,8 +1798,6 @@ F 3 "https://www.mouser.co.il/ProductDetail/Texas-Instruments/SN74AVC2T45DCUR?qs
 $EndComp
 Wire Wire Line
 	3950 10050 4400 10050
-Text Label 6400 10150 0    50   ~ 0
-FMC_3P3V_MONITOR
 Wire Wire Line
 	6250 10150 6400 10150
 $Comp
@@ -1898,4 +1892,10 @@ Wire Wire Line
 	3950 10150 4400 10150
 Text Notes 2750 8850 0    79   ~ 0
 Add LED for 5 and 3.3 volt?
+Text GLabel 6400 10050 2    50   Input ~ 0
+FMC_2P8V_MONITOR
+Text GLabel 6400 10150 2    50   Input ~ 0
+FMC_3P3V_MONITOR
+Text GLabel 2800 9950 2    50   Output ~ 0
+FMC_1P2V_MONITOR
 $EndSCHEMATC

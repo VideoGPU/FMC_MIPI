@@ -27,12 +27,12 @@ $EndComp
 $Comp
 L FMC_MIPI_v2:ASP-134488-01_VER2 J1
 U 2 1 61918832
-P 2350 8900
-F 0 "J1" H 2100 11150 45  0000 L CNN
-F 1 "ASP-134488-01" H 2050 11050 45  0000 L CNN
-F 2 "FMC_MIPI_v2_sym:ASP-134488-01_VER2" H 2350 9200 60  0001 C CNN
-F 3 "https://www.mouser.com/ProductDetail/Samtec/ASP-134488-01?qs=jyzYFa4oMQiB2Frr%252B13AUg%3D%3D" H 2350 9200 60  0001 C CNN
-	2    2350 8900
+P 3150 8950
+F 0 "J1" H 2900 11200 45  0000 L CNN
+F 1 "ASP-134488-01" H 2850 11100 45  0000 L CNN
+F 2 "FMC_MIPI_v2_sym:ASP-134488-01_VER2" H 3150 9250 60  0001 C CNN
+F 3 "https://www.mouser.com/ProductDetail/Samtec/ASP-134488-01?qs=jyzYFa4oMQiB2Frr%252B13AUg%3D%3D" H 3150 9250 60  0001 C CNN
+	2    3150 8950
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -321,13 +321,6 @@ F 3 "~" H 3100 5600 50  0001 C CNN
 	1    3100 5600
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1400 7000
-NoConn ~ 1400 7100
-NoConn ~ 1400 7200
-NoConn ~ 1400 7300
-NoConn ~ 1400 7400
-NoConn ~ 1400 7500
-NoConn ~ 1400 7600
 NoConn ~ 1400 7700
 NoConn ~ 1400 7800
 NoConn ~ 1400 7900
@@ -361,46 +354,6 @@ NoConn ~ 1400 10600
 NoConn ~ 1400 10700
 NoConn ~ 1400 10800
 NoConn ~ 1400 10900
-NoConn ~ 2550 6900
-NoConn ~ 2550 7000
-NoConn ~ 2550 7100
-NoConn ~ 2550 7200
-NoConn ~ 2550 7300
-NoConn ~ 2550 7400
-NoConn ~ 2550 7500
-NoConn ~ 2550 7600
-NoConn ~ 2550 7700
-NoConn ~ 2550 7800
-NoConn ~ 2550 7900
-NoConn ~ 2550 8000
-NoConn ~ 2550 8100
-NoConn ~ 2550 8200
-NoConn ~ 2550 8300
-NoConn ~ 2550 8400
-NoConn ~ 2550 8500
-NoConn ~ 2550 8600
-NoConn ~ 2550 8700
-NoConn ~ 2550 8800
-NoConn ~ 2550 8900
-NoConn ~ 2550 9000
-NoConn ~ 2550 9100
-NoConn ~ 2550 9200
-NoConn ~ 2550 9300
-NoConn ~ 2550 9400
-NoConn ~ 2550 9500
-NoConn ~ 2550 9600
-NoConn ~ 2550 9700
-NoConn ~ 2550 9800
-NoConn ~ 2550 9900
-NoConn ~ 2550 10000
-NoConn ~ 2550 10100
-NoConn ~ 2550 10200
-NoConn ~ 2550 10300
-NoConn ~ 2550 10400
-NoConn ~ 2550 10500
-NoConn ~ 2550 10600
-NoConn ~ 2550 10700
-NoConn ~ 2550 10800
 NoConn ~ 14800 1200
 NoConn ~ 14800 1300
 NoConn ~ 14800 1400
@@ -768,7 +721,6 @@ NoConn ~ 6200 3650
 NoConn ~ 6200 3450
 NoConn ~ 6200 3350
 NoConn ~ 6200 3150
-NoConn ~ 6200 3050
 NoConn ~ 6200 2850
 NoConn ~ 6200 2750
 NoConn ~ 6200 2550
@@ -1067,4 +1019,96 @@ Text Label 8450 5050 0    50   ~ 0
 VDD_VADJ
 Text Label 10600 4950 0    50   ~ 0
 VDD_VADJ
+Text GLabel 3350 6950 2    43   Output ~ 0
+FMC_HS_CSI_C_D1_N
+Text GLabel 3350 7050 2    43   Output ~ 0
+FMC_HS_CSI_C_D1_P
+Text GLabel 3350 7150 2    43   Output ~ 0
+FMC_HS_CSI_C_D0_N
+Text GLabel 3350 7250 2    43   Output ~ 0
+FMC_HS_CSI_C_D0_P
+Text GLabel 3350 7350 2    43   Output ~ 0
+FMC_HS_CSI_D_D1_N
+Text GLabel 3350 7450 2    43   Output ~ 0
+FMC_HS_CSI_D_D1_P
+Text GLabel 3350 7550 2    43   Output ~ 0
+FMC_HS_CSI_D_D0_N
+Text GLabel 3350 7650 2    43   Output ~ 0
+FMC_HS_CSI_D_D0_P
+Text GLabel 3350 7750 2    43   Output ~ 0
+FMC_HS_CSI_D_CLK_P
+Text GLabel 3350 7850 2    43   Output ~ 0
+FMC_HS_CSI_C_CLK_N
+Text GLabel 3350 7950 2    43   Output ~ 0
+FMC_HS_CSI_C_CLK_P
+Text GLabel 3350 8050 2    43   Output ~ 0
+FMC_HS_CSI_D_CLK_N
+Text GLabel 3350 8150 2    43   Output ~ 0
+FMC_LP_CSI_C_D1_P
+Text GLabel 3350 8250 2    43   Output ~ 0
+FMC_LP_CSI_C_D1_N
+Text GLabel 3350 8350 2    43   Output ~ 0
+FMC_LP_CSI_C_D0_N
+Text GLabel 3350 8450 2    43   Output ~ 0
+FMC_LP_CSI_C_D0_P
+Text GLabel 3350 8550 2    43   Output ~ 0
+FMC_LP_CSI_D_D1_N
+Text GLabel 3350 8650 2    43   Output ~ 0
+FMC_LP_CSI_D_D1_P
+Text GLabel 3350 8750 2    43   Output ~ 0
+FMC_LP_CSI_D_D0_P
+Text GLabel 3350 8850 2    43   Output ~ 0
+FMC_LP_CSI_D_D0_N
+Text GLabel 3350 8950 2    43   Output ~ 0
+FMC_SWITCH_DATA_LANES_VADJ
+Text GLabel 3350 9050 2    43   Output ~ 0
+FMC_SWITCH_CLOCK_LANES_VADJ
+Text GLabel 3350 9150 2    43   Output ~ 0
+FMC_LP_CSI_C_CLK_P
+Text GLabel 3350 9250 2    43   Output ~ 0
+FMC_LP_CSI_C_CLK_N
+Text GLabel 3350 9350 2    43   Output ~ 0
+FMC_LP_CSI_D_CLK_P
+Text GLabel 3350 9450 2    43   Output ~ 0
+FMC_LP_CSI_D_CLK_N
+Text GLabel 3350 9550 2    43   Output ~ 0
+FMC_EN_MIPI_OUT_DATA_VADJ
+Text GLabel 3350 9650 2    43   Output ~ 0
+FMC_EN_MIPI_OUT_CLOCK_VADJ
+Text GLabel 3350 9750 2    43   Output ~ 0
+FMC_I2C_CAM_CLK
+Text GLabel 3350 9850 2    43   Output ~ 0
+FMC_I2C_CAM_DAT
+Text GLabel 3350 9950 2    43   Output ~ 0
+FMC_GPIO17_OUT
+Text GLabel 3350 10050 2    43   Output ~ 0
+FMC_GPIO9_OUT
+Text GLabel 1400 7000 2    43   Input ~ 0
+FMC_CAM0_PWR
+Text GLabel 1400 7100 2    43   Input ~ 0
+FMC_CAM0_RST
+Text GLabel 1400 7200 2    43   Input ~ 0
+FMC_CAM0_MCLK
+Text GLabel 1400 7300 2    43   Input ~ 0
+FMC_I2C2_CAM_CLK
+Text GLabel 1400 7400 2    43   BiDi ~ 0
+FMC_I2C2_CAM_DAT
+Text GLabel 1400 7500 2    43   Input ~ 0
+FMC_I2C3_CAM_CLK
+Text GLabel 1400 7600 2    43   BiDi ~ 0
+FMC_I2C3_CAM_DAT
+Text GLabel 3350 10250 2    43   Input ~ 0
+FMC_1P8V_MONITOR
+Text GLabel 3350 10150 2    43   Output ~ 0
+FMC_ENN_JT_GPIO_INPUT
+Text GLabel 3350 10550 2    43   Input ~ 0
+FMC_1P2V_MONITOR
+Text GLabel 3350 10450 2    43   Input ~ 0
+FMC_2P8V_MONITOR
+Text GLabel 3350 10350 2    43   Input ~ 0
+FMC_3P3V_MONITOR
+NoConn ~ 6200 3050
+NoConn ~ 3350 10650
+NoConn ~ 3350 10750
+NoConn ~ 3350 10850
 $EndSCHEMATC

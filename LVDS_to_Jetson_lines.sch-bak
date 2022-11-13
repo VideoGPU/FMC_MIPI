@@ -864,10 +864,6 @@ Text Label 8900 2050 0    50   ~ 0
 HS_CSI_C_D1_N
 Text Label 8900 2150 0    50   ~ 0
 HS_CSI_C_D1_P
-Text Label 6400 2050 0    50   ~ 0
-FMC_HS_CSI_C_D1_N
-Text Label 6400 2150 0    50   ~ 0
-FMC_HS_CSI_C_D1_P
 $Sheet
 S 7300 2550 1250 350 
 U 63D0A579
@@ -1003,24 +999,6 @@ Text Label 6800 4500 0    50   ~ 10
 VOLT_2P5
 Text Label 6800 5150 0    50   ~ 10
 VOLT_2P5
-Text Label 6400 2700 0    50   ~ 0
-FMC_HS_CSI_C_D0_N
-Text Label 6400 2800 0    50   ~ 0
-FMC_HS_CSI_C_D0_P
-Text Label 6400 3350 0    50   ~ 0
-FMC_HS_CSI_D_D1_N
-Text Label 6400 3450 0    50   ~ 0
-FMC_HS_CSI_D_D1_P
-Text Label 6400 4000 0    50   ~ 0
-FMC_HS_CSI_D_D0_N
-Text Label 6400 4100 0    50   ~ 0
-FMC_HS_CSI_D_D0_P
-Text Label 6400 4800 0    50   ~ 0
-FMC_HS_CSI_D_CLK_P
-Text Label 6400 5350 0    50   ~ 0
-FMC_HS_CSI_C_CLK_N
-Text Label 6400 5450 0    50   ~ 0
-FMC_HS_CSI_C_CLK_P
 Wire Wire Line
 	6400 2700 7300 2700
 Wire Wire Line
@@ -1041,24 +1019,6 @@ Wire Wire Line
 	6400 5350 7300 5350
 Wire Wire Line
 	7300 5450 6400 5450
-Text Label 6400 4700 0    50   ~ 0
-FMC_HS_CSI_D_CLK_N
-Text Label 2750 8400 2    50   ~ 0
-FMC_LP_CSI_C_D1_P
-Text Label 2750 8300 2    50   ~ 0
-FMC_LP_CSI_C_D1_N
-Text Label 2750 9100 2    50   ~ 0
-FMC_LP_CSI_C_D0_N
-Text Label 2750 9200 2    50   ~ 0
-FMC_LP_CSI_C_D0_P
-Text Label 2750 9400 2    50   ~ 0
-FMC_LP_CSI_D_D1_N
-Text Label 2750 9500 2    50   ~ 0
-FMC_LP_CSI_D_D1_P
-Text Label 2750 9800 2    50   ~ 0
-FMC_LP_CSI_D_D0_P
-Text Label 2750 9700 2    50   ~ 0
-FMC_LP_CSI_D_D0_N
 Text Notes 2300 8600 2    50   ~ 0
 LP lanes
 Wire Wire Line
@@ -1150,9 +1110,7 @@ VOLT_3P3
 Wire Wire Line
 	3250 3100 3400 3100
 Wire Wire Line
-	2050 3100 800  3100
-Text Label 800  3100 0    50   ~ 0
-FMC_SWITCH_DATA_LANES_VADJ
+	2050 3100 1950 3100
 Text Notes 700  2100 0    79   ~ 0
 Switches U5 and U6,  A to B level shift from VADJ to 3p3 volt 
 Wire Wire Line
@@ -1455,9 +1413,7 @@ SWITCH1_U5
 Wire Wire Line
 	3250 3200 3400 3200
 Wire Wire Line
-	2050 3200 800  3200
-Text Label 800  3200 0    50   ~ 0
-FMC_SWITCH_CLOCK_LANES_VADJ
+	2050 3200 1950 3200
 Wire Wire Line
 	15450 7800 15550 7800
 $Comp
@@ -1547,10 +1503,6 @@ F 6 "RC0805JR-070RL" V 15300 7800 60  0001 C CNN "Part Number"
 $EndComp
 Text Label 14650 7800 0    50   ~ 0
 SWITCH1_U6
-Text Label 2750 8100 2    50   ~ 0
-FMC_LP_CSI_C_CLK_P
-Text Label 2750 8000 2    50   ~ 0
-FMC_LP_CSI_C_CLK_N
 Wire Wire Line
 	4050 8100 2750 8100
 Wire Wire Line
@@ -1559,10 +1511,6 @@ Wire Wire Line
 	2750 8000 4050 8000
 Wire Wire Line
 	2750 7700 4050 7700
-Text Label 2750 7800 2    50   ~ 0
-FMC_LP_CSI_D_CLK_P
-Text Label 2750 7700 2    50   ~ 0
-FMC_LP_CSI_D_CLK_N
 Text Notes 800  6550 0    71   ~ 14
 TODO: make LP lanes split from a single FMC source!!\nClock LP lanes as well!!\n            Split goes here!!
 Wire Notes Line
@@ -1953,14 +1901,10 @@ Text Label 3400 3300 0    50   ~ 0
 EN_MIPI_OUT_CSI_C
 Wire Wire Line
 	3250 3300 3400 3300
-Text Label 800  3300 0    50   ~ 0
-FMC_EN_MIPI_OUT_DATA_VADJ
-Text Label 800  3400 0    50   ~ 0
-FMC_EN_MIPI_OUT_CLOCK_VADJ
 Wire Wire Line
-	800  3300 2050 3300
+	1950 3300 2050 3300
 Wire Wire Line
-	800  3400 2050 3400
+	1950 3400 2050 3400
 Text GLabel 14750 6700 2    50   Output ~ 0
 CSI_D_D0_P
 Text GLabel 14750 6600 2    50   Output ~ 0
@@ -2221,4 +2165,60 @@ F 6 "25V" H 1400 4000 50  0001 C CNN "Voltage"
 	1    1400 4000
 	-1   0    0    1   
 $EndComp
+Text GLabel 1950 3100 0    50   Output ~ 0
+FMC_SWITCH_DATA_LANES_VADJ
+Text GLabel 1950 3400 0    50   Output ~ 0
+FMC_EN_MIPI_OUT_CLOCK_VADJ
+Text GLabel 1950 3300 0    50   Output ~ 0
+FMC_EN_MIPI_OUT_DATA_VADJ
+Text GLabel 1950 3200 0    50   Output ~ 0
+FMC_SWITCH_CLOCK_LANES_VADJ
+Text GLabel 2750 7800 0    50   Output ~ 0
+FMC_LP_CSI_D_CLK_P
+Text GLabel 2750 8000 0    50   Output ~ 0
+FMC_LP_CSI_C_CLK_N
+Text GLabel 2750 8100 0    50   Output ~ 0
+FMC_LP_CSI_C_CLK_P
+Text GLabel 2750 8300 0    50   Output ~ 0
+FMC_LP_CSI_C_D1_N
+Text GLabel 2750 8400 0    50   Output ~ 0
+FMC_LP_CSI_C_D1_P
+Text GLabel 2750 9100 0    50   Output ~ 0
+FMC_LP_CSI_C_D0_N
+Text GLabel 2750 9200 0    50   Output ~ 0
+FMC_LP_CSI_C_D0_P
+Text GLabel 2750 9400 0    50   Output ~ 0
+FMC_LP_CSI_D_D1_N
+Text GLabel 2750 9500 0    50   Output ~ 0
+FMC_LP_CSI_D_D1_P
+Text GLabel 2750 9800 0    50   Output ~ 0
+FMC_LP_CSI_D_D0_P
+Text GLabel 2750 7700 0    50   Output ~ 0
+FMC_LP_CSI_D_CLK_N
+Text GLabel 2750 9700 0    50   Output ~ 0
+FMC_LP_CSI_D_D0_N
+Text GLabel 6400 2050 0    50   Input ~ 0
+FMC_HS_CSI_C_D1_N
+Text GLabel 6400 2150 0    50   Input ~ 0
+FMC_HS_CSI_C_D1_P
+Text GLabel 6400 2700 0    50   Input ~ 0
+FMC_HS_CSI_C_D0_N
+Text GLabel 6400 2800 0    50   Input ~ 0
+FMC_HS_CSI_C_D0_P
+Text GLabel 6400 3350 0    50   Input ~ 0
+FMC_HS_CSI_D_D1_N
+Text GLabel 6400 3450 0    50   Input ~ 0
+FMC_HS_CSI_D_D1_P
+Text GLabel 6400 4000 0    50   Input ~ 0
+FMC_HS_CSI_D_D0_N
+Text GLabel 6400 4100 0    50   Input ~ 0
+FMC_HS_CSI_D_D0_P
+Text GLabel 6400 4700 0    50   Input ~ 0
+FMC_HS_CSI_D_CLK_N
+Text GLabel 6400 4800 0    50   Input ~ 0
+FMC_HS_CSI_D_CLK_P
+Text GLabel 6400 5350 0    50   Input ~ 0
+FMC_HS_CSI_C_CLK_N
+Text GLabel 6400 5450 0    50   Input ~ 0
+FMC_HS_CSI_C_CLK_P
 $EndSCHEMATC

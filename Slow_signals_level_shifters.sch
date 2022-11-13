@@ -75,10 +75,6 @@ Wire Wire Line
 	3150 2500 3150 2600
 Text Label 3200 2000 0    50   ~ 10
 VDD_VADJ
-Text Label 3650 2250 0    50   ~ 0
-FMC_I2C_CAM_CLK
-Text Label 3650 2350 0    50   ~ 0
-FMC_I2C_CAM_DAT
 $Comp
 L FMC_MIPI_v2:C C?
 U 1 1 6365CFEF
@@ -657,10 +653,6 @@ Text Notes 4950 2350 0    50   ~ 0
 Bus B<-A, goes from Jetson to FMC 
 Text Label 10350 2350 0    50   ~ 10
 VOLT_1P8
-Text Label 5900 4400 0    50   ~ 0
-FMC_GPIO17_OUT
-Text Label 5900 4300 0    50   ~ 0
-FMC_GPIO9_OUT
 Text GLabel 9950 4400 2    50   Input ~ 0
 JT_1p8V_GPIO17_IN
 Text GLabel 9950 4300 2    50   Input ~ 0
@@ -1036,12 +1028,6 @@ Wire Wire Line
 	3500 2250 3650 2250
 Wire Wire Line
 	3500 2350 3650 2350
-Text Label 5400 2900 0    50   ~ 0
-FMC_CAM0_PWR
-Text Label 5400 3000 0    50   ~ 0
-FMC_CAM0_RST
-Text Label 5400 2600 0    50   ~ 0
-FMC_CAM0_MCLK
 Wire Wire Line
 	6150 4800 6900 4800
 $Comp
@@ -1276,10 +1262,6 @@ Wire Wire Line
 	3150 4450 3150 4550
 Text Label 3200 3950 0    50   ~ 10
 VDD_VADJ
-Text Label 3700 4200 0    50   ~ 0
-FMC_I2C2_CAM_CLK
-Text Label 3700 4300 0    50   ~ 0
-FMC_I2C2_CAM_DAT
 $Comp
 L FMC_MIPI_v2:C C?
 U 1 1 636B8936
@@ -1798,10 +1780,6 @@ Wire Wire Line
 	3150 6400 3150 6500
 Text Label 3200 5900 0    50   ~ 10
 VDD_VADJ
-Text Label 3700 6150 0    50   ~ 0
-FMC_I2C3_CAM_CLK
-Text Label 3700 6250 0    50   ~ 0
-FMC_I2C3_CAM_DAT
 $Comp
 L FMC_MIPI_v2:C C?
 U 1 1 63721457
@@ -2357,14 +2335,10 @@ F 6 "CRCW08051K00FKEAC" V 10150 3200 60  0001 C CNN "Part Number"
 $EndComp
 Wire Wire Line
 	10300 3200 10400 3200
-Text Label 5400 3200 0    50   ~ 0
-FMC_1P8V_MONITOR
 Text Label 4950 2500 0    50   ~ 10
 VOLT_1P8
 Wire Wire Line
 	6000 2500 4950 2500
-Text Label 4650 6400 0    50   ~ 0
-FMC_ENN_JT_GPIO_INPUT
 Wire Wire Line
 	9700 4500 9700 5200
 Wire Wire Line
@@ -2638,7 +2612,7 @@ Wire Notes Line
 Text Label 6750 6150 0    50   ~ 10
 VOLT_1P8
 Wire Wire Line
-	4650 6400 5650 6400
+	5550 6400 5650 6400
 Text Label 10450 4800 0    50   ~ 0
 ENN_JETSON_GPIO
 $Comp
@@ -2731,4 +2705,30 @@ Wire Wire Line
 	10250 4800 10450 4800
 Text Label 6150 6900 0    50   ~ 10
 VOLT_1P8
+Text GLabel 5400 3200 0    50   Output ~ 0
+FMC_1P8V_MONITOR
+Text GLabel 5400 2900 0    50   Output ~ 0
+FMC_CAM0_PWR
+Text GLabel 5400 2600 0    50   Output ~ 0
+FMC_CAM0_MCLK
+Text GLabel 5400 3000 0    50   Output ~ 0
+FMC_CAM0_RST
+Text GLabel 5900 4300 0    50   Output ~ 0
+FMC_GPIO9_OUT
+Text GLabel 5900 4400 0    50   Output ~ 0
+FMC_GPIO17_OUT
+Text GLabel 3650 2250 2    50   Output ~ 0
+FMC_I2C_CAM_CLK
+Text GLabel 3650 2350 2    50   BiDi ~ 0
+FMC_I2C_CAM_DAT
+Text GLabel 3700 6150 2    50   Output ~ 0
+FMC_I2C3_CAM_CLK
+Text GLabel 3700 6250 2    50   BiDi ~ 0
+FMC_I2C3_CAM_DAT
+Text GLabel 5550 6400 0    50   Input ~ 0
+FMC_ENN_JT_GPIO_INPUT
+Text GLabel 3700 4200 2    50   Output ~ 0
+FMC_I2C2_CAM_CLK
+Text GLabel 3700 4300 2    50   BiDi ~ 0
+FMC_I2C2_CAM_DAT
 $EndSCHEMATC
