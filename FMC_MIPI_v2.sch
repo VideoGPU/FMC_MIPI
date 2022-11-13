@@ -140,4 +140,6 @@ Text Label 4400 2900 0    50   ~ 0
 VOLT_3P3
 Wire Wire Line
 	4400 2900 4950 2900
+Text Notes 2300 6100 0    50   ~ 0
+Stackup:\nSingle Ended: 6 mil\nDifferential:\n4  mil Width, 8 mil spacing\n-----\n0.1 mm height to ground plane\n
 $EndSCHEMATC

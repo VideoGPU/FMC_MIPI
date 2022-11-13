@@ -1028,7 +1028,7 @@ F 1 "9.1" V 3350 1250 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 3280 1250 50  0001 C CNN
 F 3 "https://www.mouser.co.il/ProductDetail/Bourns/CR0603-F-9R10ELF?qs=W%2FMpXkg%252BdQ6lipKjUosapQ%3D%3D" H 3350 1250 50  0001 C CNN
 F 4 "1%" V 3350 1250 60  0001 C CNN "Tolerance"
-F 5 "250 mW" V 3350 1250 60  0001 C CNN "Power"
+F 5 "100 mW " V 3350 1250 60  0001 C CNN "Power"
 F 6 "CR0603-F/-9R10ELF" V 3350 1250 60  0001 C CNN "Part Number"
 	1    3350 1250
 	-1   0    0    1   
@@ -1162,11 +1162,11 @@ AR Path="/6366AF3A/63D3885E/63C11627" Ref="R?"  Part="1"
 AR Path="/6366AF3A/63D47A03/63C11627" Ref="R?"  Part="1" 
 F 0 "R44" V 3430 1950 50  0000 C CNN
 F 1 "9.1" V 3350 1950 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 3280 1950 50  0001 C CNN
-F 3 "" H 3350 1950 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" V 3280 1950 50  0001 C CNN
+F 3 "https://www.mouser.co.il/ProductDetail/Bourns/CR0603-F-9R10ELF?qs=W%2FMpXkg%252BdQ6lipKjUosapQ%3D%3D" H 3350 1950 50  0001 C CNN
 F 4 "1%" V 3350 1950 60  0001 C CNN "Tolerance"
-F 5 "250 mW" V 3350 1950 60  0001 C CNN "Power"
-F 6 "" V 3350 1950 60  0001 C CNN "Part Number"
+F 5 "100 mW " V 3350 1950 60  0001 C CNN "Power"
+F 6 "CR0603-F/-9R10ELF" V 3350 1950 60  0001 C CNN "Part Number"
 	1    3350 1950
 	-1   0    0    1   
 $EndComp
