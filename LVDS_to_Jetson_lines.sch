@@ -398,29 +398,6 @@ F 3 "~" H 3200 10250 50  0001 C CNN
 	1    3200 10250
 	1    0    0    -1  
 $EndComp
-$Comp
-L FMC_MIPI_v2:Earth #PWR?
-U 1 1 636800C9
-P 6850 10300
-AR Path="/6193F705/636800C9" Ref="#PWR?"  Part="1" 
-AR Path="/6191D89C/6191EB86/636800C9" Ref="#PWR?"  Part="1" 
-AR Path="/6191D89C/6191F185/636800C9" Ref="#PWR?"  Part="1" 
-AR Path="/6191D89C/6192061E/636800C9" Ref="#PWR?"  Part="1" 
-AR Path="/6191D89C/61920A25/636800C9" Ref="#PWR?"  Part="1" 
-AR Path="/6191D89C/61933123/636800C9" Ref="#PWR?"  Part="1" 
-AR Path="/6191D89C/61935424/636800C9" Ref="#PWR?"  Part="1" 
-AR Path="/6191D89C/636800C9" Ref="#PWR0110"  Part="1" 
-AR Path="/6191D89C/61A814B9/636800C9" Ref="#PWR?"  Part="1" 
-AR Path="/6191D89C/61A38142/636800C9" Ref="#PWR?"  Part="1" 
-AR Path="/6191D89C/61A4C646/636800C9" Ref="#PWR?"  Part="1" 
-AR Path="/6191D89C/62016C67/636800C9" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0110" H 6850 10050 50  0001 C CNN
-F 1 "Earth" H 6850 10150 50  0001 C CNN
-F 2 "" H 6850 10300 50  0001 C CNN
-F 3 "~" H 6850 10300 50  0001 C CNN
-	1    6850 10300
-	1    0    0    -1  
-$EndComp
 Text Notes 12800 5900 0    50   ~ 0
 LP/HS switch clock lanes
 Wire Wire Line
@@ -453,38 +430,34 @@ Text Label 11300 4850 0    50   ~ 0
 LP_CSI_C_CLK_P
 Wire Wire Line
 	6450 8600 6600 8600
-Text Label 7900 8100 2    50   ~ 0
+Text Label 7900 8400 2    50   ~ 0
 LP_CSI_C_CLK_P
-Text Label 7900 8000 2    50   ~ 0
+Text Label 7900 8300 2    50   ~ 0
 LP_CSI_C_CLK_N
-Text Label 7850 8400 2    50   ~ 0
+Text Label 7850 7800 2    50   ~ 0
 LP_CSI_C_D1_P
-Text Label 7850 8300 2    50   ~ 0
+Text Label 7850 7700 2    50   ~ 0
 LP_CSI_C_D1_N
-Text Label 7900 9100 2    50   ~ 0
+Text Label 7900 8000 2    50   ~ 0
 LP_CSI_C_D0_N
-Text Label 7900 9200 2    50   ~ 0
+Text Label 7900 8100 2    50   ~ 0
 LP_CSI_C_D0_P
 Text Notes 7850 8800 2    50   ~ 0
 LP lanes
-Wire Wire Line
-	6450 9100 7900 9100
-Wire Wire Line
-	6450 9200 7900 9200
-Wire Wire Line
-	6450 8300 7850 8300
-Wire Wire Line
-	6450 8400 7850 8400
 Wire Wire Line
 	6450 8000 7900 8000
 Wire Wire Line
 	6450 8100 7900 8100
 Wire Wire Line
-	6450 7800 7900 7800
+	6450 7700 7850 7700
+Wire Wire Line
+	6450 7800 7850 7800
+Wire Wire Line
+	6450 8300 7900 8300
+Wire Wire Line
+	6450 8400 7900 8400
 Wire Wire Line
 	6600 8600 6600 8700
-Wire Wire Line
-	6450 7700 7900 7700
 Wire Wire Line
 	4000 8200 4000 9300
 $Comp
@@ -819,10 +792,6 @@ F 3 "~" H 10650 9950 50  0001 C CNN
 	1    10650 9950
 	1    0    0    -1  
 $EndComp
-Text Label 7900 7700 2    50   ~ 0
-LP_CSI_D_CLK_N
-Text Label 7900 7800 2    50   ~ 0
-LP_CSI_D_CLK_P
 Text Notes 4700 6650 0    50   ~ 0
 Note: LP signal are single ended!! No need to treat them as diffrential,\n+ they are low speed, so SI is not an issue.\nPlacing it at the bottom layer for now.\nB -> A switching time = 2.9 ns\nA -> B switching time = 2.6
 Text Label 11350 7000 0    50   ~ 0
@@ -1019,7 +988,7 @@ Wire Wire Line
 	6400 5350 7300 5350
 Wire Wire Line
 	7300 5450 6400 5450
-Text Notes 2300 8600 2    50   ~ 0
+Text Notes 2450 8750 2    50   ~ 0
 LP lanes
 Wire Wire Line
 	2750 8300 4050 8300
@@ -1029,22 +998,22 @@ Wire Wire Line
 	2750 9100 4050 9100
 Wire Wire Line
 	4050 9200 2750 9200
-Text Label 7900 9700 2    50   ~ 0
-LP_CSI_D_D0_N
-Text Label 7900 9800 2    50   ~ 0
-LP_CSI_D_D0_P
-Text Label 7900 9500 2    50   ~ 0
-LP_CSI_D_D1_P
 Text Label 7900 9400 2    50   ~ 0
+LP_CSI_D_D0_N
+Text Label 7900 9500 2    50   ~ 0
+LP_CSI_D_D0_P
+Text Label 7900 9200 2    50   ~ 0
+LP_CSI_D_D1_P
+Text Label 7900 9100 2    50   ~ 0
 LP_CSI_D_D1_N
+Wire Wire Line
+	6450 9100 7900 9100
+Wire Wire Line
+	6450 9200 7900 9200
 Wire Wire Line
 	6450 9400 7900 9400
 Wire Wire Line
 	6450 9500 7900 9500
-Wire Wire Line
-	6450 9700 7900 9700
-Wire Wire Line
-	6450 9800 7900 9800
 $Comp
 L FMC_MIPI_v2:Earth #PWR?
 U 1 1 63572036
@@ -2173,29 +2142,29 @@ Text GLabel 1950 3300 0    50   Output ~ 0
 FMC_EN_MIPI_OUT_DATA_VADJ
 Text GLabel 1950 3200 0    50   Output ~ 0
 FMC_SWITCH_CLOCK_LANES_VADJ
-Text GLabel 2750 7800 0    50   Output ~ 0
-FMC_LP_CSI_D_CLK_P
-Text GLabel 2750 8000 0    50   Output ~ 0
-FMC_LP_CSI_C_CLK_N
-Text GLabel 2750 8100 0    50   Output ~ 0
-FMC_LP_CSI_C_CLK_P
-Text GLabel 2750 8300 0    50   Output ~ 0
-FMC_LP_CSI_C_D1_N
-Text GLabel 2750 8400 0    50   Output ~ 0
-FMC_LP_CSI_C_D1_P
-Text GLabel 2750 9100 0    50   Output ~ 0
-FMC_LP_CSI_C_D0_N
-Text GLabel 2750 9200 0    50   Output ~ 0
-FMC_LP_CSI_C_D0_P
-Text GLabel 2750 9400 0    50   Output ~ 0
-FMC_LP_CSI_D_D1_N
-Text GLabel 2750 9500 0    50   Output ~ 0
-FMC_LP_CSI_D_D1_P
 Text GLabel 2750 9800 0    50   Output ~ 0
-FMC_LP_CSI_D_D0_P
+FMC_LP_CSI_D_CLK_P
+Text GLabel 2750 8300 0    50   Output ~ 0
+FMC_LP_CSI_C_CLK_N
+Text GLabel 2750 8400 0    50   Output ~ 0
+FMC_LP_CSI_C_CLK_P
 Text GLabel 2750 7700 0    50   Output ~ 0
-FMC_LP_CSI_D_CLK_N
+FMC_LP_CSI_C_D1_N
+Text GLabel 2750 7800 0    50   Output ~ 0
+FMC_LP_CSI_C_D1_P
+Text GLabel 2750 8000 0    50   Output ~ 0
+FMC_LP_CSI_C_D0_N
+Text GLabel 2750 8100 0    50   Output ~ 0
+FMC_LP_CSI_C_D0_P
+Text GLabel 2750 9100 0    50   Output ~ 0
+FMC_LP_CSI_D_D1_N
+Text GLabel 2750 9200 0    50   Output ~ 0
+FMC_LP_CSI_D_D1_P
+Text GLabel 2750 9500 0    50   Output ~ 0
+FMC_LP_CSI_D_D0_P
 Text GLabel 2750 9700 0    50   Output ~ 0
+FMC_LP_CSI_D_CLK_N
+Text GLabel 2750 9400 0    50   Output ~ 0
 FMC_LP_CSI_D_D0_N
 Text GLabel 6400 2050 0    50   Input ~ 0
 FMC_HS_CSI_C_D1_N
@@ -2221,4 +2190,35 @@ Text GLabel 6400 5350 0    50   Input ~ 0
 FMC_HS_CSI_C_CLK_N
 Text GLabel 6400 5450 0    50   Input ~ 0
 FMC_HS_CSI_C_CLK_P
+Text Label 7900 9800 2    50   ~ 0
+LP_CSI_D_CLK_P
+Text Label 7900 9700 2    50   ~ 0
+LP_CSI_D_CLK_N
+Wire Wire Line
+	6450 9700 7900 9700
+Wire Wire Line
+	6450 9800 7900 9800
+$Comp
+L FMC_MIPI_v2:Earth #PWR?
+U 1 1 636800C9
+P 6850 10300
+AR Path="/6193F705/636800C9" Ref="#PWR?"  Part="1" 
+AR Path="/6191D89C/6191EB86/636800C9" Ref="#PWR?"  Part="1" 
+AR Path="/6191D89C/6191F185/636800C9" Ref="#PWR?"  Part="1" 
+AR Path="/6191D89C/6192061E/636800C9" Ref="#PWR?"  Part="1" 
+AR Path="/6191D89C/61920A25/636800C9" Ref="#PWR?"  Part="1" 
+AR Path="/6191D89C/61933123/636800C9" Ref="#PWR?"  Part="1" 
+AR Path="/6191D89C/61935424/636800C9" Ref="#PWR?"  Part="1" 
+AR Path="/6191D89C/636800C9" Ref="#PWR0110"  Part="1" 
+AR Path="/6191D89C/61A814B9/636800C9" Ref="#PWR?"  Part="1" 
+AR Path="/6191D89C/61A38142/636800C9" Ref="#PWR?"  Part="1" 
+AR Path="/6191D89C/61A4C646/636800C9" Ref="#PWR?"  Part="1" 
+AR Path="/6191D89C/62016C67/636800C9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0110" H 6850 10050 50  0001 C CNN
+F 1 "Earth" H 6850 10150 50  0001 C CNN
+F 2 "" H 6850 10300 50  0001 C CNN
+F 3 "~" H 6850 10300 50  0001 C CNN
+	1    6850 10300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
