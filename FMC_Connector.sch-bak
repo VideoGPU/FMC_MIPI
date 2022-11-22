@@ -1053,12 +1053,10 @@ Text GLabel 8600 2450 2    43   BiDi ~ 0
 FMC_I2C2_CAM_DAT
 Text GLabel 6300 2150 2    43   Input ~ 0
 FMC_I2C2_CAM_CLK
-Text GLabel 6350 4250 2    43   Input ~ 0
+Text GLabel 6350 4550 2    43   Input ~ 0
 FMC_CAM0_MCLK
 Text GLabel 6350 4050 2    43   Input ~ 0
 FMC_CAM0_RST
-Text GLabel 6350 4550 2    43   Input ~ 0
-FMC_CAM0_PWR
 Wire Wire Line
 	4500 2300 4650 2300
 Wire Wire Line
@@ -1168,4 +1166,6 @@ Wire Wire Line
 	8450 4050 8650 4050
 Text GLabel 6350 3950 2    43   Input ~ 0
 FMC_1P8V_MONITOR
+Text GLabel 6350 4250 2    43   Input ~ 0
+FMC_CAM0_PWR
 $EndSCHEMATC
