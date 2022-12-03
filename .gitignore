@@ -2,6 +2,7 @@
 # Format documentation: http://kicad-pcb.org/help/file-formats/
 
 FMC_MIPI_v2-backups/
+Manufacturing/
 
 # Temporary files
 *.000
