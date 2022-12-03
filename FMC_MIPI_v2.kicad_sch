@@ -980,7 +980,7 @@
       (reference "U1") (unit 1) (value "LP5907MFX-1.8") (footprint "Package_TO_SOT_SMD:SOT-23-5")
     )
     (path "/00000000-0000-0000-0000-000061aca102/00000000-0000-0000-0000-000063958435"
-      (reference "U2") (unit 1) (value "SN74AVC2T45DCUR") (footprint "DCU8")
+      (reference "U2") (unit 1) (value "SN74AVC2T45DCUR") (footprint "FMC_MIPI_v2_sym:SN74AVC2T45DCUR")
     )
     (path "/00000000-0000-0000-0000-00006362ecc5/00000000-0000-0000-0000-000063673675"
       (reference "U3") (unit 1) (value "SN74AVCH16T245_DGV_48") (footprint "FMC_MIPI_v2_sym:DGV48")

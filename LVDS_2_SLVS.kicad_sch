@@ -6,7 +6,7 @@
 
   (lib_symbols
     (symbol "FMC_MIPI_v2:Earth" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (id 0) (at 0 -6.35 0)
+      (property "Reference" "#PWR?" (id 0) (at 0 -6.35 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "Value" "Earth" (id 1) (at 0 -3.81 0)
@@ -15,7 +15,13 @@
       (property "Footprint" "" (id 2) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Datasheet" "" (id 3) (at 0 0 0)
+      (property "Datasheet" "~" (id 3) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "power-flag ground gnd" (id 4) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"Earth\"" (id 5) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "Earth_0_1"
@@ -53,7 +59,7 @@
         )
       )
       (symbol "Earth_1_1"
-        (pin passive line (at 0 0 270) (length 0) hide
+        (pin power_in line (at 0 0 270) (length 0) hide
           (name "Earth" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
@@ -325,7 +331,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Footprint" "" (id 2) (at 91.44 29.21 0))
-    (property "Datasheet" "" (id 3) (at 91.44 29.21 0))
+    (property "Datasheet" "~" (id 3) (at 91.44 29.21 0))
     (pin "1" (uuid 6a8a0b03-06ee-4e04-b89a-987b40043801))
   )
 
@@ -339,7 +345,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Footprint" "" (id 2) (at 91.44 58.42 0))
-    (property "Datasheet" "" (id 3) (at 91.44 58.42 0))
+    (property "Datasheet" "~" (id 3) (at 91.44 58.42 0))
     (pin "1" (uuid 5ac86f09-0dcf-41fb-ae61-cb8df4854028))
   )
 
