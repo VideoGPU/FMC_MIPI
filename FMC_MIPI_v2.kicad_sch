@@ -28,7 +28,7 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 445c1811-ee9c-436c-9557-b2547e101c48)
   )
-  (wire (pts (xy 50.8 26.67) (xy 66.04 26.67))
+  (wire (pts (xy 50.8 26.67) (xy 53.34 26.67))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 5a593f38-9cd9-4938-ab03-0bac0ad92ecc)
   )
@@ -66,6 +66,10 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid a6a6f65f-dbca-482f-8dbc-be65bab02674)
   )
+  (wire (pts (xy 53.34 26.67) (xy 53.34 20.32))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid c7ffca13-b470-4bc9-905c-44b29972f547)
+  )
   (polyline (pts (xy 21.59 139.7) (xy 50.8 139.7))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid cb45d8cd-182b-4b13-95d2-6ef57bc8bff7)
@@ -83,6 +87,10 @@
   (wire (pts (xy 107.95 31.75) (xy 115.57 31.75))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid e4c24620-78cc-452f-86e1-bb349d29de40)
+  )
+  (wire (pts (xy 53.34 20.32) (xy 55.88 20.32))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid ea55704e-159a-4dc4-9d39-68ae28a36b6b)
   )
   (wire (pts (xy 147.32 26.67) (xy 134.62 26.67))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -141,7 +149,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 2b551037-4bb0-45bd-b9d7-275d13195f31)
   )
-  (label "VDD_VADJ" (at 54.61 26.67 0)
+  (label "VDD_VADJ" (at 55.88 20.32 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 343195dc-fc7c-4aca-a120-4f8343632cd9)
   )
@@ -303,10 +311,6 @@
     (pin "VOLT_1P8" output (at 107.95 29.21 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 8b71efd3-08fe-4472-96ce-707b77b0e8cb)
-    )
-    (pin "VDD_VADJ" input (at 66.04 26.67 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid b309b938-d207-4ad2-aa77-3583927af6db)
     )
     (pin "VOLT_3P3" input (at 66.04 29.21 180)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -543,6 +547,12 @@
     (path "/00000000-0000-0000-0000-000061aca102/75adb3da-2b4f-495a-b7e5-7bd47b05a3db"
       (reference "#PWR0170") (unit 1) (value "Earth") (footprint "")
     )
+    (path "/00000000-0000-0000-0000-00006191d89c/a6e028eb-5cad-4a89-9ee1-8b000b9d29f8"
+      (reference "#PWR0171") (unit 1) (value "Earth") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00006191d89c/1baeb4d8-9d24-4168-8d32-ec567582b332"
+      (reference "#PWR0172") (unit 1) (value "Earth") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-00006191d89c/00000000-0000-0000-0000-00006384a0b1"
       (reference "C1") (unit 1) (value "0.1uF") (footprint "Capacitors_SMD:C_0402")
     )
@@ -667,16 +677,16 @@
       (reference "C41") (unit 1) (value "0.1uF") (footprint "Capacitors_SMD:C_0402")
     )
     (path "/00000000-0000-0000-0000-000061aca102/00000000-0000-0000-0000-0000635d4ce0"
-      (reference "D1") (unit 1) (value "UCLAMP0501H.TCT") (footprint "Diodes_SMD:D_SOD-523")
+      (reference "D1") (unit 1) (value "UCLAMP0501H.TCT") (footprint "SODFL1608X70N")
     )
     (path "/00000000-0000-0000-0000-0000637747ef/00000000-0000-0000-0000-0000636d55eb"
-      (reference "D2") (unit 1) (value "UCLAMP0501H.TCT") (footprint "Diodes_SMD:D_SOD-523")
+      (reference "D2") (unit 1) (value "UCLAMP0501H.TCT") (footprint "SODFL1608X70N")
     )
     (path "/00000000-0000-0000-0000-0000637747ef/00000000-0000-0000-0000-0000636d7d69"
-      (reference "D3") (unit 1) (value "UCLAMP0501H.TCT") (footprint "Diodes_SMD:D_SOD-523")
+      (reference "D3") (unit 1) (value "UCLAMP0501H.TCT") (footprint "SODFL1608X70N")
     )
     (path "/00000000-0000-0000-0000-0000637747ef/00000000-0000-0000-0000-0000636c2a4e"
-      (reference "D4") (unit 1) (value "UCLAMP0501H.TCT") (footprint "Diodes_SMD:D_SOD-523")
+      (reference "D4") (unit 1) (value "UCLAMP0501H.TCT") (footprint "SODFL1608X70N")
     )
     (path "/00000000-0000-0000-0000-00006191d89c/00000000-0000-0000-0000-000063727c9f"
       (reference "IC1") (unit 1) (value "SN74AVC4T245PWR") (footprint "SOP65P640X120-16N")
@@ -685,19 +695,19 @@
       (reference "IC2") (unit 1) (value "AT24MAC402-MAHM-T") (footprint "SON50P300X200X60-9N")
     )
     (path "/00000000-0000-0000-0000-00006362ecc5/00000000-0000-0000-0000-00006365cfd1"
-      (reference "IC3") (unit 1) (value "TCA9406DCUR") (footprint "FMC_MIPI_v2_sym:SOP50P310X90-8N")
+      (reference "IC3") (unit 1) (value "TCA9406DCUR") (footprint "SOP50P310X90-8N")
     )
     (path "/00000000-0000-0000-0000-00006362ecc5/00000000-0000-0000-0000-0000636b86ee"
-      (reference "IC4") (unit 1) (value "TCA9406DCUR") (footprint "FMC_MIPI_v2_sym:SOP50P310X90-8N")
+      (reference "IC4") (unit 1) (value "TCA9406DCUR") (footprint "SOP50P310X90-8N")
     )
     (path "/00000000-0000-0000-0000-00006362ecc5/00000000-0000-0000-0000-000063721435"
-      (reference "IC5") (unit 1) (value "TCA9406DCUR") (footprint "FMC_MIPI_v2_sym:SOP50P310X90-8N")
+      (reference "IC5") (unit 1) (value "TCA9406DCUR") (footprint "SOP50P310X90-8N")
     )
     (path "/00000000-0000-0000-0000-000061aca102/00000000-0000-0000-0000-000063729e09"
-      (reference "IC6") (unit 1) (value "SN74AVC1T45DCKT") (footprint "FMC_MIPI_v2_sym:SOT65P210X110-6N")
+      (reference "IC6") (unit 1) (value "SN74AVC1T45DCKT") (footprint "SOT65P210X110-6N")
     )
     (path "/00000000-0000-0000-0000-00006362ecc5/00000000-0000-0000-0000-000063b30661"
-      (reference "IC7") (unit 1) (value "SN74AVC1T45DCKT") (footprint "FMC_MIPI_v2_sym:SOT65P210X110-6N")
+      (reference "IC7") (unit 1) (value "SN74AVC1T45DCKT") (footprint "SOT65P210X110-6N")
     )
     (path "/00000000-0000-0000-0000-00006170b975/00000000-0000-0000-0000-00006191882c"
       (reference "J1") (unit 1) (value "ASP-134488-01") (footprint "FMC_MIPI_v2_sym:ASP-134488-01_VER2")
@@ -967,10 +977,10 @@
       (reference "R75") (unit 1) (value "0") (footprint "Resistors_SMD:R_0805")
     )
     (path "/00000000-0000-0000-0000-0000637747ef/00000000-0000-0000-0000-000063810b84"
-      (reference "U1") (unit 1) (value "LP5907MFX-1.8") (footprint "TO_SOT_Packages_SMD:SOT-23-5")
+      (reference "U1") (unit 1) (value "LP5907MFX-1.8") (footprint "Package_TO_SOT_SMD:SOT-23-5")
     )
     (path "/00000000-0000-0000-0000-000061aca102/00000000-0000-0000-0000-000063958435"
-      (reference "U2") (unit 1) (value "SN74AVC2T45DCUR") (footprint "FMC_MIPI_v2_sym:SN74AVC2T45DCUR")
+      (reference "U2") (unit 1) (value "SN74AVC2T45DCUR") (footprint "DCU8")
     )
     (path "/00000000-0000-0000-0000-00006362ecc5/00000000-0000-0000-0000-000063673675"
       (reference "U3") (unit 1) (value "SN74AVCH16T245_DGV_48") (footprint "FMC_MIPI_v2_sym:DGV48")
@@ -985,7 +995,7 @@
       (reference "U6") (unit 1) (value "TS3DDR3812_RUA_42") (footprint "FMC_MIPI_v2_sym:TS3DDR3812RUAR")
     )
     (path "/00000000-0000-0000-0000-0000637747ef/00000000-0000-0000-0000-000063821542"
-      (reference "U7") (unit 1) (value "LP5907MFX-1.2") (footprint "TO_SOT_Packages_SMD:SOT-23-5")
+      (reference "U7") (unit 1) (value "LP5907MFX-1.2") (footprint "Package_TO_SOT_SMD:SOT-23-5")
     )
     (path "/00000000-0000-0000-0000-00006191d89c/00000000-0000-0000-0000-0000636800c7"
       (reference "U8") (unit 1) (value "SN74AVCH16T245_DGV_48") (footprint "FMC_MIPI_v2_sym:DGV48")
