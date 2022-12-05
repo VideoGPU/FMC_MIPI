@@ -3,6 +3,7 @@
 
 FMC_MIPI_v2-backups/
 Manufacturing/
+BOM/
 
 # Temporary files
 *.000
