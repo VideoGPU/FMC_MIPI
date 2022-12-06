@@ -127,9 +127,9 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid dffe91df-c4f8-4321-be56-7310a7da04b3)
   )
-  (text "Stackup:\nSingle Ended: 6 mil\nDifferential:\n4  mil Width, 8 mil spacing\n-----\n0.1 mm height to ground plane\n"
-    (at 58.42 154.94 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
+  (text "Stackup:\nSingle Ended: 6 mil\nDifferential:\n4  mil Width, 8 mil spacing\n-----\n0.1 mm height to ground plane\n\nJLCPCB Stackup name: JLC06161H-3313\n"
+    (at 55.88 163.195 0)
+    (effects (font (size 2 2) (thickness 0.254) bold) (justify left bottom))
     (uuid ffacdeea-fd90-4b5a-8604-10b66f49b7b2)
   )
 
@@ -836,22 +836,22 @@
       (reference "R28") (unit 1) (value "0") (footprint "Resistors_SMD:R_0805")
     )
     (path "/00000000-0000-0000-0000-000061aca102/00000000-0000-0000-0000-0000637a2fc5"
-      (reference "R29") (unit 1) (value "1k") (footprint "Resistors_SMD:R_0805")
+      (reference "R29") (unit 1) (value "2.2k") (footprint "Resistors_SMD:R_0805")
     )
     (path "/00000000-0000-0000-0000-000061aca102/00000000-0000-0000-0000-00006376ce9d"
       (reference "R30") (unit 1) (value "4.7k") (footprint "Resistors_SMD:R_0805")
     )
     (path "/00000000-0000-0000-0000-00006362ecc5/00000000-0000-0000-0000-0000638632db"
-      (reference "R31") (unit 1) (value "1k") (footprint "Resistors_SMD:R_0805")
+      (reference "R31") (unit 1) (value "2.2k") (footprint "Resistors_SMD:R_0805")
     )
     (path "/00000000-0000-0000-0000-000061aca102/00000000-0000-0000-0000-0000638d5ec5"
-      (reference "R32") (unit 1) (value "1k") (footprint "Resistors_SMD:R_0805")
+      (reference "R32") (unit 1) (value "2.2k") (footprint "Resistors_SMD:R_0805")
     )
     (path "/00000000-0000-0000-0000-000061aca102/00000000-0000-0000-0000-0000638d5eb1"
       (reference "R33") (unit 1) (value "4.7k") (footprint "Resistors_SMD:R_0805")
     )
     (path "/00000000-0000-0000-0000-000061aca102/00000000-0000-0000-0000-000063a1f4ee"
-      (reference "R34") (unit 1) (value "1k") (footprint "Resistors_SMD:R_0805")
+      (reference "R34") (unit 1) (value "2.2k") (footprint "Resistors_SMD:R_0805")
     )
     (path "/00000000-0000-0000-0000-00006362ecc5/00000000-0000-0000-0000-000063b3066e"
       (reference "R35") (unit 1) (value "4.7k") (footprint "Resistors_SMD:R_0805")
@@ -983,7 +983,7 @@
       (reference "U2") (unit 1) (value "SN74AVC2T45DCUR") (footprint "FMC_MIPI_v2_sym:SN74AVC2T45DCUR")
     )
     (path "/00000000-0000-0000-0000-00006362ecc5/00000000-0000-0000-0000-000063673675"
-      (reference "U3") (unit 1) (value "SN74AVCH16T245_DGV_48") (footprint "FMC_MIPI_v2_sym:DGV48")
+      (reference "U3") (unit 1) (value "SN74AVCH16T245GR") (footprint "FMC_MIPI_v2_sym:SOP50P810X120-48N")
     )
     (path "/00000000-0000-0000-0000-0000637747ef/00000000-0000-0000-0000-00006379d961"
       (reference "U4") (unit 1) (value "TLV75525PDBV") (footprint "TO_SOT_Packages_SMD:SOT-23-5")
@@ -998,7 +998,7 @@
       (reference "U7") (unit 1) (value "LP5907MFX-1.2") (footprint "Package_TO_SOT_SMD:SOT-23-5")
     )
     (path "/00000000-0000-0000-0000-00006191d89c/00000000-0000-0000-0000-0000636800c7"
-      (reference "U8") (unit 1) (value "SN74AVCH16T245_DGV_48") (footprint "FMC_MIPI_v2_sym:DGV48")
+      (reference "U8") (unit 1) (value "SN74AVCH16T245GR") (footprint "FMC_MIPI_v2_sym:SOP50P810X120-48N")
     )
   )
 )
