@@ -983,7 +983,7 @@
       (reference "U2") (unit 1) (value "SN74AVC2T45DCUR") (footprint "FMC_MIPI_v2_sym:SN74AVC2T45DCUR")
     )
     (path "/00000000-0000-0000-0000-00006362ecc5/00000000-0000-0000-0000-000063673675"
-      (reference "U3") (unit 1) (value "SN74AVCH16T245GR") (footprint "FMC_MIPI_v2_sym:SOP50P810X120-48N")
+      (reference "U3") (unit 1) (value "SN74AVCH16T245GR") (footprint "SOP50P810X120-48N")
     )
     (path "/00000000-0000-0000-0000-0000637747ef/00000000-0000-0000-0000-00006379d961"
       (reference "U4") (unit 1) (value "TLV75525PDBV") (footprint "TO_SOT_Packages_SMD:SOT-23-5")
@@ -998,7 +998,7 @@
       (reference "U7") (unit 1) (value "LP5907MFX-1.2") (footprint "Package_TO_SOT_SMD:SOT-23-5")
     )
     (path "/00000000-0000-0000-0000-00006191d89c/00000000-0000-0000-0000-0000636800c7"
-      (reference "U8") (unit 1) (value "SN74AVCH16T245GR") (footprint "FMC_MIPI_v2_sym:SOP50P810X120-48N")
+      (reference "U8") (unit 1) (value "SN74AVCH16T245GR") (footprint "SOP50P810X120-48N")
     )
   )
 )

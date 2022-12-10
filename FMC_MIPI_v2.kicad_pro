@@ -45,7 +45,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.2032
+          "min_clearance": 0.508
         }
       },
       "diff_pair_dimensions": [
@@ -58,6 +58,7 @@
       "drc_exclusions": [
         "silk_over_copper|152158700|42926000|62999b5c-507e-42a8-93a6-2a3d36efb1f7|c9cc824c-7c4c-43a6-b284-75efe6d6030d",
         "silk_over_copper|152158700|42926000|c46c5531-03f2-4129-b218-eca2e8961fc9|c9cc824c-7c4c-43a6-b284-75efe6d6030d",
+        "silk_over_copper|152463944|43254876|8846d1fd-2d5c-4490-98b4-aa64213fe4da|c9cc824c-7c4c-43a6-b284-75efe6d6030d",
         "silk_over_copper|152487576|43231244|8846d1fd-2d5c-4490-98b4-aa64213fe4da|c9cc824c-7c4c-43a6-b284-75efe6d6030d",
         "silk_over_copper|152497138|42634750|8846d1fd-2d5c-4490-98b4-aa64213fe4da|c9cc824c-7c4c-43a6-b284-75efe6d6030d",
         "silk_over_copper|97448424|40183244|f4398250-4d9b-4c3c-be91-4a7d28f312f8|c69e52ba-2a9b-4895-962e-8b1345d0f360",
@@ -374,6 +375,26 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1524,
+        "via_diameter": 0.4064,
+        "via_drill": 0.3048,
+        "wire_width": 6.0
+      },
+      {
+        "bus_width": 12.0,
+        "clearance": 0.1778,
+        "diff_pair_gap": 0.1016,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.1016,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Earth",
+        "nets": [
+          "Earth"
+        ],
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.254,
         "via_diameter": 0.4064,
         "via_drill": 0.3048,
         "wire_width": 6.0
