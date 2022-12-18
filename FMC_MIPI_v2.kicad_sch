@@ -553,6 +553,12 @@
     (path "/00000000-0000-0000-0000-00006191d89c/1baeb4d8-9d24-4168-8d32-ec567582b332"
       (reference "#PWR0172") (unit 1) (value "Earth") (footprint "")
     )
+    (path "/00000000-0000-0000-0000-00006170b975/e394a73e-71c5-4c07-a2de-c78e42e9c3d9"
+      (reference "#PWR0173") (unit 1) (value "Earth") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00006170b975/9c0092fe-cc48-49af-af81-5146b42973e5"
+      (reference "#PWR0174") (unit 1) (value "Earth") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-00006191d89c/00000000-0000-0000-0000-00006384a0b1"
       (reference "C1") (unit 1) (value "0.1uF") (footprint "Capacitors_SMD:C_0402")
     )
@@ -741,6 +747,9 @@
     )
     (path "/00000000-0000-0000-0000-000061aca102/00000000-0000-0000-0000-000061acfcc9"
       (reference "J2") (unit 1) (value "QTH-060-01-L-D-A") (footprint "FMC_MIPI_v2_sym:QTH-060-01-X-D-A-QTH-060-01-X-D-A")
+    )
+    (path "/00000000-0000-0000-0000-00006170b975/5b5bc323-ecda-4ddf-be83-516ae984ebb5"
+      (reference "J3") (unit 1) (value "Conn_01x08_Female") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical")
     )
     (path "/00000000-0000-0000-0000-000061aca102/00000000-0000-0000-0000-0000635cf999"
       (reference "JP1") (unit 1) (value "Jumper_3_Bridged12") (footprint "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm")
@@ -975,6 +984,12 @@
     )
     (path "/00000000-0000-0000-0000-00006191d89c/00000000-0000-0000-0000-0000635d865c"
       (reference "R75") (unit 1) (value "0") (footprint "Resistors_SMD:R_0805")
+    )
+    (path "/00000000-0000-0000-0000-00006170b975/10fa52e3-3535-42b3-b5b6-64ff627aa6ea"
+      (reference "TP1") (unit 1) (value "GND") (footprint "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose")
+    )
+    (path "/00000000-0000-0000-0000-00006170b975/43d2895f-833a-48de-8e7b-df8bc7088d6d"
+      (reference "TP2") (unit 1) (value "GND") (footprint "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose")
     )
     (path "/00000000-0000-0000-0000-0000637747ef/00000000-0000-0000-0000-000063810b84"
       (reference "U1") (unit 1) (value "LP5907MFX-1.8") (footprint "Package_TO_SOT_SMD:SOT-23-5")
