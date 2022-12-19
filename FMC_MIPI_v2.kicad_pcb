@@ -1627,7 +1627,7 @@
       (net 49 "JT_1p8V_CAM0_MCLK") (pinfunction "1A1") (pintype "passive") (tstamp 63fa0c42-7d9d-43ca-b1f6-017ee03dd871))
     (pad "48" smd rect (at 3.788 -5.75 90) (size 0.3 1.475) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 523 "Earth") (pinfunction "1~{OE}") (pintype "passive") (tstamp 4c1f53e6-7d15-451d-9607-1ade26ac91d5))
-    (model "SN74AVCH16T245GR.stp"
+    (model "${KIPRJMOD}/Libraries/Models3D/SN74AVCH16T245GR.stp"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2046,7 +2046,7 @@
       (net 64 "/VOLT_1P8") (pintype "passive") (tstamp 189c1478-bdf7-41be-a6b4-fc9cadeee8ef))
     (pad "2" smd rect (at 0.7 0) (size 0.42 0.75) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 523 "Earth") (pintype "passive") (tstamp 0441f2ea-ec88-49d4-8af7-89b9b4045688))
-    (model "UCLAMP0501H.TCT.stp"
+    (model "${KIPRJMOD}/Libraries/Models3D/UCLAMP0501H.TCT.stp"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -3605,7 +3605,7 @@
       (net 92 "JT_VDD_1V8") (pintype "passive") (tstamp 41ab44a2-bf74-4d13-822e-f301ec8e084d))
     (pad "2" smd rect (at 0.7 0) (size 0.42 0.75) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 523 "Earth") (pintype "passive") (tstamp 80b683b4-1725-48aa-9e31-eb3b348ca4ff))
-    (model "UCLAMP0501H.TCT.stp"
+    (model "${KIPRJMOD}/Libraries/Models3D/UCLAMP0501H.TCT.stp"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -5872,7 +5872,7 @@
       (net 62 "/VDD_VADJ") (pinfunction "VCCB") (pintype "passive") (tstamp b8c729ee-1e36-41b8-8d72-ea1938397fd9))
     (pad "8" smd rect locked (at 1.575 0.75 270) (size 0.3 0.85) (layers "B.Cu" "B.Paste" "B.Mask")
       (net 52 "Net-(IC3-Pad8)") (pinfunction "SCL_B") (pintype "passive") (tstamp 0fa9befb-a773-401a-a38f-cdf8d2ebb5be))
-    (model "TCA9406DCUR.stp"
+    (model "${KIPRJMOD}/Libraries/Models3D/TCA9406DCUR.stp"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -6288,7 +6288,7 @@
       (net 65 "/VOLT_1P2") (pintype "passive") (tstamp b89ebcd3-3588-4ba6-955e-aa8bf23f0c4d))
     (pad "2" smd rect (at 0.7 0 270) (size 0.42 0.75) (layers "B.Cu" "B.Paste" "B.Mask")
       (net 523 "Earth") (pintype "passive") (tstamp 408ee8d4-a01d-43e4-b3db-a0f3f5d96b8c))
-    (model "UCLAMP0501H.TCT.stp"
+    (model "${KIPRJMOD}/Libraries/Models3D/UCLAMP0501H.TCT.stp"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -6445,7 +6445,7 @@
       (net 18 "/LVDS_to_Jetson_lines/CSI_LP_C_D1_N") (pinfunction "1A1") (pintype "passive") (tstamp c4846217-4130-441d-ac78-97360d138fee))
     (pad "48" smd rect (at 3.788 5.75 180) (size 0.3 1.475) (layers "B.Cu" "B.Paste" "B.Mask")
       (net 523 "Earth") (pinfunction "1~{OE}") (pintype "passive") (tstamp 24cf6484-54a1-4da2-b3f6-d0b80a2482b4))
-    (model "SN74AVCH16T245GR.stp"
+    (model "${KIPRJMOD}/Libraries/Models3D/SN74AVCH16T245GR.stp"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -6681,7 +6681,7 @@
       (net 93 "Net-(IC6-Pad5)") (pinfunction "DIR") (pintype "passive") (tstamp fefb9af7-bc50-4cb5-996b-c20d1bea341e))
     (pad "6" smd rect locked (at 0.95 0.65 270) (size 0.4 1.2) (layers "B.Cu" "B.Paste" "B.Mask")
       (net 62 "/VDD_VADJ") (pinfunction "VCCB") (pintype "passive") (tstamp 41eaa972-a89a-420a-a5fc-be8375acd4bf))
-    (model "SN74AVC1T45DCKT.stp"
+    (model "${KIPRJMOD}/Libraries/Models3D/SN74AVC1T45DCKT.stp"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -6738,7 +6738,7 @@
       (net 101 "Net-(IC7-Pad5)") (pinfunction "DIR") (pintype "passive") (tstamp 2d1695fa-54ba-439e-acc0-bf2c0e865a0d))
     (pad "6" smd rect locked (at 0.95 0.65 270) (size 0.4 1.2) (layers "B.Cu" "B.Paste" "B.Mask")
       (net 64 "/VOLT_1P8") (pinfunction "VCCB") (pintype "passive") (tstamp fe177b96-8c55-45b3-bdf3-36cc2699c4cd))
-    (model "SN74AVC1T45DCKT.stp"
+    (model "${KIPRJMOD}/Libraries/Models3D/SN74AVC1T45DCKT.stp"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -6986,7 +6986,7 @@
       (net 62 "/VDD_VADJ") (pinfunction "VCCB") (pintype "passive") (tstamp 92beea57-528e-4e1f-820c-0b0af326270a))
     (pad "8" smd rect locked (at 1.575 0.75 90) (size 0.3 0.85) (layers "B.Cu" "B.Paste" "B.Mask")
       (net 80 "Net-(IC5-Pad8)") (pinfunction "SCL_B") (pintype "passive") (tstamp 406dad05-1f56-4fa9-8379-e9e5f67d1cc7))
-    (model "TCA9406DCUR.stp"
+    (model "${KIPRJMOD}/Libraries/Models3D/TCA9406DCUR.stp"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -7050,7 +7050,7 @@
       (net 62 "/VDD_VADJ") (pinfunction "VCCB") (pintype "passive") (tstamp 1e2eaaab-4e4c-4895-b33e-ef11657f4cc3))
     (pad "8" smd rect locked (at 1.575 0.75 270) (size 0.3 0.85) (layers "B.Cu" "B.Paste" "B.Mask")
       (net 72 "Net-(IC4-Pad8)") (pinfunction "SCL_B") (pintype "passive") (tstamp a38c4f43-aa63-40c4-9e1e-e77e80b30bd3))
-    (model "TCA9406DCUR.stp"
+    (model "${KIPRJMOD}/Libraries/Models3D/TCA9406DCUR.stp"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -8659,7 +8659,7 @@
       (net 66 "/VOLT_2P5") (pintype "passive") (tstamp 86b27a69-cfe5-4a8a-ab5b-fd1ec516dc16))
     (pad "2" smd rect (at 0.7 0 270) (size 0.42 0.75) (layers "B.Cu" "B.Paste" "B.Mask")
       (net 523 "Earth") (pintype "passive") (tstamp 0568a6ec-2d27-44aa-a2c4-814a199bb5aa))
-    (model "UCLAMP0501H.TCT.stp"
+    (model "${KIPRJMOD}/Libraries/Models3D/UCLAMP0501H.TCT.stp"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
