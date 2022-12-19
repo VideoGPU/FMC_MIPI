@@ -1202,7 +1202,7 @@
     (property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv755p.pdf" (id 3) (at 54.61 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "NeedToAsk" (id 4) (at 54.61 68.58 0)
+    (property "LCSC" "C2867155" (id 4) (at 54.61 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid b95cc6e6-4f62-4a6f-b4cb-baaecf714b08))

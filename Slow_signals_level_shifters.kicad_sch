@@ -2973,7 +2973,7 @@
     (property "Manufacturer_Part_Number" "SN74AVC1T45DCKT" (id 9) (at 163.83 171.45 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (property "LCSC" "NeedToAsk" (id 10) (at 139.7 156.21 0)
+    (property "LCSC" "C2677669" (id 10) (at 139.7 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 46086933-e2f7-4b39-879c-8acda2382c35))
