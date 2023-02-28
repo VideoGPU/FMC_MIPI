@@ -8512,7 +8512,7 @@
       (net 523 "Earth") (pinfunction "GND") (pintype "passive") (tstamp 0ae825f2-bedb-4e84-a794-27516bf55b6f))
     (pad "K40" smd circle locked (at -24.765 -5.715 180) (size 0.635 0.635) (layers "B.Cu" "B.Paste" "B.Mask")
       (net 521 "unconnected-(J1-PadK40)") (pinfunction "VIO_B_M2C") (pintype "passive+no_connect") (tstamp e8c2435c-23e8-42e1-a0df-f2e77750c134))
-    (model "E:/KicadProjects/FMC_MIPI/Libraries/Models3D/SEAM-40-02.0-L-10-1-A-K-TR.wrl"
+    (model "${KIPRJMOD}/Libraries/Models3D/SEAM-40-02.0-L-10-1-A-K-TR.wrl"
       (offset (xyz 0 0 0.5079999924))
       (scale (xyz 10 10 10))
       (rotate (xyz -90 0 0))
