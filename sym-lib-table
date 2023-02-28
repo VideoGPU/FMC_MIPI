@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "FMC_MIPI_v2")(type "KiCad")(uri "${KIPRJMOD}/Libraries/Symbols/FMC_MIPI_v2.kicad_sym")(options "")(descr "desc_FMC_MIPI_v2"))
+)

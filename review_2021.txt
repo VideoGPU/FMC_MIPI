@@ -1,0 +1,43 @@
+* camera in via Jetson TX2 connector
+? * camera in From OpenSource MIPI RX board (May be, if there is spare place on PCB)
+* camera out via Jetson TX2 connector
+
+All with LVDS interfaces + Full LP and HS modes
+
+
+This TS3DDR3812_RUA_42 switch is not good for handling SLVS signals!!!
+
+Check xapp1339-mipi-dphy page  16 for soultion. Use HD3SS3411 component or check TMUXHS4412 component (Aval. July 2022)
+
+About clock phase read section 5.7 High-Speed Clock Transmission in D-PHY specs in 
+MIPI_D-PHY_Specification_v01-00-00.pdf
+
+ChoosePassive mux from here:
+https://www.ti.com/interface/pcie-sas-sata/products.html#p1241=Passive%20mux&p480=4;8&sort=p480;desc
+
+TMUXHS4412 July 2022 - Use in rev. 3
+HD3SS3415 20 in stock
+HD3SS3411 1 channel, but available Will use now. Full PN: HD3SS3411TRWARQ1
+
+Check PI3WVR628XBEX from Diodes. It is designed for MIPI
+
+Switches from Diodes inc:
+
+https://www.diodes.com/products/connectivity-and-timing/switches-mux/protocol-switches/mipi-switches/
+
+Switches from TI:
+
+TS5MP645
+
+I2C switches:
+https://www.ti.com/interface/i2c/switches-and-multiplexers/products.html?keyMatch=I2C
+
+check this one: PCA9546A
+
+
+Symbol paths:
+FMC_MIPI_v2
+desc_FMC_MIPI_v2
+${KIPRJMOD}/Libraries/Symbols/FMC_MIPI_v2.lib
+
+hdmi3dmix:hdmi3dmix-ASP-134488-01_VER2
